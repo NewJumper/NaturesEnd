@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "naturesend:block/willow_planks",
+    "top": "naturesend:block/willow_planks"
+  }
+}

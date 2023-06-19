@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "naturesend:block/willow_log",
+    "side": "naturesend:block/willow_log"
+  }
+}

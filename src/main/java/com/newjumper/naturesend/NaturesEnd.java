@@ -2,10 +2,18 @@ package com.newjumper.naturesend;
 
 import com.newjumper.naturesend.content.NaturesBlocks;
 import com.newjumper.naturesend.content.NaturesItems;
+import com.newjumper.naturesend.datagen.assets.ENLanguageProvider;
+import com.newjumper.naturesend.datagen.assets.NaturesBlockStateProvider;
+import com.newjumper.naturesend.datagen.assets.NaturesItemModelProvider;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -17,7 +25,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class NaturesEnd {
     public static final String MOD_ID = "naturesend";
     private static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
-    private static final RegistryObject<CreativeModeTab> NATURES_END = CREATIVE_MODE_TABS.register("natures_end", () -> CreativeModeTab.builder().icon(Items.OAK_SAPLING::getDefaultInstance).build());
+    private static final RegistryObject<CreativeModeTab> NATURES_END = CREATIVE_MODE_TABS.register("natures_end", () -> CreativeModeTab.builder().title(Component.translatable("itemGroup." + MOD_ID)).icon(() -> new ItemStack(NaturesBlocks.WILLOW_LOG.get())).build());
 
     public NaturesEnd() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -28,11 +36,23 @@ public class NaturesEnd {
 
         MinecraftForge.EVENT_BUS.register(this);
         eventBus.addListener(this::buildCreativeTab);
+        eventBus.addListener(this::generateData);
     }
 
     private void buildCreativeTab(BuildCreativeModeTabContentsEvent event) {
         if(event.getTab() == NATURES_END.get()) {
             NaturesBlocks.BLOCKS.getEntries().forEach(event::accept);
         }
+    }
+
+    private void generateData(GatherDataEvent event) {
+        DataGenerator generator = event.getGenerator();
+        PackOutput packOutput = generator.getPackOutput();
+        ExistingFileHelper fileHelper = event.getExistingFileHelper();
+
+        generator.addProvider(event.includeClient(), new NaturesBlockStateProvider(packOutput, fileHelper));
+        generator.addProvider(event.includeClient(), new NaturesItemModelProvider(packOutput, fileHelper));
+
+        generator.addProvider(event.includeClient(), new ENLanguageProvider(packOutput));
     }
 }

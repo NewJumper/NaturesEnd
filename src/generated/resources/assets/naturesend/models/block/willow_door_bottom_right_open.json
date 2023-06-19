@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "textures": {
+    "bottom": "naturesend:block/willow_planks",
+    "top": "naturesend:block/willow_planks"
+  }
+}
