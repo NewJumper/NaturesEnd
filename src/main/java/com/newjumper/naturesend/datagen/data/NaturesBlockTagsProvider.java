@@ -33,6 +33,8 @@ public class NaturesBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.WOODEN_BUTTONS).add(NaturesBlocks.WILLOW_BUTTON.get());
         tag(BlockTags.LEAVES).add(NaturesBlocks.WILLOW_LEAVES.get());
         tag(BlockTags.SAPLINGS).add(NaturesBlocks.WILLOW_SAPLING.get());
+        tag(BlockTags.STANDING_SIGNS).add(NaturesBlocks.WILLOW_SIGN.get());
+        tag(BlockTags.WALL_SIGNS).add(NaturesBlocks.WILLOW_WALL_SIGN.get());
 
         tag(NaturesTags.Blocks.WILLOW_LOGS).add(NaturesBlocks.WILLOW_LOG.get(), NaturesBlocks.WILLOW_WOOD.get(), NaturesBlocks.STRIPPED_WILLOW_LOG.get(), NaturesBlocks.STRIPPED_WILLOW_WOOD.get());
     }

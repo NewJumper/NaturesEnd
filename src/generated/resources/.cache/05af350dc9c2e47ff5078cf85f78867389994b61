@@ -1,4 +1,4 @@
-// 1.20.1	2023-06-19T21:42:47.3604467	Block States: naturesend
+// 1.20.1	2023-06-20T00:02:31.9004216	Block States: naturesend
 67a971b7e02bf48b222ff9ae9ba3d0f5ad41c39d assets/naturesend/blockstates/stripped_willow_log.json
 4c2ef94ab150610d932fd04cea2fae8979c55a93 assets/naturesend/blockstates/stripped_willow_wood.json
 5adb67ffb23c30ce028cb0bded86f6f57bfa2ac7 assets/naturesend/blockstates/willow_button.json
@@ -10,9 +10,11 @@ d15d31faa8e07c35aeb415bf896184e09828bf4f assets/naturesend/blockstates/willow_fe
 34fe9be1036bb8bc9543a11483025086e9410984 assets/naturesend/blockstates/willow_planks.json
 bf3192292d288592a088f63ef72246733962af3f assets/naturesend/blockstates/willow_pressure_plate.json
 04bdddadd4ef27ce954061aa2f6a203f111d4576 assets/naturesend/blockstates/willow_sapling.json
+effbd54fc369f00573f2d6cdd659d7c46fa97b1b assets/naturesend/blockstates/willow_sign.json
 b221f918b46fa5b3d749d837fea75c1aa7082f07 assets/naturesend/blockstates/willow_slab.json
 c5fa0b95ed179bf18f2b315f5ac1f98f15c4d073 assets/naturesend/blockstates/willow_stairs.json
 f6c830373731e805bff8ce48d95fa83eedac1ad2 assets/naturesend/blockstates/willow_trapdoor.json
+effbd54fc369f00573f2d6cdd659d7c46fa97b1b assets/naturesend/blockstates/willow_wall_sign.json
 eb149d06cb8261e9bd6e1964692003520e4cb1f6 assets/naturesend/blockstates/willow_wood.json
 50fe07a3afbaf5e17729b89ee9527bbd31d74c70 assets/naturesend/models/block/stripped_willow_log.json
 f5fb76a22c7448e11f7a52c64399a2769bb770d1 assets/naturesend/models/block/stripped_willow_log_horizontal.json
@@ -43,6 +45,7 @@ ccf5034dcbee03f105c61dd48b103b4013d0a473 assets/naturesend/models/block/willow_l
 55cba83fe52306e0409efce779ed735e57e64258 assets/naturesend/models/block/willow_pressure_plate.json
 70c7f9e4d093c7865da4591f2d6d623e37811638 assets/naturesend/models/block/willow_pressure_plate_down.json
 3932e2f1b3863aeb18074f02673812466aa927df assets/naturesend/models/block/willow_sapling.json
+54204d17eca23255c935a4374d41a7236bb349a2 assets/naturesend/models/block/willow_sign.json
 daadfc16505dc5494278605815e7dd9910fdfe0e assets/naturesend/models/block/willow_slab.json
 fbd370fcfb8e5ed444510a96b55541c37a6de8bc assets/naturesend/models/block/willow_slab_top.json
 8fb8932d9dae44223d72ebe21470980166d57a20 assets/naturesend/models/block/willow_stairs.json

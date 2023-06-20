@@ -1,11 +1,15 @@
 package com.newjumper.naturesend.content;
 
 import com.newjumper.naturesend.NaturesEnd;
+import com.newjumper.naturesend.content.entities.NaturesSignBlockEntity;
+import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.grower.OakTreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,7 +22,7 @@ public class NaturesBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, NaturesEnd.MOD_ID);
 
     private static final BlockSetType WILLOW_SET = BlockSetType.register(new BlockSetType("willow"));
-    private static final WoodType WILLOW = WoodType.register(new WoodType("willow", WILLOW_SET));
+    public static final WoodType WILLOW = WoodType.register(new WoodType("willow", WILLOW_SET));
     public static final RegistryObject<RotatedPillarBlock> WILLOW_LOG = register("willow_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<RotatedPillarBlock> WILLOW_WOOD = register("willow_wood", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
     public static final RegistryObject<RotatedPillarBlock> STRIPPED_WILLOW_LOG = register("stripped_willow_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
@@ -34,7 +38,18 @@ public class NaturesBlocks {
     public static final RegistryObject<ButtonBlock> WILLOW_BUTTON = register("willow_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), WILLOW_SET, 30, true));
     public static final RegistryObject<LeavesBlock> WILLOW_LEAVES = register("willow_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
     public static final RegistryObject<SaplingBlock> WILLOW_SAPLING = register("willow_sapling", () -> new SaplingBlock(new OakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    // sign
+    public static final RegistryObject<StandingSignBlock> WILLOW_SIGN = BLOCKS.register("willow_sign", () -> new StandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), WILLOW) {
+        @Override
+        public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+            return new NaturesSignBlockEntity(pPos, pState);
+        }
+    });
+    public static final RegistryObject<WallSignBlock> WILLOW_WALL_SIGN = BLOCKS.register("willow_wall_sign", () -> new WallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).lootFrom(WILLOW_SIGN), WILLOW) {
+        @Override
+        public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+            return new NaturesSignBlockEntity(pPos, pState);
+        }
+    });
     // hanging sign
     // boat
     // chest boat

@@ -10,9 +10,11 @@
   "block.naturesend.willow_planks": "Willow Planks",
   "block.naturesend.willow_pressure_plate": "Willow Pressure Plate",
   "block.naturesend.willow_sapling": "Willow Sapling",
+  "block.naturesend.willow_sign": "Willow Sign",
   "block.naturesend.willow_slab": "Willow Slab",
   "block.naturesend.willow_stairs": "Willow Stairs",
   "block.naturesend.willow_trapdoor": "Willow Trapdoor",
+  "block.naturesend.willow_wall_sign": "Willow Wall Sign",
   "block.naturesend.willow_wood": "Willow Wood",
   "itemGroup.naturesend": "Nature's End"
 }
