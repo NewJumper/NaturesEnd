@@ -36,6 +36,10 @@ public class NaturesItemModelProvider extends ItemModelProvider {
         blockModel(NaturesBlocks.EVERGREEN_BUTTON, "inventory");
         blockModel(NaturesBlocks.EVERGREEN_LEAVES);
         getBuilder(NaturesBlocks.EVERGREEN_SAPLING.getId().getPath()).parent(GENERATED).texture("layer0", "block/" + NaturesBlocks.EVERGREEN_SAPLING.getId().getPath());
+        itemModel(NaturesItems.EVERGREEN_SIGN, GENERATED);
+        itemModel(NaturesItems.EVERGREEN_HANGING_SIGN, GENERATED);
+        itemModel(NaturesItems.EVERGREEN_BOAT, GENERATED);
+        itemModel(NaturesItems.EVERGREEN_CHEST_BOAT, GENERATED);
 
         blockModel(NaturesBlocks.WILLOW_LOG);
         blockModel(NaturesBlocks.WILLOW_WOOD);

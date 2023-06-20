@@ -33,6 +33,9 @@ public class NaturesBlockStateProvider extends BlockStateProvider {
         buttonBlock(NaturesBlocks.EVERGREEN_BUTTON, blockLoc(NaturesBlocks.EVERGREEN_PLANKS));
         simpleBlock(NaturesBlocks.EVERGREEN_LEAVES.get(), models().cubeAll(NaturesBlocks.EVERGREEN_LEAVES.getId().getPath(), blockLoc(NaturesBlocks.EVERGREEN_LEAVES)).renderType("cutout"));
         simpleBlock(NaturesBlocks.EVERGREEN_SAPLING.get(), models().cross(NaturesBlocks.EVERGREEN_SAPLING.getId().getPath(), blockLoc(NaturesBlocks.EVERGREEN_SAPLING)).renderType("cutout"));
+        signBlock(NaturesBlocks.EVERGREEN_SIGN.get(), NaturesBlocks.EVERGREEN_WALL_SIGN.get(), blockLoc(NaturesBlocks.EVERGREEN_PLANKS));
+        simpleBlock(NaturesBlocks.EVERGREEN_HANGING_SIGN.get(), models().sign(NaturesBlocks.EVERGREEN_HANGING_SIGN.getId().getPath(), blockLoc(NaturesBlocks.STRIPPED_EVERGREEN_LOG)));
+        simpleBlock(NaturesBlocks.EVERGREEN_WALL_HANGING_SIGN.get(), models().sign(NaturesBlocks.EVERGREEN_HANGING_SIGN.getId().getPath(), blockLoc(NaturesBlocks.STRIPPED_EVERGREEN_LOG)));
 
         logBlock(NaturesBlocks.WILLOW_LOG.get());
         axisBlock(NaturesBlocks.WILLOW_WOOD.get(), blockLoc(NaturesBlocks.WILLOW_LOG), blockLoc(NaturesBlocks.WILLOW_LOG));

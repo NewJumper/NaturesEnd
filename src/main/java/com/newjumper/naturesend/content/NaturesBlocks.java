@@ -41,6 +41,30 @@ public class NaturesBlocks {
     public static final RegistryObject<ButtonBlock> EVERGREEN_BUTTON = register("evergreen_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), EVERGREEN_SET, 30, true));
     public static final RegistryObject<LeavesBlock> EVERGREEN_LEAVES = register("evergreen_leaves", () -> new FlammableLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES), 60, 30));
     public static final RegistryObject<SaplingBlock> EVERGREEN_SAPLING = register("evergreen_sapling", () -> new SaplingBlock(new OakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<StandingSignBlock> EVERGREEN_SIGN = BLOCKS.register("evergreen_sign", () -> new StandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), EVERGREEN) {
+        @Override
+        public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+            return new NaturesSignBlockEntity(pPos, pState);
+        }
+    });
+    public static final RegistryObject<WallSignBlock> EVERGREEN_WALL_SIGN = BLOCKS.register("evergreen_wall_sign", () -> new WallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).lootFrom(EVERGREEN_SIGN), EVERGREEN) {
+        @Override
+        public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+            return new NaturesSignBlockEntity(pPos, pState);
+        }
+    });
+    public static final RegistryObject<CeilingHangingSignBlock> EVERGREEN_HANGING_SIGN = BLOCKS.register("evergreen_hanging_sign", () -> new CeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), EVERGREEN) {
+        @Override
+        public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+            return new NaturesHangingSignBlockEntity(pPos, pState);
+        }
+    });
+    public static final RegistryObject<WallHangingSignBlock> EVERGREEN_WALL_HANGING_SIGN = BLOCKS.register("evergreen_wall_hanging_sign", () -> new WallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).lootFrom(EVERGREEN_HANGING_SIGN), EVERGREEN) {
+        @Override
+        public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+            return new NaturesHangingSignBlockEntity(pPos, pState);
+        }
+    });
 
     private static final BlockSetType WILLOW_SET = BlockSetType.register(new BlockSetType("willow"));
     public static final WoodType WILLOW = WoodType.register(new WoodType("willow", WILLOW_SET));

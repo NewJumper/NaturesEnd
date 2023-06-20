@@ -57,6 +57,7 @@ public class NaturesEnd {
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
+        Sheets.addWoodType(NaturesBlocks.EVERGREEN);
         Sheets.addWoodType(NaturesBlocks.WILLOW);
     }
 
@@ -89,8 +90,8 @@ public class NaturesEnd {
         public static void clientSetup(final FMLClientSetupEvent event) {
             BlockEntityRenderers.register(NaturesBlockEntities.NATURES_SIGNS.get(), SignRenderer::new);
             BlockEntityRenderers.register(NaturesBlockEntities.NATURES_HANGING_SIGNS.get(), HangingSignRenderer::new);
-            EntityRenderers.register(NaturesEntities.WILLOW_BOAT.get(), (context) -> new NaturesBoatRenderer(context, false));
-            EntityRenderers.register(NaturesEntities.WILLOW_CHEST_BOAT.get(), (context) -> new NaturesBoatRenderer(context, true));
+            EntityRenderers.register(NaturesEntities.NATURES_BOAT.get(), (context) -> new NaturesBoatRenderer(context, false));
+            EntityRenderers.register(NaturesEntities.NATURES_CHEST_BOAT.get(), (context) -> new NaturesBoatRenderer(context, true));
         }
     }
 }

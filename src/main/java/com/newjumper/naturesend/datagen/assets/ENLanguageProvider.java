@@ -16,7 +16,7 @@ public class ENLanguageProvider extends LanguageProvider {
     @Override
     protected void addTranslations() {
         add("itemGroup." + NaturesEnd.MOD_ID, "Nature's End");
-        add("entity." + NaturesEnd.MOD_ID + ".willow_chest_boat", "Boat with Chest");
+        add("entity." + NaturesEnd.MOD_ID + ".natures_chest_boat", "Boat with Chest");
 
         NaturesBlocks.BLOCKS.getEntries().forEach(block -> add(block, "block"));
         NaturesItems.ITEMS.getEntries().stream().filter(item -> !(item.get() instanceof BlockItem)).forEach(item -> add(item, "item"));

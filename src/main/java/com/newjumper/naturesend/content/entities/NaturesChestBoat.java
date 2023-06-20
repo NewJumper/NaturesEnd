@@ -12,7 +12,6 @@ import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.entity.vehicle.ChestBoat;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
 @SuppressWarnings("NullableProblems")
@@ -24,7 +23,7 @@ public class NaturesChestBoat extends ChestBoat {
     }
 
     public NaturesChestBoat(Level level, double x, double y, double z, String woodType) {
-        this(NaturesEntities.WILLOW_CHEST_BOAT.get(), level);
+        this(NaturesEntities.NATURES_CHEST_BOAT.get(), level);
         this.setPos(x, y, z);
         this.xo = x;
         this.yo = y;
@@ -40,7 +39,7 @@ public class NaturesChestBoat extends ChestBoat {
 
     @Override
     public Item getDropItem() {
-        return this.getWoodType().equals(NaturesBlocks.WILLOW.name()) ? NaturesItems.WILLOW_CHEST_BOAT.get() : Items.AIR;
+        return this.getWoodType().equals(NaturesBlocks.EVERGREEN.name()) ? NaturesItems.EVERGREEN_CHEST_BOAT.get() : NaturesItems.WILLOW_CHEST_BOAT.get();
     }
 
     @Override

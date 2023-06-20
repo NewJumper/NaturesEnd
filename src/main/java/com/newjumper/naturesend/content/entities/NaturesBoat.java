@@ -11,7 +11,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
 @SuppressWarnings("NullableProblems")
@@ -23,7 +22,7 @@ public class NaturesBoat extends Boat {
     }
 
     public NaturesBoat(Level level, double x, double y, double z, String woodType) {
-        this(NaturesEntities.WILLOW_BOAT.get(), level);
+        this(NaturesEntities.NATURES_BOAT.get(), level);
         this.setPos(x, y, z);
         this.xo = x;
         this.yo = y;
@@ -39,7 +38,7 @@ public class NaturesBoat extends Boat {
 
     @Override
     public Item getDropItem() {
-        return this.getWoodType().equals(NaturesBlocks.WILLOW.name()) ? NaturesItems.WILLOW_BOAT.get() : Items.AIR;
+        return this.getWoodType().equals(NaturesBlocks.EVERGREEN.name()) ? NaturesItems.EVERGREEN_BOAT.get() : NaturesItems.WILLOW_BOAT.get();
     }
 
     @Override
