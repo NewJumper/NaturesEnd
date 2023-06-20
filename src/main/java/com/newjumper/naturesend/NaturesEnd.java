@@ -5,6 +5,8 @@ import com.newjumper.naturesend.content.NaturesItems;
 import com.newjumper.naturesend.datagen.assets.ENLanguageProvider;
 import com.newjumper.naturesend.datagen.assets.NaturesBlockStateProvider;
 import com.newjumper.naturesend.datagen.assets.NaturesItemModelProvider;
+import com.newjumper.naturesend.datagen.data.NaturesBlockTagsProvider;
+import com.newjumper.naturesend.datagen.data.NaturesItemTagsProvider;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -54,5 +56,10 @@ public class NaturesEnd {
         generator.addProvider(event.includeClient(), new NaturesItemModelProvider(packOutput, fileHelper));
 
         generator.addProvider(event.includeClient(), new ENLanguageProvider(packOutput));
+
+        NaturesBlockTagsProvider blockTags = new NaturesBlockTagsProvider(packOutput, event.getLookupProvider(), fileHelper);
+        generator.addProvider(event.includeServer(), blockTags);
+        generator.addProvider(event.includeServer(), new NaturesItemTagsProvider(packOutput, event.getLookupProvider(), blockTags, fileHelper));
+
     }
 }
