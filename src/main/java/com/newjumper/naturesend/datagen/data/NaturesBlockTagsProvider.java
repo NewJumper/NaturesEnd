@@ -17,27 +17,31 @@ public class NaturesBlockTagsProvider extends BlockTagsProvider {
         super(output, lookupProvider, NaturesEnd.MOD_ID, exFileHelper);
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     protected void addTags(HolderLookup.@NotNull Provider pProvider) {
-        tag(BlockTags.MINEABLE_WITH_AXE).addTag(NaturesTags.Blocks.WILLOW_LOGS).add(NaturesBlocks.WILLOW_PLANKS.get(), NaturesBlocks.WILLOW_STAIRS.get(), NaturesBlocks.WILLOW_SLAB.get(), NaturesBlocks.WILLOW_FENCE.get(), NaturesBlocks.WILLOW_FENCE_GATE.get(), NaturesBlocks.WILLOW_DOOR.get(), NaturesBlocks.WILLOW_TRAPDOOR.get(), NaturesBlocks.WILLOW_PRESSURE_PLATE.get(), NaturesBlocks.WILLOW_BUTTON.get());
-        tag(BlockTags.MINEABLE_WITH_HOE).add(NaturesBlocks.WILLOW_LEAVES.get());
-        tag(BlockTags.LOGS_THAT_BURN).addTag(NaturesTags.Blocks.WILLOW_LOGS);
-        tag(BlockTags.PLANKS).add(NaturesBlocks.WILLOW_PLANKS.get());
-        tag(BlockTags.WOODEN_STAIRS).add(NaturesBlocks.WILLOW_STAIRS.get());
-        tag(BlockTags.WOODEN_SLABS).add(NaturesBlocks.WILLOW_SLAB.get());
-        tag(BlockTags.WOODEN_FENCES).add(NaturesBlocks.WILLOW_FENCE.get());
-        tag(BlockTags.FENCE_GATES).add(NaturesBlocks.WILLOW_FENCE_GATE.get());
-        tag(BlockTags.WOODEN_DOORS).add(NaturesBlocks.WILLOW_DOOR.get());
-        tag(BlockTags.WOODEN_TRAPDOORS).add(NaturesBlocks.WILLOW_TRAPDOOR.get());
-        tag(BlockTags.WOODEN_PRESSURE_PLATES).add(NaturesBlocks.WILLOW_PRESSURE_PLATE.get());
-        tag(BlockTags.WOODEN_BUTTONS).add(NaturesBlocks.WILLOW_BUTTON.get());
-        tag(BlockTags.LEAVES).add(NaturesBlocks.WILLOW_LEAVES.get());
-        tag(BlockTags.SAPLINGS).add(NaturesBlocks.WILLOW_SAPLING.get());
+        tag(BlockTags.MINEABLE_WITH_AXE).addTags(NaturesTags.Blocks.EVERGREEN_LOGS, NaturesTags.Blocks.WILLOW_LOGS)
+                .add(NaturesBlocks.EVERGREEN_PLANKS.get(), NaturesBlocks.EVERGREEN_STAIRS.get(), NaturesBlocks.EVERGREEN_SLAB.get(), NaturesBlocks.EVERGREEN_FENCE.get(), NaturesBlocks.EVERGREEN_FENCE_GATE.get(), NaturesBlocks.EVERGREEN_DOOR.get(), NaturesBlocks.EVERGREEN_TRAPDOOR.get(), NaturesBlocks.EVERGREEN_PRESSURE_PLATE.get(), NaturesBlocks.EVERGREEN_BUTTON.get(),
+                NaturesBlocks.WILLOW_PLANKS.get(), NaturesBlocks.WILLOW_STAIRS.get(), NaturesBlocks.WILLOW_SLAB.get(), NaturesBlocks.WILLOW_FENCE.get(), NaturesBlocks.WILLOW_FENCE_GATE.get(), NaturesBlocks.WILLOW_DOOR.get(), NaturesBlocks.WILLOW_TRAPDOOR.get(), NaturesBlocks.WILLOW_PRESSURE_PLATE.get(), NaturesBlocks.WILLOW_BUTTON.get());
+        tag(BlockTags.MINEABLE_WITH_HOE).add(NaturesBlocks.EVERGREEN_LEAVES.get(), NaturesBlocks.WILLOW_LEAVES.get());
+        tag(BlockTags.LOGS_THAT_BURN).addTags(NaturesTags.Blocks.EVERGREEN_LOGS, NaturesTags.Blocks.WILLOW_LOGS);
+        tag(BlockTags.PLANKS).add(NaturesBlocks.EVERGREEN_PLANKS.get(), NaturesBlocks.WILLOW_PLANKS.get());
+        tag(BlockTags.WOODEN_STAIRS).add(NaturesBlocks.EVERGREEN_STAIRS.get(), NaturesBlocks.WILLOW_STAIRS.get());
+        tag(BlockTags.WOODEN_SLABS).add(NaturesBlocks.EVERGREEN_SLAB.get(), NaturesBlocks.WILLOW_SLAB.get());
+        tag(BlockTags.WOODEN_FENCES).add(NaturesBlocks.EVERGREEN_FENCE.get(), NaturesBlocks.WILLOW_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(NaturesBlocks.EVERGREEN_FENCE_GATE.get(), NaturesBlocks.WILLOW_FENCE_GATE.get());
+        tag(BlockTags.WOODEN_DOORS).add(NaturesBlocks.EVERGREEN_DOOR.get(), NaturesBlocks.WILLOW_DOOR.get());
+        tag(BlockTags.WOODEN_TRAPDOORS).add(NaturesBlocks.EVERGREEN_TRAPDOOR.get(), NaturesBlocks.WILLOW_TRAPDOOR.get());
+        tag(BlockTags.WOODEN_PRESSURE_PLATES).add(NaturesBlocks.EVERGREEN_PRESSURE_PLATE.get(), NaturesBlocks.WILLOW_PRESSURE_PLATE.get());
+        tag(BlockTags.WOODEN_BUTTONS).add(NaturesBlocks.EVERGREEN_BUTTON.get(), NaturesBlocks.WILLOW_BUTTON.get());
+        tag(BlockTags.LEAVES).add(NaturesBlocks.EVERGREEN_LEAVES.get(), NaturesBlocks.WILLOW_LEAVES.get());
+        tag(BlockTags.SAPLINGS).add(NaturesBlocks.EVERGREEN_SAPLING.get(), NaturesBlocks.WILLOW_SAPLING.get());
         tag(BlockTags.STANDING_SIGNS).add(NaturesBlocks.WILLOW_SIGN.get());
         tag(BlockTags.WALL_SIGNS).add(NaturesBlocks.WILLOW_WALL_SIGN.get());
         tag(BlockTags.CEILING_HANGING_SIGNS).add(NaturesBlocks.WILLOW_HANGING_SIGN.get());
         tag(BlockTags.WALL_HANGING_SIGNS).add(NaturesBlocks.WILLOW_WALL_HANGING_SIGN.get());
 
+        tag(NaturesTags.Blocks.EVERGREEN_LOGS).add(NaturesBlocks.EVERGREEN_LOG.get(), NaturesBlocks.EVERGREEN_WOOD.get(), NaturesBlocks.STRIPPED_EVERGREEN_LOG.get(), NaturesBlocks.STRIPPED_EVERGREEN_WOOD.get());
         tag(NaturesTags.Blocks.WILLOW_LOGS).add(NaturesBlocks.WILLOW_LOG.get(), NaturesBlocks.WILLOW_WOOD.get(), NaturesBlocks.STRIPPED_WILLOW_LOG.get(), NaturesBlocks.STRIPPED_WILLOW_WOOD.get());
     }
 }

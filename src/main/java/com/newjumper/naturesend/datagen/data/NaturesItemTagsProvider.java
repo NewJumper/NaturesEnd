@@ -37,6 +37,7 @@ public class NaturesItemTagsProvider extends ItemTagsProvider {
         copy(BlockTags.STANDING_SIGNS, ItemTags.SIGNS);
         copy(BlockTags.CEILING_HANGING_SIGNS, ItemTags.HANGING_SIGNS);
 
+        copy(NaturesTags.Blocks.EVERGREEN_LOGS, NaturesTags.Items.EVERGREEN_LOGS);
         copy(NaturesTags.Blocks.WILLOW_LOGS, NaturesTags.Items.WILLOW_LOGS);
 
         tag(ItemTags.BOATS).add(NaturesItems.WILLOW_BOAT.get());

@@ -18,6 +18,22 @@ public class NaturesBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        logBlock(NaturesBlocks.EVERGREEN_LOG.get());
+        axisBlock(NaturesBlocks.EVERGREEN_WOOD.get(), blockLoc(NaturesBlocks.EVERGREEN_LOG), blockLoc(NaturesBlocks.EVERGREEN_LOG));
+        logBlock(NaturesBlocks.STRIPPED_EVERGREEN_LOG.get());
+        axisBlock(NaturesBlocks.STRIPPED_EVERGREEN_WOOD.get(), blockLoc(NaturesBlocks.STRIPPED_EVERGREEN_LOG), blockLoc(NaturesBlocks.STRIPPED_EVERGREEN_LOG));
+        simpleBlock(NaturesBlocks.EVERGREEN_PLANKS.get());
+        stairsBlock(NaturesBlocks.EVERGREEN_STAIRS.get(), blockLoc(NaturesBlocks.EVERGREEN_PLANKS));
+        slabBlock(NaturesBlocks.EVERGREEN_SLAB.get(), blockLoc(NaturesBlocks.EVERGREEN_PLANKS), blockLoc(NaturesBlocks.EVERGREEN_PLANKS));
+        fenceBlock(NaturesBlocks.EVERGREEN_FENCE, blockLoc(NaturesBlocks.EVERGREEN_PLANKS));
+        fenceGateBlock(NaturesBlocks.EVERGREEN_FENCE_GATE.get(), blockLoc(NaturesBlocks.EVERGREEN_PLANKS));
+        doorBlockWithRenderType(NaturesBlocks.EVERGREEN_DOOR.get(), blockLoc(NaturesBlocks.EVERGREEN_DOOR, "bottom"), blockLoc(NaturesBlocks.EVERGREEN_DOOR, "top"), "translucent");
+        trapdoorBlockWithRenderType(NaturesBlocks.EVERGREEN_TRAPDOOR.get(), blockLoc(NaturesBlocks.EVERGREEN_TRAPDOOR), true, "translucent");
+        pressurePlateBlock(NaturesBlocks.EVERGREEN_PRESSURE_PLATE.get(), blockLoc(NaturesBlocks.EVERGREEN_PLANKS));
+        buttonBlock(NaturesBlocks.EVERGREEN_BUTTON, blockLoc(NaturesBlocks.EVERGREEN_PLANKS));
+        simpleBlock(NaturesBlocks.EVERGREEN_LEAVES.get(), models().cubeAll(NaturesBlocks.EVERGREEN_LEAVES.getId().getPath(), blockLoc(NaturesBlocks.EVERGREEN_LEAVES)).renderType("cutout"));
+        simpleBlock(NaturesBlocks.EVERGREEN_SAPLING.get(), models().cross(NaturesBlocks.EVERGREEN_SAPLING.getId().getPath(), blockLoc(NaturesBlocks.EVERGREEN_SAPLING)).renderType("cutout"));
+
         logBlock(NaturesBlocks.WILLOW_LOG.get());
         axisBlock(NaturesBlocks.WILLOW_WOOD.get(), blockLoc(NaturesBlocks.WILLOW_LOG), blockLoc(NaturesBlocks.WILLOW_LOG));
         logBlock(NaturesBlocks.STRIPPED_WILLOW_LOG.get());

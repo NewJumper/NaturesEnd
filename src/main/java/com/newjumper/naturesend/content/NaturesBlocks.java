@@ -24,6 +24,24 @@ import java.util.function.Supplier;
 public class NaturesBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, NaturesEnd.MOD_ID);
 
+    private static final BlockSetType EVERGREEN_SET = BlockSetType.register(new BlockSetType("evergreen"));
+    public static final WoodType EVERGREEN = WoodType.register(new WoodType("evergreen", EVERGREEN_SET));
+    public static final RegistryObject<RotatedPillarBlock> EVERGREEN_LOG = register("evergreen_log", () -> new RotatedFlammableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG), 5, 5));
+    public static final RegistryObject<RotatedPillarBlock> EVERGREEN_WOOD = register("evergreen_wood", () -> new RotatedFlammableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD), 5, 5));
+    public static final RegistryObject<RotatedPillarBlock> STRIPPED_EVERGREEN_LOG = register("stripped_evergreen_log", () -> new RotatedFlammableBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG), 5, 5));
+    public static final RegistryObject<RotatedPillarBlock> STRIPPED_EVERGREEN_WOOD = register("stripped_evergreen_wood", () -> new RotatedFlammableBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD), 5, 5));
+    public static final RegistryObject<Block> EVERGREEN_PLANKS = register("evergreen_planks", () -> new FlammableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
+    public static final RegistryObject<StairBlock> EVERGREEN_STAIRS = register("evergreen_stairs", () -> new FlammableStairBlock(() -> EVERGREEN_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS), 20, 5));
+    public static final RegistryObject<SlabBlock> EVERGREEN_SLAB = register("evergreen_slab", () -> new FlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB), 20, 5));
+    public static final RegistryObject<FenceBlock> EVERGREEN_FENCE = register("evergreen_fence", () -> new FlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE), 20, 5));
+    public static final RegistryObject<FenceGateBlock> EVERGREEN_FENCE_GATE = register("evergreen_fence_gate", () -> new FlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), EVERGREEN, 20, 5));
+    public static final RegistryObject<DoorBlock> EVERGREEN_DOOR = register("evergreen_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), EVERGREEN_SET));
+    public static final RegistryObject<TrapDoorBlock> EVERGREEN_TRAPDOOR = register("evergreen_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), EVERGREEN_SET));
+    public static final RegistryObject<PressurePlateBlock> EVERGREEN_PRESSURE_PLATE = register("evergreen_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), EVERGREEN_SET));
+    public static final RegistryObject<ButtonBlock> EVERGREEN_BUTTON = register("evergreen_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), EVERGREEN_SET, 30, true));
+    public static final RegistryObject<LeavesBlock> EVERGREEN_LEAVES = register("evergreen_leaves", () -> new FlammableLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES), 60, 30));
+    public static final RegistryObject<SaplingBlock> EVERGREEN_SAPLING = register("evergreen_sapling", () -> new SaplingBlock(new OakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
     private static final BlockSetType WILLOW_SET = BlockSetType.register(new BlockSetType("willow"));
     public static final WoodType WILLOW = WoodType.register(new WoodType("willow", WILLOW_SET));
     public static final RegistryObject<RotatedPillarBlock> WILLOW_LOG = register("willow_log", () -> new RotatedFlammableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG), 5, 5));

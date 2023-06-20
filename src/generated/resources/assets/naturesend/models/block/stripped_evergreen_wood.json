@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "naturesend:block/stripped_evergreen_log",
+    "side": "naturesend:block/stripped_evergreen_log"
+  }
+}

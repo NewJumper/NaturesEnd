@@ -1,6 +1,16 @@
 {
   "values": [
+    "#naturesend:evergreen_logs",
     "#naturesend:willow_logs",
+    "naturesend:evergreen_planks",
+    "naturesend:evergreen_stairs",
+    "naturesend:evergreen_slab",
+    "naturesend:evergreen_fence",
+    "naturesend:evergreen_fence_gate",
+    "naturesend:evergreen_door",
+    "naturesend:evergreen_trapdoor",
+    "naturesend:evergreen_pressure_plate",
+    "naturesend:evergreen_button",
     "naturesend:willow_planks",
     "naturesend:willow_stairs",
     "naturesend:willow_slab",

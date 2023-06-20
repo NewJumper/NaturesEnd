@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.Block;
 
 public class NaturesTags {
     public static class Blocks {
+        public static final TagKey<Block> EVERGREEN_LOGS = tag("evergreen_logs");
         public static final TagKey<Block> WILLOW_LOGS = tag("willow_logs");
 
         private static TagKey<Block> tag(String name) {
@@ -18,6 +19,7 @@ public class NaturesTags {
     }
 
     public static class Items {
+        public static final TagKey<Item> EVERGREEN_LOGS = tag("evergreen_logs");
         public static final TagKey<Item> WILLOW_LOGS = tag("willow_logs");
 
         private static TagKey<Item> tag(String name) {

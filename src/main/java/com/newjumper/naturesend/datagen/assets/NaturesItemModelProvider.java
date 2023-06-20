@@ -21,6 +21,22 @@ public class NaturesItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        blockModel(NaturesBlocks.EVERGREEN_LOG);
+        blockModel(NaturesBlocks.EVERGREEN_WOOD);
+        blockModel(NaturesBlocks.STRIPPED_EVERGREEN_LOG);
+        blockModel(NaturesBlocks.STRIPPED_EVERGREEN_WOOD);
+        blockModel(NaturesBlocks.EVERGREEN_PLANKS);
+        blockModel(NaturesBlocks.EVERGREEN_STAIRS);
+        blockModel(NaturesBlocks.EVERGREEN_SLAB);
+        blockModel(NaturesBlocks.EVERGREEN_FENCE, "inventory");
+        blockModel(NaturesBlocks.EVERGREEN_FENCE_GATE);
+        blockItemModel(NaturesBlocks.EVERGREEN_DOOR, GENERATED).renderType("translucent");
+        blockModel(NaturesBlocks.EVERGREEN_TRAPDOOR, "bottom");
+        blockModel(NaturesBlocks.EVERGREEN_PRESSURE_PLATE);
+        blockModel(NaturesBlocks.EVERGREEN_BUTTON, "inventory");
+        blockModel(NaturesBlocks.EVERGREEN_LEAVES);
+        getBuilder(NaturesBlocks.EVERGREEN_SAPLING.getId().getPath()).parent(GENERATED).texture("layer0", "block/" + NaturesBlocks.EVERGREEN_SAPLING.getId().getPath());
+
         blockModel(NaturesBlocks.WILLOW_LOG);
         blockModel(NaturesBlocks.WILLOW_WOOD);
         blockModel(NaturesBlocks.STRIPPED_WILLOW_LOG);

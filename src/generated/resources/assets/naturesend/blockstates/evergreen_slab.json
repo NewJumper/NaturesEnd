@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "naturesend:block/evergreen_slab"
+    },
+    "type=double": {
+      "model": "naturesend:block/evergreen_planks"
+    },
+    "type=top": {
+      "model": "naturesend:block/evergreen_slab_top"
+    }
+  }
+}

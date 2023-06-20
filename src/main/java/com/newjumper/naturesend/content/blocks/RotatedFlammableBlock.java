@@ -33,6 +33,8 @@ public class RotatedFlammableBlock extends RotatedPillarBlock {
     @Override
     public BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate) {
         if(toolAction == ToolActions.AXE_STRIP) {
+            if(state.is(NaturesBlocks.EVERGREEN_LOG.get())) return NaturesBlocks.STRIPPED_EVERGREEN_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            if(state.is(NaturesBlocks.EVERGREEN_WOOD.get())) return NaturesBlocks.STRIPPED_EVERGREEN_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             if(state.is(NaturesBlocks.WILLOW_LOG.get())) return NaturesBlocks.STRIPPED_WILLOW_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             if(state.is(NaturesBlocks.WILLOW_WOOD.get())) return NaturesBlocks.STRIPPED_WILLOW_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
         }
