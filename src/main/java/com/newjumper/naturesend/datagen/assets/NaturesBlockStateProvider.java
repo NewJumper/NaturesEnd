@@ -27,14 +27,18 @@ public class NaturesBlockStateProvider extends BlockStateProvider {
         slabBlock(NaturesBlocks.WILLOW_SLAB.get(), blockLoc(NaturesBlocks.WILLOW_PLANKS), blockLoc(NaturesBlocks.WILLOW_PLANKS));
         fenceBlock(NaturesBlocks.WILLOW_FENCE, blockLoc(NaturesBlocks.WILLOW_PLANKS));
         fenceGateBlock(NaturesBlocks.WILLOW_FENCE_GATE.get(), blockLoc(NaturesBlocks.WILLOW_PLANKS));
-        doorBlock(NaturesBlocks.WILLOW_DOOR.get(), blockLoc(NaturesBlocks.WILLOW_PLANKS), blockLoc(NaturesBlocks.WILLOW_PLANKS));
-        trapdoorBlock(NaturesBlocks.WILLOW_TRAPDOOR.get(), blockLoc(NaturesBlocks.WILLOW_PLANKS), true);
+        doorBlockWithRenderType(NaturesBlocks.WILLOW_DOOR.get(), blockLoc(NaturesBlocks.WILLOW_DOOR, "bottom"), blockLoc(NaturesBlocks.WILLOW_DOOR, "top"), "translucent");
+        trapdoorBlockWithRenderType(NaturesBlocks.WILLOW_TRAPDOOR.get(), blockLoc(NaturesBlocks.WILLOW_TRAPDOOR), true, "translucent");
         pressurePlateBlock(NaturesBlocks.WILLOW_PRESSURE_PLATE.get(), blockLoc(NaturesBlocks.WILLOW_PLANKS));
         buttonBlock(NaturesBlocks.WILLOW_BUTTON, blockLoc(NaturesBlocks.WILLOW_PLANKS));
     }
 
     private ResourceLocation blockLoc(RegistryObject<? extends Block> block) {
         return super.modLoc("block/" + block.getId().getPath());
+    }
+
+    public ResourceLocation blockLoc(RegistryObject<? extends Block> block, String suffix) {
+        return super.modLoc("block/" + block.getId().getPath() + "_" + suffix);
     }
 
     private void fenceBlock(RegistryObject<FenceBlock> block, ResourceLocation texture) {
