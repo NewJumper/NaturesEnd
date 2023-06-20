@@ -15,8 +15,9 @@
   "block.naturesend.willow_slab": "Willow Slab",
   "block.naturesend.willow_stairs": "Willow Stairs",
   "block.naturesend.willow_trapdoor": "Willow Trapdoor",
-  "block.naturesend.willow_wall_hanging_sign": "Willow Wall Hanging Sign",
-  "block.naturesend.willow_wall_sign": "Willow Wall Sign",
   "block.naturesend.willow_wood": "Willow Wood",
+  "entity.naturesend.willow_chest_boat": "Boat with Chest",
+  "item.naturesend.willow_boat": "Willow Boat",
+  "item.naturesend.willow_chest_boat": "Willow Boat With Chest",
   "itemGroup.naturesend": "Nature's End"
 }

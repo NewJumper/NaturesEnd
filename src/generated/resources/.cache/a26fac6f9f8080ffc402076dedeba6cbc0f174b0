@@ -1,7 +1,9 @@
-// 1.20.1	2023-06-20T00:58:47.4563693	Item Models: naturesend
+// 1.20.1	2023-06-20T14:06:12.0304804	Item Models: naturesend
 b3847dbf4353d139124556047047f28c03c94702 assets/naturesend/models/item/stripped_willow_log.json
 c262bebcdd847a24751ab83e1123cfc191f1f001 assets/naturesend/models/item/stripped_willow_wood.json
+288e3c39a97c90d81eed8058d62fea19a14f8984 assets/naturesend/models/item/willow_boat.json
 473f360c7dc3eaef7f6154c59020c75d5c574887 assets/naturesend/models/item/willow_button.json
+34b51560f1d48b9712429b20135a457fcd2b8359 assets/naturesend/models/item/willow_chest_boat.json
 d311a5ca6687afedefb50ddd62571cc7f4311698 assets/naturesend/models/item/willow_door.json
 46ce4c0474118de641e845496e245a6edba4bb8c assets/naturesend/models/item/willow_fence.json
 3bfc727f1a4c110615c27b246b8cb44ac94e23d4 assets/naturesend/models/item/willow_fence_gate.json

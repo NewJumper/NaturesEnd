@@ -1,6 +1,7 @@
 package com.newjumper.naturesend.datagen.data;
 
 import com.newjumper.naturesend.NaturesEnd;
+import com.newjumper.naturesend.content.NaturesItems;
 import com.newjumper.naturesend.content.NaturesTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -37,5 +38,8 @@ public class NaturesItemTagsProvider extends ItemTagsProvider {
         copy(BlockTags.CEILING_HANGING_SIGNS, ItemTags.HANGING_SIGNS);
 
         copy(NaturesTags.Blocks.WILLOW_LOGS, NaturesTags.Items.WILLOW_LOGS);
+
+        tag(ItemTags.BOATS).add(NaturesItems.WILLOW_BOAT.get());
+        tag(ItemTags.CHEST_BOATS).add(NaturesItems.WILLOW_CHEST_BOAT.get());
     }
 }

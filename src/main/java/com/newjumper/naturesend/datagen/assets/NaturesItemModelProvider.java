@@ -38,6 +38,8 @@ public class NaturesItemModelProvider extends ItemModelProvider {
         getBuilder(NaturesBlocks.WILLOW_SAPLING.getId().getPath()).parent(GENERATED).texture("layer0", "block/" + NaturesBlocks.WILLOW_SAPLING.getId().getPath());
         itemModel(NaturesItems.WILLOW_SIGN, GENERATED);
         itemModel(NaturesItems.WILLOW_HANGING_SIGN, GENERATED);
+        itemModel(NaturesItems.WILLOW_BOAT, GENERATED);
+        itemModel(NaturesItems.WILLOW_CHEST_BOAT, GENERATED);
     }
 
     public void blockModel(RegistryObject<? extends Block> block) {

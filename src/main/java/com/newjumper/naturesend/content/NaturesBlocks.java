@@ -64,8 +64,6 @@ public class NaturesBlocks {
             return new NaturesHangingSignBlockEntity(pPos, pState);
         }
     });
-    // boat
-    // chest boat
 
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> pBlock) {
         RegistryObject<T> block = BLOCKS.register(name, pBlock);

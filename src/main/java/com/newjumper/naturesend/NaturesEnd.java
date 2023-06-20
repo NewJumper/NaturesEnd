@@ -2,16 +2,19 @@ package com.newjumper.naturesend;
 
 import com.newjumper.naturesend.content.NaturesBlockEntities;
 import com.newjumper.naturesend.content.NaturesBlocks;
+import com.newjumper.naturesend.content.NaturesEntities;
 import com.newjumper.naturesend.content.NaturesItems;
 import com.newjumper.naturesend.datagen.assets.ENLanguageProvider;
 import com.newjumper.naturesend.datagen.assets.NaturesBlockStateProvider;
 import com.newjumper.naturesend.datagen.assets.NaturesItemModelProvider;
 import com.newjumper.naturesend.datagen.data.NaturesBlockTagsProvider;
 import com.newjumper.naturesend.datagen.data.NaturesItemTagsProvider;
+import com.newjumper.naturesend.render.NaturesBoatRenderer;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -45,6 +48,7 @@ public class NaturesEnd {
         NaturesItems.ITEMS.register(eventBus);
         NaturesBlocks.BLOCKS.register(eventBus);
         NaturesBlockEntities.BLOCK_ENTITIES.register(eventBus);
+        NaturesEntities.ENTITIES.register(eventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         eventBus.addListener(this::commonSetup);
@@ -85,6 +89,8 @@ public class NaturesEnd {
         public static void clientSetup(final FMLClientSetupEvent event) {
             BlockEntityRenderers.register(NaturesBlockEntities.NATURES_SIGNS.get(), SignRenderer::new);
             BlockEntityRenderers.register(NaturesBlockEntities.NATURES_HANGING_SIGNS.get(), HangingSignRenderer::new);
+            EntityRenderers.register(NaturesEntities.WILLOW_BOAT.get(), (context) -> new NaturesBoatRenderer(context, false));
+            EntityRenderers.register(NaturesEntities.WILLOW_CHEST_BOAT.get(), (context) -> new NaturesBoatRenderer(context, true));
         }
     }
 }
