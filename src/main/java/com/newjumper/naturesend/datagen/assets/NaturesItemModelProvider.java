@@ -2,7 +2,9 @@ package com.newjumper.naturesend.datagen.assets;
 
 import com.newjumper.naturesend.NaturesEnd;
 import com.newjumper.naturesend.content.NaturesBlocks;
+import com.newjumper.naturesend.content.NaturesItems;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -28,13 +30,13 @@ public class NaturesItemModelProvider extends ItemModelProvider {
         blockModel(NaturesBlocks.WILLOW_SLAB);
         blockModel(NaturesBlocks.WILLOW_FENCE, "inventory");
         blockModel(NaturesBlocks.WILLOW_FENCE_GATE);
-        itemModel(NaturesBlocks.WILLOW_DOOR, GENERATED).renderType("translucent");
+        blockItemModel(NaturesBlocks.WILLOW_DOOR, GENERATED).renderType("translucent");
         blockModel(NaturesBlocks.WILLOW_TRAPDOOR, "bottom");
         blockModel(NaturesBlocks.WILLOW_PRESSURE_PLATE);
         blockModel(NaturesBlocks.WILLOW_BUTTON, "inventory");
         blockModel(NaturesBlocks.WILLOW_LEAVES);
         getBuilder(NaturesBlocks.WILLOW_SAPLING.getId().getPath()).parent(GENERATED).texture("layer0", "block/" + NaturesBlocks.WILLOW_SAPLING.getId().getPath());
-        itemModel(NaturesBlocks.WILLOW_SIGN, GENERATED);
+        itemModel(NaturesItems.WILLOW_SIGN, GENERATED);
     }
 
     public void blockModel(RegistryObject<? extends Block> block) {
@@ -45,7 +47,11 @@ public class NaturesItemModelProvider extends ItemModelProvider {
         withExistingParent(block.getId().getPath(), modLoc("block/" + block.getId().getPath() + "_" + suffix));
     }
 
-    public ItemModelBuilder itemModel(RegistryObject<? extends Block> item, ModelFile modelFile) {
+    public ItemModelBuilder blockItemModel(RegistryObject<? extends Block> item, ModelFile modelFile) {
+        return getBuilder(item.getId().getPath()).parent(modelFile).texture("layer0", "item/" + item.getId().getPath());
+    }
+
+    public ItemModelBuilder itemModel(RegistryObject<? extends Item> item, ModelFile modelFile) {
         return getBuilder(item.getId().getPath()).parent(modelFile).texture("layer0", "item/" + item.getId().getPath());
     }
 }
