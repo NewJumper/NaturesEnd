@@ -1,6 +1,7 @@
 package com.newjumper.naturesend.content;
 
 import com.newjumper.naturesend.NaturesEnd;
+import com.newjumper.naturesend.content.entities.NaturesHangingSignBlockEntity;
 import com.newjumper.naturesend.content.entities.NaturesSignBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.BlockItem;
@@ -51,7 +52,18 @@ public class NaturesBlocks {
             return new NaturesSignBlockEntity(pPos, pState);
         }
     });
-    // hanging sign
+    public static final RegistryObject<CeilingHangingSignBlock> WILLOW_HANGING_SIGN = BLOCKS.register("willow_hanging_sign", () -> new CeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), WILLOW) {
+        @Override
+        public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+            return new NaturesHangingSignBlockEntity(pPos, pState);
+        }
+    });
+    public static final RegistryObject<WallHangingSignBlock> WILLOW_WALL_HANGING_SIGN = BLOCKS.register("willow_wall_hanging_sign", () -> new WallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).lootFrom(WILLOW_HANGING_SIGN), WILLOW) {
+        @Override
+        public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+            return new NaturesHangingSignBlockEntity(pPos, pState);
+        }
+    });
     // boat
     // chest boat
 

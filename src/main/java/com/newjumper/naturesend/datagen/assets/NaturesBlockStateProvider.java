@@ -34,6 +34,8 @@ public class NaturesBlockStateProvider extends BlockStateProvider {
         simpleBlock(NaturesBlocks.WILLOW_LEAVES.get(), models().cubeAll(NaturesBlocks.WILLOW_LEAVES.getId().getPath(), blockLoc(NaturesBlocks.WILLOW_LEAVES)).renderType("cutout"));
         simpleBlock(NaturesBlocks.WILLOW_SAPLING.get(), models().cross(NaturesBlocks.WILLOW_SAPLING.getId().getPath(), blockLoc(NaturesBlocks.WILLOW_SAPLING)).renderType("cutout"));
         signBlock(NaturesBlocks.WILLOW_SIGN.get(), NaturesBlocks.WILLOW_WALL_SIGN.get(), blockLoc(NaturesBlocks.WILLOW_PLANKS));
+        simpleBlock(NaturesBlocks.WILLOW_HANGING_SIGN.get(), models().sign(NaturesBlocks.WILLOW_HANGING_SIGN.getId().getPath(), blockLoc(NaturesBlocks.STRIPPED_WILLOW_LOG)));
+        simpleBlock(NaturesBlocks.WILLOW_WALL_HANGING_SIGN.get(), models().sign(NaturesBlocks.WILLOW_HANGING_SIGN.getId().getPath(), blockLoc(NaturesBlocks.STRIPPED_WILLOW_LOG)));
     }
 
     private ResourceLocation blockLoc(RegistryObject<? extends Block> block) {

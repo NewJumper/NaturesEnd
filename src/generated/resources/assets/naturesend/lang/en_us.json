@@ -5,6 +5,7 @@
   "block.naturesend.willow_door": "Willow Door",
   "block.naturesend.willow_fence": "Willow Fence",
   "block.naturesend.willow_fence_gate": "Willow Fence Gate",
+  "block.naturesend.willow_hanging_sign": "Willow Hanging Sign",
   "block.naturesend.willow_leaves": "Willow Leaves",
   "block.naturesend.willow_log": "Willow Log",
   "block.naturesend.willow_planks": "Willow Planks",
@@ -14,6 +15,7 @@
   "block.naturesend.willow_slab": "Willow Slab",
   "block.naturesend.willow_stairs": "Willow Stairs",
   "block.naturesend.willow_trapdoor": "Willow Trapdoor",
+  "block.naturesend.willow_wall_hanging_sign": "Willow Wall Hanging Sign",
   "block.naturesend.willow_wall_sign": "Willow Wall Sign",
   "block.naturesend.willow_wood": "Willow Wood",
   "itemGroup.naturesend": "Nature's End"

@@ -37,6 +37,7 @@ public class NaturesItemModelProvider extends ItemModelProvider {
         blockModel(NaturesBlocks.WILLOW_LEAVES);
         getBuilder(NaturesBlocks.WILLOW_SAPLING.getId().getPath()).parent(GENERATED).texture("layer0", "block/" + NaturesBlocks.WILLOW_SAPLING.getId().getPath());
         itemModel(NaturesItems.WILLOW_SIGN, GENERATED);
+        itemModel(NaturesItems.WILLOW_HANGING_SIGN, GENERATED);
     }
 
     public void blockModel(RegistryObject<? extends Block> block) {
@@ -51,7 +52,7 @@ public class NaturesItemModelProvider extends ItemModelProvider {
         return getBuilder(item.getId().getPath()).parent(modelFile).texture("layer0", "item/" + item.getId().getPath());
     }
 
-    public ItemModelBuilder itemModel(RegistryObject<? extends Item> item, ModelFile modelFile) {
-        return getBuilder(item.getId().getPath()).parent(modelFile).texture("layer0", "item/" + item.getId().getPath());
+    public void itemModel(RegistryObject<? extends Item> item, ModelFile modelFile) {
+        getBuilder(item.getId().getPath()).parent(modelFile).texture("layer0", "item/" + item.getId().getPath());
     }
 }

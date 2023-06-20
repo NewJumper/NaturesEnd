@@ -34,6 +34,7 @@ public class NaturesItemTagsProvider extends ItemTagsProvider {
         copy(BlockTags.LEAVES, ItemTags.LEAVES);
         copy(BlockTags.SAPLINGS, ItemTags.SAPLINGS);
         copy(BlockTags.STANDING_SIGNS, ItemTags.SIGNS);
+        copy(BlockTags.CEILING_HANGING_SIGNS, ItemTags.HANGING_SIGNS);
 
         copy(NaturesTags.Blocks.WILLOW_LOGS, NaturesTags.Items.WILLOW_LOGS);
     }

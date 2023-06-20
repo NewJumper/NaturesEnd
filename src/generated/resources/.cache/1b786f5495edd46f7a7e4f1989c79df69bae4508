@@ -1,5 +1,6 @@
-// 1.20.1	2023-06-19T23:37:07.110169	Tags for minecraft:item mod id naturesend
+// 1.20.1	2023-06-20T00:58:47.4604405	Tags for minecraft:item mod id naturesend
 b9ecbc3ab5a68b3d84cca52769b2f6d19b7339f6 data/minecraft/tags/items/fence_gates.json
+86b9874425f0c44aadb7357d0e27c20b191997ad data/minecraft/tags/items/hanging_signs.json
 6eb80e6dddcdc643d5f3b94208763e25c4613c41 data/minecraft/tags/items/leaves.json
 734449eedf06503b39a4aa904e1196a3a1a8f302 data/minecraft/tags/items/logs_that_burn.json
 de0cf87b8116b82afaa969fb2043e44258538be1 data/minecraft/tags/items/planks.json
