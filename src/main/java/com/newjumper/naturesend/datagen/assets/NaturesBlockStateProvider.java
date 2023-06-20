@@ -31,6 +31,8 @@ public class NaturesBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(NaturesBlocks.WILLOW_TRAPDOOR.get(), blockLoc(NaturesBlocks.WILLOW_TRAPDOOR), true, "translucent");
         pressurePlateBlock(NaturesBlocks.WILLOW_PRESSURE_PLATE.get(), blockLoc(NaturesBlocks.WILLOW_PLANKS));
         buttonBlock(NaturesBlocks.WILLOW_BUTTON, blockLoc(NaturesBlocks.WILLOW_PLANKS));
+        simpleBlock(NaturesBlocks.WILLOW_LEAVES.get(), models().cubeAll(NaturesBlocks.WILLOW_LEAVES.getId().getPath(), blockLoc(NaturesBlocks.WILLOW_LEAVES)).renderType("cutout"));
+        simpleBlock(NaturesBlocks.WILLOW_SAPLING.get(), models().cross(NaturesBlocks.WILLOW_SAPLING.getId().getPath(), blockLoc(NaturesBlocks.WILLOW_SAPLING)).renderType("cutout"));
     }
 
     private ResourceLocation blockLoc(RegistryObject<? extends Block> block) {

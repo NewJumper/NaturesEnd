@@ -32,6 +32,8 @@ public class NaturesItemModelProvider extends ItemModelProvider {
         blockModel(NaturesBlocks.WILLOW_TRAPDOOR, "bottom");
         blockModel(NaturesBlocks.WILLOW_PRESSURE_PLATE);
         blockModel(NaturesBlocks.WILLOW_BUTTON, "inventory");
+        blockModel(NaturesBlocks.WILLOW_LEAVES);
+        getBuilder(NaturesBlocks.WILLOW_SAPLING.getId().getPath()).parent(GENERATED).texture("layer0", "block/" + NaturesBlocks.WILLOW_SAPLING.getId().getPath());
     }
 
     public void blockModel(RegistryObject<? extends Block> block) {

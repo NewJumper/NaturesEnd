@@ -4,6 +4,7 @@ import com.newjumper.naturesend.NaturesEnd;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.grower.OakTreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
@@ -31,6 +32,12 @@ public class NaturesBlocks {
     public static final RegistryObject<TrapDoorBlock> WILLOW_TRAPDOOR = register("willow_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), WILLOW_SET));
     public static final RegistryObject<PressurePlateBlock> WILLOW_PRESSURE_PLATE = register("willow_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), WILLOW_SET));
     public static final RegistryObject<ButtonBlock> WILLOW_BUTTON = register("willow_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), WILLOW_SET, 30, true));
+    public static final RegistryObject<LeavesBlock> WILLOW_LEAVES = register("willow_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
+    public static final RegistryObject<SaplingBlock> WILLOW_SAPLING = register("willow_sapling", () -> new SaplingBlock(new OakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    // sign
+    // hanging sign
+    // boat
+    // chest boat
 
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> pBlock) {
         RegistryObject<T> block = BLOCKS.register(name, pBlock);

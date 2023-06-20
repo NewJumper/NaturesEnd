@@ -1,13 +1,15 @@
-// 1.20.1	2023-06-19T19:27:52.3725734	Item Models: naturesend
+// 1.20.1	2023-06-19T21:42:47.3579404	Item Models: naturesend
 b3847dbf4353d139124556047047f28c03c94702 assets/naturesend/models/item/stripped_willow_log.json
 c262bebcdd847a24751ab83e1123cfc191f1f001 assets/naturesend/models/item/stripped_willow_wood.json
 473f360c7dc3eaef7f6154c59020c75d5c574887 assets/naturesend/models/item/willow_button.json
 d311a5ca6687afedefb50ddd62571cc7f4311698 assets/naturesend/models/item/willow_door.json
 46ce4c0474118de641e845496e245a6edba4bb8c assets/naturesend/models/item/willow_fence.json
 3bfc727f1a4c110615c27b246b8cb44ac94e23d4 assets/naturesend/models/item/willow_fence_gate.json
+ee26ee94efef9db2330920aaf444db5b3431428a assets/naturesend/models/item/willow_leaves.json
 c77503b5792fe8565970bf04edba0719d7350cd1 assets/naturesend/models/item/willow_log.json
 a234d029fa3fe992a601549789caf727ca0a9081 assets/naturesend/models/item/willow_planks.json
 cb749e0f0e45065c55ef7897f796d42401509384 assets/naturesend/models/item/willow_pressure_plate.json
+17b4ef012dcea4bb1987d0e4b7b011c93c628be2 assets/naturesend/models/item/willow_sapling.json
 1936a55b7ba9d79bfae3b2b453c5136564b4a831 assets/naturesend/models/item/willow_slab.json
 b957de9f4f5ba1ec2dc0efe00545e7dc6c45107c assets/naturesend/models/item/willow_stairs.json
 430983cb37b632eb6288f45be3b819e40470e566 assets/naturesend/models/item/willow_trapdoor.json

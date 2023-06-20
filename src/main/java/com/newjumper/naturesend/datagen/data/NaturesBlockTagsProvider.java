@@ -20,6 +20,7 @@ public class NaturesBlockTagsProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider pProvider) {
         tag(BlockTags.MINEABLE_WITH_AXE).addTag(NaturesTags.Blocks.WILLOW_LOGS).add(NaturesBlocks.WILLOW_PLANKS.get(), NaturesBlocks.WILLOW_STAIRS.get(), NaturesBlocks.WILLOW_SLAB.get(), NaturesBlocks.WILLOW_FENCE.get(), NaturesBlocks.WILLOW_FENCE_GATE.get(), NaturesBlocks.WILLOW_DOOR.get(), NaturesBlocks.WILLOW_TRAPDOOR.get(), NaturesBlocks.WILLOW_PRESSURE_PLATE.get(), NaturesBlocks.WILLOW_BUTTON.get());
+        tag(BlockTags.MINEABLE_WITH_HOE).add(NaturesBlocks.WILLOW_LEAVES.get());
         tag(BlockTags.LOGS_THAT_BURN).addTag(NaturesTags.Blocks.WILLOW_LOGS);
         tag(BlockTags.PLANKS).add(NaturesBlocks.WILLOW_PLANKS.get());
         tag(BlockTags.WOODEN_STAIRS).add(NaturesBlocks.WILLOW_STAIRS.get());
@@ -30,6 +31,8 @@ public class NaturesBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.WOODEN_TRAPDOORS).add(NaturesBlocks.WILLOW_TRAPDOOR.get());
         tag(BlockTags.WOODEN_PRESSURE_PLATES).add(NaturesBlocks.WILLOW_PRESSURE_PLATE.get());
         tag(BlockTags.WOODEN_BUTTONS).add(NaturesBlocks.WILLOW_BUTTON.get());
+        tag(BlockTags.LEAVES).add(NaturesBlocks.WILLOW_LEAVES.get());
+        tag(BlockTags.SAPLINGS).add(NaturesBlocks.WILLOW_SAPLING.get());
 
         tag(NaturesTags.Blocks.WILLOW_LOGS).add(NaturesBlocks.WILLOW_LOG.get(), NaturesBlocks.WILLOW_WOOD.get(), NaturesBlocks.STRIPPED_WILLOW_LOG.get(), NaturesBlocks.STRIPPED_WILLOW_WOOD.get());
     }
