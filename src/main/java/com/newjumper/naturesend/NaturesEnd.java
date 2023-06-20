@@ -10,6 +10,7 @@ import com.newjumper.naturesend.datagen.data.NaturesBlockTagsProvider;
 import com.newjumper.naturesend.datagen.data.NaturesItemTagsProvider;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
+import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.DataGenerator;
@@ -83,6 +84,7 @@ public class NaturesEnd {
         @SubscribeEvent
         public static void clientSetup(final FMLClientSetupEvent event) {
             BlockEntityRenderers.register(NaturesBlockEntities.NATURES_SIGNS.get(), SignRenderer::new);
+            BlockEntityRenderers.register(NaturesBlockEntities.NATURES_HANGING_SIGNS.get(), HangingSignRenderer::new);
         }
     }
 }
