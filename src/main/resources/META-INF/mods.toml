@@ -8,7 +8,7 @@ license="${mod_license}"
     version="${mod_version}"
     displayName="${mod_name}"
     authors="${mod_authors}"
-    #logoFile="logo.png"
+    logoFile="banner.png"
 
     description='''${mod_description}'''
 
