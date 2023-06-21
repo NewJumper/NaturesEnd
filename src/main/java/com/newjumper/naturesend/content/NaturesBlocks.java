@@ -4,6 +4,7 @@ import com.newjumper.naturesend.NaturesEnd;
 import com.newjumper.naturesend.content.blocks.*;
 import com.newjumper.naturesend.content.entities.NaturesHangingSignBlockEntity;
 import com.newjumper.naturesend.content.entities.NaturesSignBlockEntity;
+import com.newjumper.naturesend.world.trees.EvergreenTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -40,7 +41,7 @@ public class NaturesBlocks {
     public static final RegistryObject<PressurePlateBlock> EVERGREEN_PRESSURE_PLATE = register("evergreen_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), EVERGREEN_SET));
     public static final RegistryObject<ButtonBlock> EVERGREEN_BUTTON = register("evergreen_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), EVERGREEN_SET, 30, true));
     public static final RegistryObject<LeavesBlock> EVERGREEN_LEAVES = register("evergreen_leaves", () -> new FlammableLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES), 60, 30));
-    public static final RegistryObject<SaplingBlock> EVERGREEN_SAPLING = register("evergreen_sapling", () -> new SaplingBlock(new OakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<SaplingBlock> EVERGREEN_SAPLING = register("evergreen_sapling", () -> new SaplingBlock(new EvergreenTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<StandingSignBlock> EVERGREEN_SIGN = BLOCKS.register("evergreen_sign", () -> new StandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), EVERGREEN) {
         @Override
         public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {

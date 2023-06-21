@@ -9,6 +9,7 @@ import com.newjumper.naturesend.datagen.assets.NaturesBlockStateProvider;
 import com.newjumper.naturesend.datagen.assets.NaturesItemModelProvider;
 import com.newjumper.naturesend.datagen.data.NaturesBlockTagsProvider;
 import com.newjumper.naturesend.datagen.data.NaturesItemTagsProvider;
+import com.newjumper.naturesend.datagen.data.NaturesWorldGeneration;
 import com.newjumper.naturesend.util.NaturesCreativeTab;
 import com.newjumper.naturesend.util.render.NaturesBoatRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
@@ -59,6 +60,7 @@ public class NaturesEnd {
         generator.addProvider(event.includeServer(), blockTags);
         generator.addProvider(event.includeServer(), new NaturesItemTagsProvider(packOutput, event.getLookupProvider(), blockTags, fileHelper));
 
+        generator.addProvider(event.includeServer(), new NaturesWorldGeneration(packOutput, event.getLookupProvider()));
     }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
