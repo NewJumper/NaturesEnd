@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "naturesend:willow_planks"
+    }
+  ],
+  "result": {
+    "item": "naturesend:willow_button"
+  }
+}

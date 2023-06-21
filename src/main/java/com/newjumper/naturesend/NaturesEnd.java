@@ -7,6 +7,7 @@ import com.newjumper.naturesend.content.NaturesItems;
 import com.newjumper.naturesend.datagen.assets.ENLanguageProvider;
 import com.newjumper.naturesend.datagen.assets.NaturesBlockStateProvider;
 import com.newjumper.naturesend.datagen.assets.NaturesItemModelProvider;
+import com.newjumper.naturesend.datagen.data.CraftingRecipeProvider;
 import com.newjumper.naturesend.datagen.data.NaturesBlockTagsProvider;
 import com.newjumper.naturesend.datagen.data.NaturesItemTagsProvider;
 import com.newjumper.naturesend.datagen.data.NaturesWorldGeneration;
@@ -51,10 +52,14 @@ public class NaturesEnd {
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper fileHelper = event.getExistingFileHelper();
 
+        // assets
         generator.addProvider(event.includeClient(), new NaturesBlockStateProvider(packOutput, fileHelper));
         generator.addProvider(event.includeClient(), new NaturesItemModelProvider(packOutput, fileHelper));
 
         generator.addProvider(event.includeClient(), new ENLanguageProvider(packOutput));
+
+        // data
+        generator.addProvider(event.includeServer(), new CraftingRecipeProvider(packOutput));
 
         NaturesBlockTagsProvider blockTags = new NaturesBlockTagsProvider(packOutput, event.getLookupProvider(), fileHelper);
         generator.addProvider(event.includeServer(), blockTags);
