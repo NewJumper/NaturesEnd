@@ -2,7 +2,7 @@ package com.newjumper.naturesend.datagen.data;
 
 import com.newjumper.naturesend.NaturesEnd;
 import com.newjumper.naturesend.content.NaturesBlocks;
-import com.newjumper.naturesend.content.NaturesTags;
+import com.newjumper.naturesend.util.NaturesTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;

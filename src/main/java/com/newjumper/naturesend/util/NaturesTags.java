@@ -1,4 +1,4 @@
-package com.newjumper.naturesend.content;
+package com.newjumper.naturesend.util;
 
 import com.newjumper.naturesend.NaturesEnd;
 import net.minecraft.resources.ResourceLocation;
