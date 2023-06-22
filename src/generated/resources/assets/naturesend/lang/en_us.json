@@ -1,4 +1,5 @@
 {
+  "block.naturesend.chlorite_shale": "Chlorite Shale",
   "block.naturesend.evergreen_button": "Evergreen Button",
   "block.naturesend.evergreen_door": "Evergreen Door",
   "block.naturesend.evergreen_fence": "Evergreen Fence",
@@ -16,6 +17,8 @@
   "block.naturesend.evergreen_wall_hanging_sign": "Evergreen Wall Hanging Sign",
   "block.naturesend.evergreen_wall_sign": "Evergreen Wall Sign",
   "block.naturesend.evergreen_wood": "Evergreen Wood",
+  "block.naturesend.red_shale": "Red Shale",
+  "block.naturesend.shale": "Shale",
   "block.naturesend.stripped_evergreen_log": "Stripped Evergreen Log",
   "block.naturesend.stripped_evergreen_wood": "Stripped Evergreen Wood",
   "block.naturesend.stripped_willow_log": "Stripped Willow Log",

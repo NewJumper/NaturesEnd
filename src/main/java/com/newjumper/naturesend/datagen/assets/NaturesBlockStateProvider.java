@@ -55,6 +55,10 @@ public class NaturesBlockStateProvider extends BlockStateProvider {
         signBlock(NaturesBlocks.WILLOW_SIGN.get(), NaturesBlocks.WILLOW_WALL_SIGN.get(), blockLoc(NaturesBlocks.WILLOW_PLANKS));
         simpleBlock(NaturesBlocks.WILLOW_HANGING_SIGN.get(), models().sign(NaturesBlocks.WILLOW_HANGING_SIGN.getId().getPath(), blockLoc(NaturesBlocks.STRIPPED_WILLOW_LOG)));
         simpleBlock(NaturesBlocks.WILLOW_WALL_HANGING_SIGN.get(), models().sign(NaturesBlocks.WILLOW_HANGING_SIGN.getId().getPath(), blockLoc(NaturesBlocks.STRIPPED_WILLOW_LOG)));
+
+        simpleBlock(NaturesBlocks.SHALE.get());
+        simpleBlock(NaturesBlocks.CHLORITE_SHALE.get());
+        simpleBlock(NaturesBlocks.RED_SHALE.get());
     }
 
     private ResourceLocation blockLoc(RegistryObject<? extends Block> block) {

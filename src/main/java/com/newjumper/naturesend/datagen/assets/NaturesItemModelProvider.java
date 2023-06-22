@@ -60,6 +60,10 @@ public class NaturesItemModelProvider extends ItemModelProvider {
         itemModel(NaturesItems.WILLOW_HANGING_SIGN, GENERATED);
         itemModel(NaturesItems.WILLOW_BOAT, GENERATED);
         itemModel(NaturesItems.WILLOW_CHEST_BOAT, GENERATED);
+
+        blockModel(NaturesBlocks.SHALE);
+        blockModel(NaturesBlocks.CHLORITE_SHALE);
+        blockModel(NaturesBlocks.RED_SHALE);
     }
 
     public void blockModel(RegistryObject<? extends Block> block) {

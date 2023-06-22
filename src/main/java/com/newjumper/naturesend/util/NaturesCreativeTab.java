@@ -36,6 +36,7 @@ public class NaturesCreativeTab {
             event.accept(NaturesItems.EVERGREEN_HANGING_SIGN);
             event.accept(NaturesItems.EVERGREEN_BOAT);
             event.accept(NaturesItems.EVERGREEN_CHEST_BOAT);
+
             event.accept(NaturesBlocks.WILLOW_LOG);
             event.accept(NaturesBlocks.WILLOW_WOOD);
             event.accept(NaturesBlocks.STRIPPED_WILLOW_LOG);
@@ -55,6 +56,10 @@ public class NaturesCreativeTab {
             event.accept(NaturesItems.WILLOW_HANGING_SIGN);
             event.accept(NaturesItems.WILLOW_BOAT);
             event.accept(NaturesItems.WILLOW_CHEST_BOAT);
+
+            event.accept(NaturesBlocks.SHALE);
+            event.accept(NaturesBlocks.CHLORITE_SHALE);
+            event.accept(NaturesBlocks.RED_SHALE);
         }
     }
 }

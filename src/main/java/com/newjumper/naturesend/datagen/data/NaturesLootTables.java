@@ -58,6 +58,10 @@ public class NaturesLootTables extends BlockLootSubProvider {
         dropSelf(NaturesBlocks.WILLOW_SAPLING.get());
         dropSelf(NaturesBlocks.WILLOW_SIGN.get());
         dropSelf(NaturesBlocks.WILLOW_HANGING_SIGN.get());
+
+        dropSelf(NaturesBlocks.SHALE.get());
+        dropSelf(NaturesBlocks.CHLORITE_SHALE.get());
+        dropSelf(NaturesBlocks.RED_SHALE.get());
     }
 
     @Override

@@ -111,6 +111,10 @@ public class NaturesBlocks {
         }
     });
 
+    public static final RegistryObject<Block> SHALE = register("shale", () -> new Block(BlockBehaviour.Properties.of().strength(4f, 7).mapColor(MapColor.COLOR_GRAY).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CHLORITE_SHALE = register("chlorite_shale", () -> new Block(BlockBehaviour.Properties.of().strength(1.5f, 6).mapColor(MapColor.COLOR_YELLOW).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> RED_SHALE = register("red_shale", () -> new Block(BlockBehaviour.Properties.of().strength(2.5f, 6.5f).mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops()));
+
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> pBlock) {
         RegistryObject<T> block = BLOCKS.register(name, pBlock);
         NaturesItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

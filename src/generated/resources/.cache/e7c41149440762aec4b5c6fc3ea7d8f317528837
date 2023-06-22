@@ -1,10 +1,11 @@
-// 1.20.1	2023-06-20T16:47:00.0500727	Tags for minecraft:block mod id naturesend
+// 1.20.1	2023-06-22T00:42:16.65497	Tags for minecraft:block mod id naturesend
 c566de3972cbf5af86edab7798911269c48c40bd data/minecraft/tags/blocks/ceiling_hanging_signs.json
 c2af2d5f98ffe09a821f3f6b2d925b07922cd4ac data/minecraft/tags/blocks/fence_gates.json
 2c3d2e423fcc8b5747410cca086a68bf200b6e07 data/minecraft/tags/blocks/leaves.json
 2490001ce4070cc4f91d6122084eada22dc580cf data/minecraft/tags/blocks/logs_that_burn.json
 644a092026011683ecc9b1d02a1c2daea79a74c1 data/minecraft/tags/blocks/mineable/axe.json
 2c3d2e423fcc8b5747410cca086a68bf200b6e07 data/minecraft/tags/blocks/mineable/hoe.json
+e8d0d5bfa205d3a887dd18e5de39e7088dd423ec data/minecraft/tags/blocks/mineable/pickaxe.json
 3bd1f8edd69b3e69902e269f2917e151d7fd15b3 data/minecraft/tags/blocks/planks.json
 9cac245c3b7f1bbb7febb44a198e637a830968d1 data/minecraft/tags/blocks/saplings.json
 71f31cf58cb979dc1a8935aa03463f363af82aa8 data/minecraft/tags/blocks/standing_signs.json
