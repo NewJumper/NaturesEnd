@@ -1,12 +1,14 @@
 package com.newjumper.naturesend.datagen.data;
 
 import com.newjumper.naturesend.content.NaturesBlocks;
+import com.newjumper.naturesend.content.NaturesItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
 
@@ -62,6 +64,7 @@ public class NaturesLootTables extends BlockLootSubProvider {
         dropSelf(NaturesBlocks.SHALE.get());
         dropSelf(NaturesBlocks.CHLORITE_SHALE.get());
         dropSelf(NaturesBlocks.RED_SHALE.get());
+        add(NaturesBlocks.SALT_BLOCK.get(), (block) -> this.createSingleItemTableWithSilkTouch(block, NaturesItems.SALT.get(), ConstantValue.exactly(4)));
 
         dropSelf(NaturesBlocks.SHALE_BRICKS.get());
         dropSelf(NaturesBlocks.SHALE_BRICK_STAIRS.get());

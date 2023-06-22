@@ -1,4 +1,4 @@
-// 1.20.1	2023-06-22T01:12:51.2272351	Block States: naturesend
+// 1.20.1	2023-06-22T02:10:06.1538224	Block States: naturesend
 4a52247dbb00fafe97bca6ff94ad3836a2d712a1 assets/naturesend/blockstates/chlorite_shale.json
 e570107d0bebbc40683a0dff0b8603607394c72f assets/naturesend/blockstates/evergreen_button.json
 2f094bb4d741056574795f0f47751c7061e03a6d assets/naturesend/blockstates/evergreen_door.json
@@ -18,6 +18,7 @@ bc39a4d54956d869ebd328daa42214387c6610e3 assets/naturesend/blockstates/evergreen
 b786dbe751ecf26ddb0cb5a97aec668d7b28c541 assets/naturesend/blockstates/evergreen_wall_sign.json
 abe81d502199e6b323f9438d9f254eba46ee8f17 assets/naturesend/blockstates/evergreen_wood.json
 22f66ab914241e474dd103faa74d20ad8c915f8a assets/naturesend/blockstates/red_shale.json
+d81d409e1ede59906b3b362b6572c1905d36cef2 assets/naturesend/blockstates/salt_block.json
 60b5533d86533e6fc53fe82decf370ef0ec75481 assets/naturesend/blockstates/shale.json
 04b682b31b45e10e5a282324ac8818ac8bfad323 assets/naturesend/blockstates/shale_bricks.json
 2bedd187e62f26c24aaeb4591968a1446f4ed8b6 assets/naturesend/blockstates/shale_brick_slab.json
@@ -83,6 +84,7 @@ ddc687adbd9f19ceafd886ad761c3ce32ec9cc5f assets/naturesend/models/block/evergree
 11fb932e2455a411a7252110beef4def7e64a297 assets/naturesend/models/block/evergreen_wood.json
 a622d6cb934d763dc2dd848d1af5d39d134e6eed assets/naturesend/models/block/evergreen_wood_horizontal.json
 21ef31fb93c39a7ecc8a7fa7ce44329e6656ef0d assets/naturesend/models/block/red_shale.json
+b018bdda7d2d7a05a3e713720ce9f9f794a8ce3b assets/naturesend/models/block/salt_block.json
 a7267df16f9cb7d31ca205a7c549b9419b4f86f2 assets/naturesend/models/block/shale.json
 a61549893efa6115c9d0edf9294d17298213a997 assets/naturesend/models/block/shale_bricks.json
 0dfdd1c2a88e609b7a9df532631ca712a69561c8 assets/naturesend/models/block/shale_brick_slab.json

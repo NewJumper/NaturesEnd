@@ -3,7 +3,7 @@
   "category": "building",
   "ingredients": [
     {
-      "tag": "minecraft:coals"
+      "item": "minecraft:coal"
     },
     {
       "item": "minecraft:mud"

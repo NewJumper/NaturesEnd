@@ -36,10 +36,6 @@ public class NaturesItemModelProvider extends ItemModelProvider {
         blockModel(NaturesBlocks.EVERGREEN_BUTTON, "inventory");
         blockModel(NaturesBlocks.EVERGREEN_LEAVES);
         getBuilder(NaturesBlocks.EVERGREEN_SAPLING.getId().getPath()).parent(GENERATED).texture("layer0", "block/" + NaturesBlocks.EVERGREEN_SAPLING.getId().getPath());
-        itemModel(NaturesItems.EVERGREEN_SIGN, GENERATED);
-        itemModel(NaturesItems.EVERGREEN_HANGING_SIGN, GENERATED);
-        itemModel(NaturesItems.EVERGREEN_BOAT, GENERATED);
-        itemModel(NaturesItems.EVERGREEN_CHEST_BOAT, GENERATED);
 
         blockModel(NaturesBlocks.WILLOW_LOG);
         blockModel(NaturesBlocks.WILLOW_WOOD);
@@ -56,19 +52,28 @@ public class NaturesItemModelProvider extends ItemModelProvider {
         blockModel(NaturesBlocks.WILLOW_BUTTON, "inventory");
         blockModel(NaturesBlocks.WILLOW_LEAVES);
         getBuilder(NaturesBlocks.WILLOW_SAPLING.getId().getPath()).parent(GENERATED).texture("layer0", "block/" + NaturesBlocks.WILLOW_SAPLING.getId().getPath());
-        itemModel(NaturesItems.WILLOW_SIGN, GENERATED);
-        itemModel(NaturesItems.WILLOW_HANGING_SIGN, GENERATED);
-        itemModel(NaturesItems.WILLOW_BOAT, GENERATED);
-        itemModel(NaturesItems.WILLOW_CHEST_BOAT, GENERATED);
 
         blockModel(NaturesBlocks.SHALE);
         blockModel(NaturesBlocks.CHLORITE_SHALE);
         blockModel(NaturesBlocks.RED_SHALE);
+        blockModel(NaturesBlocks.SALT_BLOCK);
 
         blockModel(NaturesBlocks.SHALE_BRICKS);
         blockModel(NaturesBlocks.SHALE_BRICK_STAIRS);
         blockModel(NaturesBlocks.SHALE_BRICK_SLAB);
         blockModel(NaturesBlocks.SHALE_BRICK_WALL, "inventory");
+
+
+        itemModel(NaturesItems.EVERGREEN_SIGN, GENERATED);
+        itemModel(NaturesItems.EVERGREEN_HANGING_SIGN, GENERATED);
+        itemModel(NaturesItems.EVERGREEN_BOAT, GENERATED);
+        itemModel(NaturesItems.EVERGREEN_CHEST_BOAT, GENERATED);
+        itemModel(NaturesItems.WILLOW_SIGN, GENERATED);
+        itemModel(NaturesItems.WILLOW_HANGING_SIGN, GENERATED);
+        itemModel(NaturesItems.WILLOW_BOAT, GENERATED);
+        itemModel(NaturesItems.WILLOW_CHEST_BOAT, GENERATED);
+
+        itemModel(NaturesItems.SALT, GENERATED);
     }
 
     public void blockModel(RegistryObject<? extends Block> block) {

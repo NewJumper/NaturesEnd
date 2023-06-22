@@ -21,4 +21,6 @@ public class NaturesItems {
     public static final RegistryObject<Item> WILLOW_HANGING_SIGN = ITEMS.register("willow_hanging_sign", () -> new HangingSignItem(NaturesBlocks.WILLOW_HANGING_SIGN.get(), NaturesBlocks.WILLOW_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> WILLOW_BOAT = ITEMS.register("willow_boat", () -> new NaturesBoatItem(false, new Item.Properties().stacksTo(1), NaturesBlocks.WILLOW));
     public static final RegistryObject<Item> WILLOW_CHEST_BOAT = ITEMS.register("willow_chest_boat", () -> new NaturesBoatItem(true, new Item.Properties().stacksTo(1), NaturesBlocks.WILLOW));
+
+    public static final RegistryObject<Item> SALT = ITEMS.register("salt", () -> new Item(new Item.Properties()));
 }

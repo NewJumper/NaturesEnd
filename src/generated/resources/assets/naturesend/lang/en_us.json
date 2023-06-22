@@ -18,6 +18,7 @@
   "block.naturesend.evergreen_wall_sign": "Evergreen Wall Sign",
   "block.naturesend.evergreen_wood": "Evergreen Wood",
   "block.naturesend.red_shale": "Red Shale",
+  "block.naturesend.salt_block": "Block of Salt",
   "block.naturesend.shale": "Shale",
   "block.naturesend.shale_brick_slab": "Shale Brick Slab",
   "block.naturesend.shale_brick_stairs": "Shale Brick Stairs",
@@ -45,6 +46,7 @@
   "entity.naturesend.natures_chest_boat": "Boat with Chest",
   "item.naturesend.evergreen_boat": "Evergreen Boat",
   "item.naturesend.evergreen_chest_boat": "Evergreen Boat With Chest",
+  "item.naturesend.salt": "Salt",
   "item.naturesend.willow_boat": "Willow Boat",
   "item.naturesend.willow_chest_boat": "Willow Boat With Chest",
   "itemGroup.naturesend": "Nature's End"

@@ -1,4 +1,4 @@
-// 1.20.1	2023-06-22T01:12:51.2242331	Item Models: naturesend
+// 1.20.1	2023-06-22T02:10:06.1524267	Item Models: naturesend
 da8fe7f82e824998cc7c4479cfc6fdc7d0606dab assets/naturesend/models/item/chlorite_shale.json
 d2ff4672e68cb3067f0dc6bef0644da2b413eec7 assets/naturesend/models/item/evergreen_boat.json
 288785d972eacda52cc1bada21bce1feb21a93f2 assets/naturesend/models/item/evergreen_button.json
@@ -18,6 +18,8 @@ e7c109a15905c8faf0c65228598301f48c43b8e6 assets/naturesend/models/item/evergreen
 45dc3e0400a93f3ca3261eb003be68c969ad1d81 assets/naturesend/models/item/evergreen_trapdoor.json
 504250a9726725fe7379256045b3779bf1bd08e2 assets/naturesend/models/item/evergreen_wood.json
 b60956f7f623c18865e2cf7705c0adca3020647f assets/naturesend/models/item/red_shale.json
+8eda08281aaf18301298683fa510b770bba85d35 assets/naturesend/models/item/salt.json
+fed1987e7a34a9aad6fbaea9cb4e27c3553b6439 assets/naturesend/models/item/salt_block.json
 b94c2d4c01872a9ceda04e84bd1e4f9c836f85ce assets/naturesend/models/item/shale.json
 09b707d8c224451699368ab0015077bf6f1043ce assets/naturesend/models/item/shale_bricks.json
 987b1701881c8da31d18b260083470ee29fca714 assets/naturesend/models/item/shale_brick_slab.json

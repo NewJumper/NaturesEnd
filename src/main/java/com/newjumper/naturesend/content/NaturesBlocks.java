@@ -114,6 +114,7 @@ public class NaturesBlocks {
     public static final RegistryObject<Block> SHALE = register("shale", () -> new Block(BlockBehaviour.Properties.of().strength(4f, 7).mapColor(MapColor.COLOR_GRAY).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CHLORITE_SHALE = register("chlorite_shale", () -> new Block(BlockBehaviour.Properties.of().strength(1.5f, 6).mapColor(MapColor.DIRT).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> RED_SHALE = register("red_shale", () -> new Block(BlockBehaviour.Properties.of().strength(2.5f, 6.5f).mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SALT_BLOCK = register("salt_block", () -> new Block(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.SAND).mapColor(MapColor.TERRACOTTA_WHITE)));
 
     public static final RegistryObject<Block> SHALE_BRICKS = register("shale_bricks", () -> new Block(BlockBehaviour.Properties.of().strength(4f, 9).mapColor(MapColor.COLOR_GRAY).requiresCorrectToolForDrops()));
     public static final RegistryObject<StairBlock> SHALE_BRICK_STAIRS = register("shale_brick_stairs", () -> new StairBlock(() -> SHALE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.of().strength(4f, 9).mapColor(MapColor.COLOR_GRAY).requiresCorrectToolForDrops()));

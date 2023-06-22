@@ -45,5 +45,7 @@ public class NaturesItemTagsProvider extends ItemTagsProvider {
 
         tag(ItemTags.BOATS).add(NaturesItems.EVERGREEN_BOAT.get(), NaturesItems.WILLOW_BOAT.get());
         tag(ItemTags.CHEST_BOATS).add(NaturesItems.EVERGREEN_CHEST_BOAT.get(), NaturesItems.WILLOW_CHEST_BOAT.get());
+
+        tag(NaturesTags.Items.SALTS).add(NaturesItems.SALT.get());
     }
 }

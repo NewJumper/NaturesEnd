@@ -25,6 +25,7 @@ public class NaturesBlockTagsProvider extends BlockTagsProvider {
                 NaturesBlocks.WILLOW_PLANKS.get(), NaturesBlocks.WILLOW_STAIRS.get(), NaturesBlocks.WILLOW_SLAB.get(), NaturesBlocks.WILLOW_FENCE.get(), NaturesBlocks.WILLOW_FENCE_GATE.get(), NaturesBlocks.WILLOW_DOOR.get(), NaturesBlocks.WILLOW_TRAPDOOR.get(), NaturesBlocks.WILLOW_PRESSURE_PLATE.get(), NaturesBlocks.WILLOW_BUTTON.get());
         tag(BlockTags.MINEABLE_WITH_HOE).add(NaturesBlocks.EVERGREEN_LEAVES.get(), NaturesBlocks.WILLOW_LEAVES.get());
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(NaturesBlocks.SHALE.get(), NaturesBlocks.CHLORITE_SHALE.get(), NaturesBlocks.RED_SHALE.get(), NaturesBlocks.SHALE_BRICKS.get(), NaturesBlocks.SHALE_BRICK_STAIRS.get(), NaturesBlocks.SHALE_BRICK_SLAB.get(), NaturesBlocks.SHALE_BRICK_WALL.get());
+        tag(BlockTags.MINEABLE_WITH_SHOVEL).add(NaturesBlocks.SALT_BLOCK.get());
         tag(BlockTags.LOGS_THAT_BURN).addTags(NaturesTags.Blocks.EVERGREEN_LOGS, NaturesTags.Blocks.WILLOW_LOGS);
         tag(BlockTags.PLANKS).add(NaturesBlocks.EVERGREEN_PLANKS.get(), NaturesBlocks.WILLOW_PLANKS.get());
         tag(BlockTags.WOODEN_STAIRS).add(NaturesBlocks.EVERGREEN_STAIRS.get(), NaturesBlocks.WILLOW_STAIRS.get());

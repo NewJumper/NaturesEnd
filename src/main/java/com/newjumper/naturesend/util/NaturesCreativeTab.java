@@ -60,10 +60,13 @@ public class NaturesCreativeTab {
             event.accept(NaturesBlocks.SHALE);
             event.accept(NaturesBlocks.CHLORITE_SHALE);
             event.accept(NaturesBlocks.RED_SHALE);
+            event.accept(NaturesBlocks.SALT_BLOCK);
             event.accept(NaturesBlocks.SHALE_BRICKS);
             event.accept(NaturesBlocks.SHALE_BRICK_STAIRS);
             event.accept(NaturesBlocks.SHALE_BRICK_SLAB);
             event.accept(NaturesBlocks.SHALE_BRICK_WALL);
+
+            event.accept(NaturesItems.SALT);
         }
     }
 }

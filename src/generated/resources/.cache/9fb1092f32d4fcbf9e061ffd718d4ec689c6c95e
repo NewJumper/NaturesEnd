@@ -1,4 +1,4 @@
-// 1.20.1	2023-06-22T01:33:13.5915956	Recipes
+// 1.20.1	2023-06-22T02:10:06.1578255	Recipes
 41a409c4eaf14be703f087729647485c18ef5c17 data/naturesend/advancements/recipes/building_blocks/evergreen_planks.json
 8b91109327eff637f73b0d5f5beb6c9bc337556e data/naturesend/advancements/recipes/building_blocks/evergreen_slab.json
 7aece7dd2f6c88fbc78bceb1ec167533a8418bda data/naturesend/advancements/recipes/building_blocks/evergreen_stairs.json
@@ -50,7 +50,7 @@ c7b574983edfe571c5042fbaa580b7057856221e data/naturesend/recipes/evergreen_sign.
 025421353f911028fe97dfa03ff0d21f093e900e data/naturesend/recipes/evergreen_slab.json
 28e430536d4fc1562c04d9c27c809096a6719716 data/naturesend/recipes/evergreen_stairs.json
 c9a3c9c83ebca67993b887ece9923bfdc75efe0a data/naturesend/recipes/evergreen_trapdoor.json
-d14fa6ec6ed75f34a759aa39436524a96555c86f data/naturesend/recipes/shale.json
+9b2794a30bf12a836fb17303c2fcb6c743b3b16a data/naturesend/recipes/shale.json
 da0e6fc449bc8e1a6f3d28c9aa464d07cf0864b8 data/naturesend/recipes/shale_bricks.json
 87b2790f3a7b81883565f893a1510bc04b6a0b52 data/naturesend/recipes/shale_bricks_from_shale_stonecutting.json
 18e0bfff3694d40e05915493efd3ca41fd8589f4 data/naturesend/recipes/shale_brick_slab.json

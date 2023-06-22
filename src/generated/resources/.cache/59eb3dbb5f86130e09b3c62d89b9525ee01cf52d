@@ -1,4 +1,4 @@
-// 1.20.1	2023-06-22T01:12:51.2321971	Loot Tables
+// 1.20.1	2023-06-22T02:10:06.1558272	Loot Tables
 fd220a9b6b25bb4a263a453a4f7bd5043c7e05ad data/naturesend/loot_tables/blocks/chlorite_shale.json
 b087bbe66242232d329f29028fc942ccec8ecd23 data/naturesend/loot_tables/blocks/evergreen_button.json
 40abba1fdf680e7bb02afc8b9668592cbf1c343f data/naturesend/loot_tables/blocks/evergreen_door.json
@@ -16,6 +16,7 @@ d7d57dcec923620917e75f14ffdb980ccac49fc7 data/naturesend/loot_tables/blocks/ever
 41e7d86ad6dcee1f70207581ecaaf728c4a2bc7b data/naturesend/loot_tables/blocks/evergreen_trapdoor.json
 1a05e5c1c33c9fb87d58c709af89d409773d0456 data/naturesend/loot_tables/blocks/evergreen_wood.json
 e6e7ae9211bbfc84cbd87f101a9cacb22aa6759d data/naturesend/loot_tables/blocks/red_shale.json
+8b8f197070335c262467b7f17abd7e292bfe9dc0 data/naturesend/loot_tables/blocks/salt_block.json
 f3ae5312123b8ce29adb2c1a1be2e715a9778944 data/naturesend/loot_tables/blocks/shale.json
 d82a230b44945dcec7b6f8b98ff136b3b44c6953 data/naturesend/loot_tables/blocks/shale_bricks.json
 a0ae742dba3b63ae9879ab7f5fd9525bb88241d8 data/naturesend/loot_tables/blocks/shale_brick_slab.json

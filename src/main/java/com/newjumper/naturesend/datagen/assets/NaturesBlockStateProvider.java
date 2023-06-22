@@ -60,6 +60,7 @@ public class NaturesBlockStateProvider extends BlockStateProvider {
         simpleBlock(NaturesBlocks.SHALE.get());
         simpleBlock(NaturesBlocks.CHLORITE_SHALE.get());
         simpleBlock(NaturesBlocks.RED_SHALE.get());
+        simpleBlock(NaturesBlocks.SALT_BLOCK.get());
 
         simpleBlock(NaturesBlocks.SHALE_BRICKS.get());
         stairsBlock(NaturesBlocks.SHALE_BRICK_STAIRS.get(), blockLoc(NaturesBlocks.SHALE_BRICKS));
