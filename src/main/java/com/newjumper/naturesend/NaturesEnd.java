@@ -7,10 +7,7 @@ import com.newjumper.naturesend.content.NaturesItems;
 import com.newjumper.naturesend.datagen.assets.ENLanguageProvider;
 import com.newjumper.naturesend.datagen.assets.NaturesBlockStateProvider;
 import com.newjumper.naturesend.datagen.assets.NaturesItemModelProvider;
-import com.newjumper.naturesend.datagen.data.CraftingRecipeProvider;
-import com.newjumper.naturesend.datagen.data.NaturesBlockTagsProvider;
-import com.newjumper.naturesend.datagen.data.NaturesItemTagsProvider;
-import com.newjumper.naturesend.datagen.data.NaturesWorldGeneration;
+import com.newjumper.naturesend.datagen.data.*;
 import com.newjumper.naturesend.util.NaturesCreativeTab;
 import com.newjumper.naturesend.util.render.NaturesBoatRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
@@ -64,6 +61,8 @@ public class NaturesEnd {
         NaturesBlockTagsProvider blockTags = new NaturesBlockTagsProvider(packOutput, event.getLookupProvider(), fileHelper);
         generator.addProvider(event.includeServer(), blockTags);
         generator.addProvider(event.includeServer(), new NaturesItemTagsProvider(packOutput, event.getLookupProvider(), blockTags, fileHelper));
+
+        generator.addProvider(event.includeServer(), new NaturesLootTableProvider(packOutput));
 
         generator.addProvider(event.includeServer(), new NaturesWorldGeneration(packOutput, event.getLookupProvider()));
     }
