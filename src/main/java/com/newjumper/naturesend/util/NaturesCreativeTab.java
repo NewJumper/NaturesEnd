@@ -66,6 +66,7 @@ public class NaturesCreativeTab {
             event.accept(NaturesBlocks.SHALE_BRICK_SLAB);
             event.accept(NaturesBlocks.SHALE_BRICK_WALL);
 
+            event.accept(NaturesItems.SHALE_PLATE);
             event.accept(NaturesItems.SALT);
         }
     }

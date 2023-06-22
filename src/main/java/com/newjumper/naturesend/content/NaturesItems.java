@@ -22,5 +22,6 @@ public class NaturesItems {
     public static final RegistryObject<Item> WILLOW_BOAT = ITEMS.register("willow_boat", () -> new NaturesBoatItem(false, new Item.Properties().stacksTo(1), NaturesBlocks.WILLOW));
     public static final RegistryObject<Item> WILLOW_CHEST_BOAT = ITEMS.register("willow_chest_boat", () -> new NaturesBoatItem(true, new Item.Properties().stacksTo(1), NaturesBlocks.WILLOW));
 
+    public static final RegistryObject<Item> SHALE_PLATE = ITEMS.register("shale_plate", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SALT = ITEMS.register("salt", () -> new Item(new Item.Properties()));
 }

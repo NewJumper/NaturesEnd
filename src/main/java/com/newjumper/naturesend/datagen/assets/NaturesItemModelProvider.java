@@ -73,6 +73,7 @@ public class NaturesItemModelProvider extends ItemModelProvider {
         itemModel(NaturesItems.WILLOW_BOAT, GENERATED);
         itemModel(NaturesItems.WILLOW_CHEST_BOAT, GENERATED);
 
+        itemModel(NaturesItems.SHALE_PLATE, GENERATED);
         itemModel(NaturesItems.SALT, GENERATED);
     }
 

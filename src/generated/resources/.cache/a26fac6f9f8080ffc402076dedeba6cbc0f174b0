@@ -1,4 +1,4 @@
-// 1.20.1	2023-06-22T02:10:06.1524267	Item Models: naturesend
+// 1.20.1	2023-06-22T18:49:33.1781514	Item Models: naturesend
 da8fe7f82e824998cc7c4479cfc6fdc7d0606dab assets/naturesend/models/item/chlorite_shale.json
 d2ff4672e68cb3067f0dc6bef0644da2b413eec7 assets/naturesend/models/item/evergreen_boat.json
 288785d972eacda52cc1bada21bce1feb21a93f2 assets/naturesend/models/item/evergreen_button.json
@@ -25,6 +25,7 @@ b94c2d4c01872a9ceda04e84bd1e4f9c836f85ce assets/naturesend/models/item/shale.jso
 987b1701881c8da31d18b260083470ee29fca714 assets/naturesend/models/item/shale_brick_slab.json
 b541f7dd01556d08ddc1f52ddd6d864ecc9955b8 assets/naturesend/models/item/shale_brick_stairs.json
 89ef8c902882159e77eac7bb3b6dc33c6e320ba1 assets/naturesend/models/item/shale_brick_wall.json
+d5092a360a8e769ab1c53a223c1e17699e67efe0 assets/naturesend/models/item/shale_plate.json
 e4f40c93a74b21497f15f199cd93ae4ecfbd1bfd assets/naturesend/models/item/stripped_evergreen_log.json
 b987ca3946f4141334b1c908044e7cf90f61660a assets/naturesend/models/item/stripped_evergreen_wood.json
 b3847dbf4353d139124556047047f28c03c94702 assets/naturesend/models/item/stripped_willow_log.json
