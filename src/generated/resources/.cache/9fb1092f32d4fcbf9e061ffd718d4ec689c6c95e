@@ -1,7 +1,8 @@
-// 1.20.1	2023-06-21T18:12:21.7135561	Recipes
+// 1.20.1	2023-06-22T00:48:35.3837795	Recipes
 41a409c4eaf14be703f087729647485c18ef5c17 data/naturesend/advancements/recipes/building_blocks/evergreen_planks.json
 8b91109327eff637f73b0d5f5beb6c9bc337556e data/naturesend/advancements/recipes/building_blocks/evergreen_slab.json
 7aece7dd2f6c88fbc78bceb1ec167533a8418bda data/naturesend/advancements/recipes/building_blocks/evergreen_stairs.json
+37d69e2ba28b754241bcb07783d516bef993d2f3 data/naturesend/advancements/recipes/building_blocks/shale.json
 b3857f76c6d317428b9a54f28afca904abc90c44 data/naturesend/advancements/recipes/building_blocks/willow_planks.json
 4f8da34924625782bc4309ce926f08587239f89e data/naturesend/advancements/recipes/building_blocks/willow_slab.json
 7f2ac014c366cb5bb00470f9600f2800e050fd56 data/naturesend/advancements/recipes/building_blocks/willow_stairs.json
@@ -38,6 +39,7 @@ c7b574983edfe571c5042fbaa580b7057856221e data/naturesend/recipes/evergreen_sign.
 025421353f911028fe97dfa03ff0d21f093e900e data/naturesend/recipes/evergreen_slab.json
 28e430536d4fc1562c04d9c27c809096a6719716 data/naturesend/recipes/evergreen_stairs.json
 c9a3c9c83ebca67993b887ece9923bfdc75efe0a data/naturesend/recipes/evergreen_trapdoor.json
+f22745eb92207f253ea66b32c43e57e2e9c8b2e6 data/naturesend/recipes/shale.json
 f8ee0e73df362cae2e9b3b6091179edfbd2e59d2 data/naturesend/recipes/willow_boat.json
 1edeaba35ad01e65ab89c058fcb7c1bdb7294ca2 data/naturesend/recipes/willow_button.json
 116a11f03c194011fb083fcfdcd6308273671242 data/naturesend/recipes/willow_chest_boat.json

@@ -7,6 +7,8 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.ShapelessRecipeBuilder;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -26,6 +28,8 @@ public class CraftingRecipeProvider extends RecipeProvider implements ICondition
     protected void buildRecipes(@NotNull Consumer<FinishedRecipe> pWriter) {
         addWoodenRecipes(pWriter, NaturesTags.Items.EVERGREEN_LOGS, NaturesBlocks.STRIPPED_EVERGREEN_LOG, NaturesBlocks.EVERGREEN_PLANKS, NaturesBlocks.EVERGREEN_STAIRS, NaturesBlocks.EVERGREEN_SLAB, NaturesBlocks.EVERGREEN_FENCE, NaturesBlocks.EVERGREEN_FENCE_GATE, NaturesBlocks.EVERGREEN_DOOR, NaturesBlocks.EVERGREEN_TRAPDOOR, NaturesBlocks.EVERGREEN_PRESSURE_PLATE, NaturesBlocks.EVERGREEN_BUTTON, NaturesItems.EVERGREEN_SIGN, NaturesItems.EVERGREEN_HANGING_SIGN, NaturesItems.EVERGREEN_BOAT, NaturesItems.EVERGREEN_CHEST_BOAT);
         addWoodenRecipes(pWriter, NaturesTags.Items.WILLOW_LOGS, NaturesBlocks.STRIPPED_WILLOW_LOG, NaturesBlocks.WILLOW_PLANKS, NaturesBlocks.WILLOW_STAIRS, NaturesBlocks.WILLOW_SLAB, NaturesBlocks.WILLOW_FENCE, NaturesBlocks.WILLOW_FENCE_GATE, NaturesBlocks.WILLOW_DOOR, NaturesBlocks.WILLOW_TRAPDOOR, NaturesBlocks.WILLOW_PRESSURE_PLATE, NaturesBlocks.WILLOW_BUTTON, NaturesItems.WILLOW_SIGN, NaturesItems.WILLOW_HANGING_SIGN, NaturesItems.WILLOW_BOAT, NaturesItems.WILLOW_CHEST_BOAT);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, NaturesBlocks.SHALE.get(), 8).requires(Blocks.MUD, 4).requires(Blocks.CLAY, 4).requires(ItemTags.COALS).unlockedBy("has_mud", has(Blocks.MUD)).unlockedBy("has_clay", has(Blocks.CLAY)).save(pWriter);
     }
 
     private void addWoodenRecipes(Consumer<FinishedRecipe> writer, TagKey<Item> logs, RegistryObject<RotatedPillarBlock> strippedLog, RegistryObject<Block> planks, RegistryObject<StairBlock> stairs, RegistryObject<SlabBlock> slabs, RegistryObject<FenceBlock> fence, RegistryObject<FenceGateBlock> fenceGate, RegistryObject<DoorBlock> door, RegistryObject<TrapDoorBlock> trapDoor, RegistryObject<PressurePlateBlock> pressurePlate, RegistryObject<ButtonBlock> button, RegistryObject<Item> sign, RegistryObject<Item> hangingSign, RegistryObject<Item> boat, RegistryObject<Item> chestBoat) {
