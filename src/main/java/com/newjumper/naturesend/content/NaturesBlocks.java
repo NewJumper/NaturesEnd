@@ -115,6 +115,11 @@ public class NaturesBlocks {
     public static final RegistryObject<Block> CHLORITE_SHALE = register("chlorite_shale", () -> new Block(BlockBehaviour.Properties.of().strength(1.5f, 6).mapColor(MapColor.COLOR_YELLOW).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> RED_SHALE = register("red_shale", () -> new Block(BlockBehaviour.Properties.of().strength(2.5f, 6.5f).mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> SHALE_BRICKS = register("shale_bricks", () -> new Block(BlockBehaviour.Properties.of().strength(4f, 9).mapColor(MapColor.COLOR_GRAY).requiresCorrectToolForDrops()));
+    public static final RegistryObject<StairBlock> SHALE_BRICK_STAIRS = register("shale_brick_stairs", () -> new StairBlock(() -> SHALE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.of().strength(4f, 9).mapColor(MapColor.COLOR_GRAY).requiresCorrectToolForDrops()));
+    public static final RegistryObject<SlabBlock> SHALE_BRICK_SLAB = register("shale_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.of().strength(4f, 9).mapColor(MapColor.COLOR_GRAY).requiresCorrectToolForDrops()));
+    public static final RegistryObject<WallBlock> SHALE_BRICK_WALL = register("shale_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.of().strength(4f, 9).mapColor(MapColor.COLOR_GRAY).requiresCorrectToolForDrops()));
+
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> pBlock) {
         RegistryObject<T> block = BLOCKS.register(name, pBlock);
         NaturesItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

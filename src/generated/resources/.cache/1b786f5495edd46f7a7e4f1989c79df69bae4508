@@ -1,4 +1,4 @@
-// 1.20.1	2023-06-20T17:01:39.4500555	Tags for minecraft:item mod id naturesend
+// 1.20.1	2023-06-22T01:28:40.1867867	Tags for minecraft:item mod id naturesend
 55afcce5ccd9b70304dc90ea4b3d2ea55b014126 data/minecraft/tags/items/boats.json
 3dbb41407169840f00dce887041dc36d8c41a3f4 data/minecraft/tags/items/chest_boats.json
 c2af2d5f98ffe09a821f3f6b2d925b07922cd4ac data/minecraft/tags/items/fence_gates.json
@@ -8,6 +8,9 @@ c566de3972cbf5af86edab7798911269c48c40bd data/minecraft/tags/items/hanging_signs
 3bd1f8edd69b3e69902e269f2917e151d7fd15b3 data/minecraft/tags/items/planks.json
 9cac245c3b7f1bbb7febb44a198e637a830968d1 data/minecraft/tags/items/saplings.json
 71f31cf58cb979dc1a8935aa03463f363af82aa8 data/minecraft/tags/items/signs.json
+17e9d6a63b155ee5b166f882371234cd23a1bd1b data/minecraft/tags/items/slabs.json
+8d04f0003cca79bbcd035ae136626b7738b9b9c7 data/minecraft/tags/items/stairs.json
+2b30e021bab276f72b564d33c0fdf21ef74500d8 data/minecraft/tags/items/walls.json
 ec02340e3560ea9a03068ae851d9f3cd6c4d122c data/minecraft/tags/items/wooden_buttons.json
 d2cc989828b071ea3bddcac90cd365552c236afd data/minecraft/tags/items/wooden_doors.json
 00ec7f1128002b2db59ef5904d1cc8d1252f7e12 data/minecraft/tags/items/wooden_fences.json

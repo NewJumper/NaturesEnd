@@ -62,6 +62,11 @@ public class NaturesLootTables extends BlockLootSubProvider {
         dropSelf(NaturesBlocks.SHALE.get());
         dropSelf(NaturesBlocks.CHLORITE_SHALE.get());
         dropSelf(NaturesBlocks.RED_SHALE.get());
+
+        dropSelf(NaturesBlocks.SHALE_BRICKS.get());
+        dropSelf(NaturesBlocks.SHALE_BRICK_STAIRS.get());
+        add(NaturesBlocks.SHALE_BRICK_SLAB.get(), this::createSlabItemTable);
+        dropSelf(NaturesBlocks.SHALE_BRICK_WALL.get());
     }
 
     @Override

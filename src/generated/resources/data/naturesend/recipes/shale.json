@@ -3,31 +3,31 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "minecraft:mud"
-    },
-    {
-      "item": "minecraft:mud"
-    },
-    {
-      "item": "minecraft:mud"
-    },
-    {
-      "item": "minecraft:mud"
-    },
-    {
-      "item": "minecraft:clay"
-    },
-    {
-      "item": "minecraft:clay"
-    },
-    {
-      "item": "minecraft:clay"
-    },
-    {
-      "item": "minecraft:clay"
-    },
-    {
       "tag": "minecraft:coals"
+    },
+    {
+      "item": "minecraft:mud"
+    },
+    {
+      "item": "minecraft:mud"
+    },
+    {
+      "item": "minecraft:mud"
+    },
+    {
+      "item": "minecraft:mud"
+    },
+    {
+      "item": "minecraft:clay"
+    },
+    {
+      "item": "minecraft:clay"
+    },
+    {
+      "item": "minecraft:clay"
+    },
+    {
+      "item": "minecraft:clay"
     }
   ],
   "result": {

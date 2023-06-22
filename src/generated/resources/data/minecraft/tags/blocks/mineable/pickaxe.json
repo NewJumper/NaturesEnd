@@ -2,6 +2,10 @@
   "values": [
     "naturesend:shale",
     "naturesend:chlorite_shale",
-    "naturesend:red_shale"
+    "naturesend:red_shale",
+    "naturesend:shale_bricks",
+    "naturesend:shale_brick_stairs",
+    "naturesend:shale_brick_slab",
+    "naturesend:shale_brick_wall"
   ]
 }

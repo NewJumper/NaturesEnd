@@ -64,6 +64,11 @@ public class NaturesItemModelProvider extends ItemModelProvider {
         blockModel(NaturesBlocks.SHALE);
         blockModel(NaturesBlocks.CHLORITE_SHALE);
         blockModel(NaturesBlocks.RED_SHALE);
+
+        blockModel(NaturesBlocks.SHALE_BRICKS);
+        blockModel(NaturesBlocks.SHALE_BRICK_STAIRS);
+        blockModel(NaturesBlocks.SHALE_BRICK_SLAB);
+        blockModel(NaturesBlocks.SHALE_BRICK_WALL, "inventory");
     }
 
     public void blockModel(RegistryObject<? extends Block> block) {

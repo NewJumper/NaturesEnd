@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "naturesend:shale"
+  },
+  "result": "naturesend:shale_brick_stairs"
+}

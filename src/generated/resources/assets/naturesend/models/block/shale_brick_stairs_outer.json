@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "naturesend:block/shale_bricks",
+    "side": "naturesend:block/shale_bricks",
+    "top": "naturesend:block/shale_bricks"
+  }
+}

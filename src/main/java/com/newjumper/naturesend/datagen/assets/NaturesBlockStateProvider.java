@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.ButtonBlock;
 import net.minecraft.world.level.block.FenceBlock;
+import net.minecraft.world.level.block.WallBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
@@ -59,6 +60,11 @@ public class NaturesBlockStateProvider extends BlockStateProvider {
         simpleBlock(NaturesBlocks.SHALE.get());
         simpleBlock(NaturesBlocks.CHLORITE_SHALE.get());
         simpleBlock(NaturesBlocks.RED_SHALE.get());
+
+        simpleBlock(NaturesBlocks.SHALE_BRICKS.get());
+        stairsBlock(NaturesBlocks.SHALE_BRICK_STAIRS.get(), blockLoc(NaturesBlocks.SHALE_BRICKS));
+        slabBlock(NaturesBlocks.SHALE_BRICK_SLAB.get(), blockLoc(NaturesBlocks.SHALE_BRICKS), blockLoc(NaturesBlocks.SHALE_BRICKS));
+        wallBlock(NaturesBlocks.SHALE_BRICK_WALL, blockLoc(NaturesBlocks.SHALE_BRICKS));
     }
 
     private ResourceLocation blockLoc(RegistryObject<? extends Block> block) {
@@ -77,5 +83,10 @@ public class NaturesBlockStateProvider extends BlockStateProvider {
     public void buttonBlock(RegistryObject<ButtonBlock> block, ResourceLocation texture) {
         super.buttonBlock(block.get(), texture);
         models().buttonInventory(block.getId().getPath() + "_inventory", texture);
+    }
+
+    public void wallBlock(RegistryObject<WallBlock> block, ResourceLocation texture) {
+        super.wallBlock(block.get(), texture);
+        models().wallInventory(block.getId().getPath() + "_inventory", texture);
     }
 }
