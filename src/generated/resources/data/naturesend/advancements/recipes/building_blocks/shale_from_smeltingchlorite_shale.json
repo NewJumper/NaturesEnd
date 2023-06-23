@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chlorite_shale": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "naturesend:chlorite_shale"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "naturesend:shale_from_smeltingchlorite_shale"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_chlorite_shale",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "naturesend:shale_from_smeltingchlorite_shale"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -56,7 +56,7 @@ public class NaturesEnd {
         generator.addProvider(event.includeClient(), new ENLanguageProvider(packOutput));
 
         // data
-        generator.addProvider(event.includeServer(), new CraftingRecipeProvider(packOutput));
+        generator.addProvider(event.includeServer(), new NaturesRecipeProvider(packOutput));
 
         NaturesBlockTagsProvider blockTags = new NaturesBlockTagsProvider(packOutput, event.getLookupProvider(), fileHelper);
         generator.addProvider(event.includeServer(), blockTags);

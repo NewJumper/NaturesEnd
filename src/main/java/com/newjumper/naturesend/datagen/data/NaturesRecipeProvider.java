@@ -1,5 +1,6 @@
 package com.newjumper.naturesend.datagen.data;
 
+import com.google.common.collect.ImmutableList;
 import com.newjumper.naturesend.NaturesEnd;
 import com.newjumper.naturesend.content.NaturesBlocks;
 import com.newjumper.naturesend.content.NaturesItems;
@@ -17,25 +18,46 @@ import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.List;
 import java.util.function.Consumer;
 
-public class CraftingRecipeProvider extends RecipeProvider implements IConditionBuilder {
-    public CraftingRecipeProvider(PackOutput pOutput) {
+public class NaturesRecipeProvider extends RecipeProvider implements IConditionBuilder {
+    public NaturesRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
 
     @Override
     protected void buildRecipes(@NotNull Consumer<FinishedRecipe> pWriter) {
-        addWoodenRecipes(pWriter, NaturesTags.Items.EVERGREEN_LOGS, NaturesBlocks.STRIPPED_EVERGREEN_LOG, NaturesBlocks.EVERGREEN_PLANKS, NaturesBlocks.EVERGREEN_STAIRS, NaturesBlocks.EVERGREEN_SLAB, NaturesBlocks.EVERGREEN_FENCE, NaturesBlocks.EVERGREEN_FENCE_GATE, NaturesBlocks.EVERGREEN_DOOR, NaturesBlocks.EVERGREEN_TRAPDOOR, NaturesBlocks.EVERGREEN_PRESSURE_PLATE, NaturesBlocks.EVERGREEN_BUTTON, NaturesItems.EVERGREEN_SIGN, NaturesItems.EVERGREEN_HANGING_SIGN, NaturesItems.EVERGREEN_BOAT, NaturesItems.EVERGREEN_CHEST_BOAT);
-        addWoodenRecipes(pWriter, NaturesTags.Items.WILLOW_LOGS, NaturesBlocks.STRIPPED_WILLOW_LOG, NaturesBlocks.WILLOW_PLANKS, NaturesBlocks.WILLOW_STAIRS, NaturesBlocks.WILLOW_SLAB, NaturesBlocks.WILLOW_FENCE, NaturesBlocks.WILLOW_FENCE_GATE, NaturesBlocks.WILLOW_DOOR, NaturesBlocks.WILLOW_TRAPDOOR, NaturesBlocks.WILLOW_PRESSURE_PLATE, NaturesBlocks.WILLOW_BUTTON, NaturesItems.WILLOW_SIGN, NaturesItems.WILLOW_HANGING_SIGN, NaturesItems.WILLOW_BOAT, NaturesItems.WILLOW_CHEST_BOAT);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, NaturesBlocks.SHALE.get(), 8).requires(Items.COAL).requires(Blocks.MUD, 4).requires(Blocks.CLAY, 4).unlockedBy("has_mud", has(Blocks.MUD)).unlockedBy("has_clay", has(Blocks.CLAY)).save(pWriter);
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, NaturesBlocks.SHALE_BRICKS.get(), 4).define('#', NaturesBlocks.SHALE.get()).pattern("##").pattern("##").unlockedBy(getHasName(NaturesBlocks.SHALE.get()), has(NaturesBlocks.SHALE.get())).save(pWriter);
-        stairBuilder(NaturesBlocks.SHALE_BRICK_STAIRS.get(), Ingredient.of(NaturesBlocks.SHALE_BRICKS.get())).unlockedBy("has_shale_bricks", has(NaturesBlocks.SHALE_BRICKS.get())).save(pWriter);
-        slab(pWriter, RecipeCategory.BUILDING_BLOCKS, NaturesBlocks.SHALE_BRICK_SLAB.get(), NaturesBlocks.SHALE_BRICKS.get());
-        wall(pWriter, RecipeCategory.BUILDING_BLOCKS, NaturesBlocks.SHALE_BRICK_WALL.get(), NaturesBlocks.SHALE_BRICKS.get());
-
+        addCraftingRecipes(pWriter);
+        addSmeltingRecipes(pWriter);
         addStonecuttingRecipes(pWriter);
+    }
+
+    public void addCraftingRecipes(Consumer<FinishedRecipe> writer) {
+        addWoodenRecipes(writer, NaturesTags.Items.EVERGREEN_LOGS, NaturesBlocks.STRIPPED_EVERGREEN_LOG, NaturesBlocks.EVERGREEN_PLANKS, NaturesBlocks.EVERGREEN_STAIRS, NaturesBlocks.EVERGREEN_SLAB, NaturesBlocks.EVERGREEN_FENCE, NaturesBlocks.EVERGREEN_FENCE_GATE, NaturesBlocks.EVERGREEN_DOOR, NaturesBlocks.EVERGREEN_TRAPDOOR, NaturesBlocks.EVERGREEN_PRESSURE_PLATE, NaturesBlocks.EVERGREEN_BUTTON, NaturesItems.EVERGREEN_SIGN, NaturesItems.EVERGREEN_HANGING_SIGN, NaturesItems.EVERGREEN_BOAT, NaturesItems.EVERGREEN_CHEST_BOAT);
+        addWoodenRecipes(writer, NaturesTags.Items.WILLOW_LOGS, NaturesBlocks.STRIPPED_WILLOW_LOG, NaturesBlocks.WILLOW_PLANKS, NaturesBlocks.WILLOW_STAIRS, NaturesBlocks.WILLOW_SLAB, NaturesBlocks.WILLOW_FENCE, NaturesBlocks.WILLOW_FENCE_GATE, NaturesBlocks.WILLOW_DOOR, NaturesBlocks.WILLOW_TRAPDOOR, NaturesBlocks.WILLOW_PRESSURE_PLATE, NaturesBlocks.WILLOW_BUTTON, NaturesItems.WILLOW_SIGN, NaturesItems.WILLOW_HANGING_SIGN, NaturesItems.WILLOW_BOAT, NaturesItems.WILLOW_CHEST_BOAT);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, NaturesBlocks.SHALE.get(), 8).requires(Items.COAL).requires(Blocks.MUD, 4).requires(Blocks.CLAY, 4).unlockedBy("has_mud", has(Blocks.MUD)).unlockedBy("has_clay", has(Blocks.CLAY)).save(writer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, NaturesBlocks.SHALE_BRICKS.get(), 4).define('#', NaturesBlocks.SHALE.get()).pattern("##").pattern("##").unlockedBy(getHasName(NaturesBlocks.SHALE.get()), has(NaturesBlocks.SHALE.get())).save(writer);
+        stairBuilder(NaturesBlocks.SHALE_BRICK_STAIRS.get(), Ingredient.of(NaturesBlocks.SHALE_BRICKS.get())).unlockedBy("has_shale_bricks", has(NaturesBlocks.SHALE_BRICKS.get())).save(writer);
+        slab(writer, RecipeCategory.BUILDING_BLOCKS, NaturesBlocks.SHALE_BRICK_SLAB.get(), NaturesBlocks.SHALE_BRICKS.get());
+        wall(writer, RecipeCategory.BUILDING_BLOCKS, NaturesBlocks.SHALE_BRICK_WALL.get(), NaturesBlocks.SHALE_BRICKS.get());
+    }
+
+    public void addSmeltingRecipes(Consumer<FinishedRecipe> writer) {
+        final ImmutableList<ItemLike> NON_CARBON_SHALE = ImmutableList.of(NaturesBlocks.CHLORITE_SHALE.get(), NaturesBlocks.FERROUS_SHALE.get(), NaturesBlocks.PURPLE_SHALE.get(), NaturesBlocks.RED_SHALE.get());
+
+        smelting(NaturesBlocks.SHALE.get(), RecipeCategory.BUILDING_BLOCKS, Blocks.DEEPSLATE, 0.1f, "deepslate", writer);
+        smelting(NaturesBlocks.ERODED_SHALE.get(), RecipeCategory.BUILDING_BLOCKS, Blocks.STONE, 0.1f, "stone", writer);
+        smelting(NON_CARBON_SHALE, RecipeCategory.BUILDING_BLOCKS, NaturesBlocks.SHALE.get(), 0.1f, "shale", writer);
+    }
+
+    private void smelting(List<ItemLike> ingredients, RecipeCategory category, ItemLike result, float experience, String group, Consumer<FinishedRecipe> consumer) {
+        for(ItemLike item : ingredients) smelting(item, category, result, experience, group, consumer);
+    }
+
+    private void smelting(ItemLike ingredient, RecipeCategory category, ItemLike result, float experience, String group, Consumer<FinishedRecipe> consumer) {
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ingredient), category, result, experience, 200).group(group).unlockedBy(getHasName(ingredient), has(ingredient)).save(consumer, new ResourceLocation(NaturesEnd.MOD_ID, getSmeltingRecipeName(result) + getItemName(ingredient)));
     }
 
     public void addStonecuttingRecipes(Consumer<FinishedRecipe> writer) {
