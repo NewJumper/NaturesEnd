@@ -62,6 +62,7 @@ public class NaturesLootTables extends BlockLootSubProvider {
         dropSelf(NaturesBlocks.WILLOW_HANGING_SIGN.get());
 
         dropSelf(NaturesBlocks.SHALE.get());
+        dropSelf(NaturesBlocks.ERODED_SHALE.get());
         dropSelf(NaturesBlocks.CHLORITE_SHALE.get());
         dropSelf(NaturesBlocks.RED_SHALE.get());
         add(NaturesBlocks.SALT_BLOCK.get(), (block) -> this.createSingleItemTableWithSilkTouch(block, NaturesItems.SALT.get(), ConstantValue.exactly(4)));

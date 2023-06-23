@@ -1,5 +1,6 @@
-// 1.20.1	2023-06-22T02:10:06.1538224	Block States: naturesend
+// 1.20.1	2023-06-22T20:01:01.1012395	Block States: naturesend
 4a52247dbb00fafe97bca6ff94ad3836a2d712a1 assets/naturesend/blockstates/chlorite_shale.json
+e054e42f6ca332caaa24995e1230ab278220c766 assets/naturesend/blockstates/eroded_shale.json
 e570107d0bebbc40683a0dff0b8603607394c72f assets/naturesend/blockstates/evergreen_button.json
 2f094bb4d741056574795f0f47751c7061e03a6d assets/naturesend/blockstates/evergreen_door.json
 418cbeb4e434464176aefbfeaa7bf8f18622f803 assets/naturesend/blockstates/evergreen_fence.json
@@ -46,6 +47,7 @@ a0f429c2923c028980c85d2663cabe00eaad115d assets/naturesend/blockstates/willow_wa
 effbd54fc369f00573f2d6cdd659d7c46fa97b1b assets/naturesend/blockstates/willow_wall_sign.json
 eb149d06cb8261e9bd6e1964692003520e4cb1f6 assets/naturesend/blockstates/willow_wood.json
 abd11d6c5c694dc49e2c312ae1284f9489312e98 assets/naturesend/models/block/chlorite_shale.json
+7916555f8ea8f3a2bbea09790944075f12406877 assets/naturesend/models/block/eroded_shale.json
 299cedc6f2c50c7706ae0787a1c1ce7dbf29d2fe assets/naturesend/models/block/evergreen_button.json
 258453b0dcbff313463a9a35fbd06208bbd41115 assets/naturesend/models/block/evergreen_button_inventory.json
 f461dbcc110db3471127910b5b7e30f990388d68 assets/naturesend/models/block/evergreen_button_pressed.json

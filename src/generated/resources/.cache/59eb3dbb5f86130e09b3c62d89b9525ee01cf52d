@@ -1,5 +1,6 @@
-// 1.20.1	2023-06-22T02:10:06.1558272	Loot Tables
+// 1.20.1	2023-06-22T20:01:01.102747	Loot Tables
 fd220a9b6b25bb4a263a453a4f7bd5043c7e05ad data/naturesend/loot_tables/blocks/chlorite_shale.json
+3a9a51bdec1380625c352249b4f7534e87dd6763 data/naturesend/loot_tables/blocks/eroded_shale.json
 b087bbe66242232d329f29028fc942ccec8ecd23 data/naturesend/loot_tables/blocks/evergreen_button.json
 40abba1fdf680e7bb02afc8b9668592cbf1c343f data/naturesend/loot_tables/blocks/evergreen_door.json
 98811ca7611dbe0bc0b27e3714649f2eb4df4c59 data/naturesend/loot_tables/blocks/evergreen_fence.json

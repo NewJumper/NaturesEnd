@@ -54,6 +54,7 @@ public class NaturesItemModelProvider extends ItemModelProvider {
         getBuilder(NaturesBlocks.WILLOW_SAPLING.getId().getPath()).parent(GENERATED).texture("layer0", "block/" + NaturesBlocks.WILLOW_SAPLING.getId().getPath());
 
         blockModel(NaturesBlocks.SHALE);
+        blockModel(NaturesBlocks.ERODED_SHALE);
         blockModel(NaturesBlocks.CHLORITE_SHALE);
         blockModel(NaturesBlocks.RED_SHALE);
         blockModel(NaturesBlocks.SALT_BLOCK);

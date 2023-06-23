@@ -58,6 +58,7 @@ public class NaturesCreativeTab {
             event.accept(NaturesItems.WILLOW_CHEST_BOAT);
 
             event.accept(NaturesBlocks.SHALE);
+            event.accept(NaturesBlocks.ERODED_SHALE);
             event.accept(NaturesBlocks.CHLORITE_SHALE);
             event.accept(NaturesBlocks.RED_SHALE);
             event.accept(NaturesBlocks.SALT_BLOCK);

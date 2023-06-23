@@ -42,6 +42,8 @@ public class ShaleBlock extends Block {
             int[] drops = { 1, 1, 1, 2, 2, 3 };
             popResource(pLevel, pPos, new ItemStack(NaturesItems.SHALE_PLATE.get(), drops[(int) (Math.random() * 6)]));
             pPlayer.getMainHandItem().hurtAndBreak(1, pPlayer, player -> player.broadcastBreakEvent(pHand));
+
+            if(Math.random() < 0.75) pLevel.setBlock(pPos, NaturesBlocks.ERODED_SHALE.get().defaultBlockState(), 3);
             return InteractionResult.sidedSuccess(pLevel.isClientSide());
         }
 

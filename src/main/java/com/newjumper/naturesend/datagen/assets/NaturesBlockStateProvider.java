@@ -58,6 +58,7 @@ public class NaturesBlockStateProvider extends BlockStateProvider {
         simpleBlock(NaturesBlocks.WILLOW_WALL_HANGING_SIGN.get(), models().sign(NaturesBlocks.WILLOW_HANGING_SIGN.getId().getPath(), blockLoc(NaturesBlocks.STRIPPED_WILLOW_LOG)));
 
         simpleBlock(NaturesBlocks.SHALE.get());
+        simpleBlock(NaturesBlocks.ERODED_SHALE.get());
         simpleBlock(NaturesBlocks.CHLORITE_SHALE.get());
         simpleBlock(NaturesBlocks.RED_SHALE.get());
         simpleBlock(NaturesBlocks.SALT_BLOCK.get());
