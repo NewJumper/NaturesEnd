@@ -56,6 +56,8 @@ public class NaturesItemModelProvider extends ItemModelProvider {
         blockModel(NaturesBlocks.SHALE);
         blockModel(NaturesBlocks.ERODED_SHALE);
         blockModel(NaturesBlocks.CHLORITE_SHALE);
+        blockModel(NaturesBlocks.FERROUS_SHALE);
+        blockModel(NaturesBlocks.PURPLE_SHALE);
         blockModel(NaturesBlocks.RED_SHALE);
         blockModel(NaturesBlocks.SALT_BLOCK);
 

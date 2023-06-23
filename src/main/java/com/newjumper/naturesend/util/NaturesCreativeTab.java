@@ -60,6 +60,8 @@ public class NaturesCreativeTab {
             event.accept(NaturesBlocks.SHALE);
             event.accept(NaturesBlocks.ERODED_SHALE);
             event.accept(NaturesBlocks.CHLORITE_SHALE);
+            event.accept(NaturesBlocks.FERROUS_SHALE);
+            event.accept(NaturesBlocks.PURPLE_SHALE);
             event.accept(NaturesBlocks.RED_SHALE);
             event.accept(NaturesBlocks.SALT_BLOCK);
             event.accept(NaturesBlocks.SHALE_BRICKS);

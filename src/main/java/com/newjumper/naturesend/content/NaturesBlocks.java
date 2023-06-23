@@ -114,6 +114,8 @@ public class NaturesBlocks {
     public static final RegistryObject<Block> SHALE = register("shale", () -> new ShaleBlock(BlockBehaviour.Properties.of().strength(4, 7).mapColor(MapColor.COLOR_GRAY).randomTicks().requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> ERODED_SHALE = register("eroded_shale", () -> new Block(BlockBehaviour.Properties.of().strength(2, 7).mapColor(MapColor.COLOR_LIGHT_GRAY).randomTicks().requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CHLORITE_SHALE = register("chlorite_shale", () -> new Block(BlockBehaviour.Properties.of().strength(1.5f, 6).mapColor(MapColor.DIRT).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FERROUS_SHALE = register("ferrous_shale", () -> new Block(BlockBehaviour.Properties.of().strength(1.5f, 6).mapColor(MapColor.DIRT).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PURPLE_SHALE = register("purple_shale", () -> new Block(BlockBehaviour.Properties.of().strength(1.5f, 6).mapColor(MapColor.DIRT).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> RED_SHALE = register("red_shale", () -> new Block(BlockBehaviour.Properties.of().strength(2.5f, 6.5f).mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> SALT_BLOCK = register("salt_block", () -> new Block(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.SAND).mapColor(MapColor.TERRACOTTA_WHITE)));
 
