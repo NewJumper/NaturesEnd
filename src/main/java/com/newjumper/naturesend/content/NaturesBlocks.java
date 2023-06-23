@@ -8,6 +8,7 @@ import com.newjumper.naturesend.world.trees.EvergreenTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -112,12 +113,12 @@ public class NaturesBlocks {
     });
 
     public static final RegistryObject<Block> SHALE = register("shale", () -> new ShaleBlock(BlockBehaviour.Properties.of().strength(4, 7).mapColor(MapColor.COLOR_GRAY).randomTicks().requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> ERODED_SHALE = register("eroded_shale", () -> new Block(BlockBehaviour.Properties.of().strength(2, 7).mapColor(MapColor.COLOR_LIGHT_GRAY).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> CHLORITE_SHALE = register("chlorite_shale", () -> new ShaleBlock(BlockBehaviour.Properties.of().strength(1.5f, 6).mapColor(MapColor.DIRT).randomTicks().requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> FERROUS_SHALE = register("ferrous_shale", () -> new ShaleBlock(BlockBehaviour.Properties.of().strength(1.5f, 6).mapColor(MapColor.DIRT).randomTicks().requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> PURPLE_SHALE = register("purple_shale", () -> new ShaleBlock(BlockBehaviour.Properties.of().strength(1.5f, 6).mapColor(MapColor.DIRT).randomTicks().requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> RED_SHALE = register("red_shale", () -> new ShaleBlock(BlockBehaviour.Properties.of().strength(2.5f, 6.5f).mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> SALT_BLOCK = register("salt_block", () -> new Block(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.SAND).mapColor(MapColor.TERRACOTTA_WHITE)));
+    public static final RegistryObject<Block> ERODED_SHALE = register("eroded_shale", () -> new Block(BlockBehaviour.Properties.of().strength(2, 7).mapColor(MapColor.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CHLORITE_SHALE = register("chlorite_shale", () -> new ShaleBlock(BlockBehaviour.Properties.of().strength(1.5f, 6).mapColor(MapColor.TERRACOTTA_LIGHT_GREEN).randomTicks().requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FERROUS_SHALE = register("ferrous_shale", () -> new ShaleBlock(BlockBehaviour.Properties.of().strength(2, 6.5f).mapColor(MapColor.TERRACOTTA_CYAN).randomTicks().requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PURPLE_SHALE = register("purple_shale", () -> new ShaleBlock(BlockBehaviour.Properties.of().strength(2, 6.5f).mapColor(MapColor.TERRACOTTA_PURPLE).randomTicks().requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> RED_SHALE = register("red_shale", () -> new ShaleBlock(BlockBehaviour.Properties.of().strength(2.5f, 6.5f).mapColor(MapColor.TERRACOTTA_RED).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SALT_BLOCK = register("salt_block", () -> new Block(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.SAND).mapColor(DyeColor.WHITE)));
 
     public static final RegistryObject<Block> SHALE_BRICKS = register("shale_bricks", () -> new Block(BlockBehaviour.Properties.of().strength(4f, 9).mapColor(MapColor.COLOR_GRAY).requiresCorrectToolForDrops()));
     public static final RegistryObject<StairBlock> SHALE_BRICK_STAIRS = register("shale_brick_stairs", () -> new StairBlock(() -> SHALE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.of().strength(4f, 9).mapColor(MapColor.COLOR_GRAY).requiresCorrectToolForDrops()));
