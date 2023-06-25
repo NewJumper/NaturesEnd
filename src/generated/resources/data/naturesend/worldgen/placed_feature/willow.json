@@ -1,12 +1,12 @@
 {
-  "feature": "naturesend:tree_evergreen",
+  "feature": "naturesend:tree_willow",
   "placement": [
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
         "type": "minecraft:would_survive",
         "state": {
-          "Name": "naturesend:evergreen_sapling",
+          "Name": "naturesend:willow_sapling",
           "Properties": {
             "stage": "0"
           }

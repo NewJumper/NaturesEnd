@@ -1,5 +1,7 @@
-// 1.20.1	2023-06-20T23:58:44.2361926	Registries
-a0e35cdf7ee8fd920b0e6d2c596f0b5ab0e20aa7 data/naturesend/worldgen/configured_feature/evergreen.json
-1c2f49285c9dee1d747370052bafc1afd2654471 data/naturesend/worldgen/configured_feature/evergreen_short.json
-598bdd8ff159168a040e7d2c49d726d512f073b0 data/naturesend/worldgen/placed_feature/evergreen.json
-ea67c6d5951d7f09f521ff48337e9a4ebf201d8d data/naturesend/worldgen/placed_feature/evergreen_short.json
+// 1.20.1	2023-06-24T22:10:49.4021988	Registries
+a0e35cdf7ee8fd920b0e6d2c596f0b5ab0e20aa7 data/naturesend/worldgen/configured_feature/tree_evergreen.json
+1c2f49285c9dee1d747370052bafc1afd2654471 data/naturesend/worldgen/configured_feature/tree_evergreen_short.json
+3af870e2bdee28ef5d26faafda823a87a8a73c8c data/naturesend/worldgen/configured_feature/tree_willow.json
+700d11aa497bde0453a4706e5cd67aeddb6c61df data/naturesend/worldgen/placed_feature/evergreen.json
+3987d3d8b724e78ecec8b1a3e446ccbb694900c3 data/naturesend/worldgen/placed_feature/evergreen_short.json
+69221d41c320ee75b619b6935c0194678d8f1b7b data/naturesend/worldgen/placed_feature/willow.json

@@ -1,5 +1,5 @@
 {
-  "feature": "naturesend:evergreen_short",
+  "feature": "naturesend:tree_evergreen_short",
   "placement": [
     {
       "type": "minecraft:block_predicate_filter",

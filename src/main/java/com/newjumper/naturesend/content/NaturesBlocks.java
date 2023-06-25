@@ -5,6 +5,7 @@ import com.newjumper.naturesend.content.blocks.*;
 import com.newjumper.naturesend.content.entities.NaturesHangingSignBlockEntity;
 import com.newjumper.naturesend.content.entities.NaturesSignBlockEntity;
 import com.newjumper.naturesend.world.trees.EvergreenTreeGrower;
+import com.newjumper.naturesend.world.trees.WillowTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
@@ -12,7 +13,6 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.grower.OakTreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -86,7 +86,7 @@ public class NaturesBlocks {
     public static final RegistryObject<PressurePlateBlock> WILLOW_PRESSURE_PLATE = register("willow_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.COLOR_ORANGE), WILLOW_SET));
     public static final RegistryObject<ButtonBlock> WILLOW_BUTTON = register("willow_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), WILLOW_SET, 30, true));
     public static final RegistryObject<LeavesBlock> WILLOW_LEAVES = register("willow_leaves", () -> new FlammableLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES), 60, 30));
-    public static final RegistryObject<SaplingBlock> WILLOW_SAPLING = register("willow_sapling", () -> new SaplingBlock(new OakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<SaplingBlock> WILLOW_SAPLING = register("willow_sapling", () -> new SaplingBlock(new WillowTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<StandingSignBlock> WILLOW_SIGN = BLOCKS.register("willow_sign", () -> new StandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(MapColor.COLOR_ORANGE), WILLOW) {
         @Override
         public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
