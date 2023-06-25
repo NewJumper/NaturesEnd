@@ -70,6 +70,22 @@ public class NaturesBlocks {
         }
     });
 
+    private static final BlockSetType SHADOW_SET = BlockSetType.register(new BlockSetType("shadow"));
+    public static final WoodType SHADOW = WoodType.register(new WoodType("shadow", SHADOW_SET));
+    public static final RegistryObject<RotatedPillarBlock> SHADOW_LOG = register("shadow_log", () -> new RotatedFlammableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(state -> state.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? MapColor.COLOR_LIGHT_GRAY : MapColor.DEEPSLATE), 2, 5));
+    public static final RegistryObject<RotatedPillarBlock> SHADOW_WOOD = register("shadow_wood", () -> new RotatedFlammableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).mapColor(MapColor.DEEPSLATE), 2, 5));
+    public static final RegistryObject<RotatedPillarBlock> STRIPPED_SHADOW_LOG = register("stripped_shadow_log", () -> new RotatedFlammableBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).mapColor(MapColor.COLOR_LIGHT_GRAY), 2, 5));
+    public static final RegistryObject<RotatedPillarBlock> STRIPPED_SHADOW_WOOD = register("stripped_shadow_wood", () -> new RotatedFlammableBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).mapColor(MapColor.COLOR_LIGHT_GRAY), 2, 5));
+    public static final RegistryObject<Block> SHADOW_PLANKS = register("shadow_planks", () -> new FlammableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(MapColor.COLOR_LIGHT_GRAY), 10, 5));
+    public static final RegistryObject<StairBlock> SHADOW_STAIRS = register("shadow_stairs", () -> new FlammableStairBlock(() -> SHADOW_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).mapColor(MapColor.COLOR_LIGHT_GRAY), 10, 5));
+    public static final RegistryObject<SlabBlock> SHADOW_SLAB = register("shadow_slab", () -> new FlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).mapColor(MapColor.COLOR_LIGHT_GRAY), 10, 5));
+    public static final RegistryObject<FenceBlock> SHADOW_FENCE = register("shadow_fence", () -> new FlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).mapColor(MapColor.COLOR_LIGHT_GRAY), 10, 5));
+    public static final RegistryObject<FenceGateBlock> SHADOW_FENCE_GATE = register("shadow_fence_gate", () -> new FlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE).mapColor(MapColor.COLOR_LIGHT_GRAY), SHADOW, 10, 5));
+    public static final RegistryObject<DoorBlock> SHADOW_DOOR = register("shadow_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(MapColor.COLOR_LIGHT_GRAY), SHADOW_SET));
+    public static final RegistryObject<TrapDoorBlock> SHADOW_TRAPDOOR = register("shadow_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_LIGHT_GRAY), SHADOW_SET));
+    public static final RegistryObject<PressurePlateBlock> SHADOW_PRESSURE_PLATE = register("shadow_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.COLOR_LIGHT_GRAY), SHADOW_SET));
+    public static final RegistryObject<ButtonBlock> SHADOW_BUTTON = register("shadow_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), SHADOW_SET, 30, true));
+
     private static final BlockSetType WILLOW_SET = BlockSetType.register(new BlockSetType("willow"));
     public static final WoodType WILLOW = WoodType.register(new WoodType("willow", WILLOW_SET));
     public static final RegistryObject<RotatedPillarBlock> WILLOW_LOG = register("willow_log", () -> new RotatedFlammableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(state -> state.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? MapColor.COLOR_ORANGE : MapColor.TERRACOTTA_ORANGE), 5, 5));

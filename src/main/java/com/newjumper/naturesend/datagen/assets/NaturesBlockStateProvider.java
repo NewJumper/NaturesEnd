@@ -28,8 +28,8 @@ public class NaturesBlockStateProvider extends BlockStateProvider {
         slabBlock(NaturesBlocks.EVERGREEN_SLAB.get(), blockLoc(NaturesBlocks.EVERGREEN_PLANKS), blockLoc(NaturesBlocks.EVERGREEN_PLANKS));
         fenceBlock(NaturesBlocks.EVERGREEN_FENCE, blockLoc(NaturesBlocks.EVERGREEN_PLANKS));
         fenceGateBlock(NaturesBlocks.EVERGREEN_FENCE_GATE.get(), blockLoc(NaturesBlocks.EVERGREEN_PLANKS));
-        doorBlockWithRenderType(NaturesBlocks.EVERGREEN_DOOR.get(), blockLoc(NaturesBlocks.EVERGREEN_DOOR, "bottom"), blockLoc(NaturesBlocks.EVERGREEN_DOOR, "top"), "translucent");
-        trapdoorBlockWithRenderType(NaturesBlocks.EVERGREEN_TRAPDOOR.get(), blockLoc(NaturesBlocks.EVERGREEN_TRAPDOOR), true, "translucent");
+        doorBlock(NaturesBlocks.EVERGREEN_DOOR.get(), blockLoc(NaturesBlocks.EVERGREEN_DOOR, "bottom"), blockLoc(NaturesBlocks.EVERGREEN_DOOR, "top"));
+        trapdoorBlock(NaturesBlocks.EVERGREEN_TRAPDOOR.get(), blockLoc(NaturesBlocks.EVERGREEN_TRAPDOOR), true);
         pressurePlateBlock(NaturesBlocks.EVERGREEN_PRESSURE_PLATE.get(), blockLoc(NaturesBlocks.EVERGREEN_PLANKS));
         buttonBlock(NaturesBlocks.EVERGREEN_BUTTON, blockLoc(NaturesBlocks.EVERGREEN_PLANKS));
         simpleBlock(NaturesBlocks.EVERGREEN_LEAVES.get(), models().cubeAll(NaturesBlocks.EVERGREEN_LEAVES.getId().getPath(), blockLoc(NaturesBlocks.EVERGREEN_LEAVES)).renderType("cutout"));
@@ -37,6 +37,20 @@ public class NaturesBlockStateProvider extends BlockStateProvider {
         signBlock(NaturesBlocks.EVERGREEN_SIGN.get(), NaturesBlocks.EVERGREEN_WALL_SIGN.get(), blockLoc(NaturesBlocks.EVERGREEN_PLANKS));
         simpleBlock(NaturesBlocks.EVERGREEN_HANGING_SIGN.get(), models().sign(NaturesBlocks.EVERGREEN_HANGING_SIGN.getId().getPath(), blockLoc(NaturesBlocks.STRIPPED_EVERGREEN_LOG)));
         simpleBlock(NaturesBlocks.EVERGREEN_WALL_HANGING_SIGN.get(), models().sign(NaturesBlocks.EVERGREEN_HANGING_SIGN.getId().getPath(), blockLoc(NaturesBlocks.STRIPPED_EVERGREEN_LOG)));
+
+        logBlock(NaturesBlocks.SHADOW_LOG.get());
+        axisBlock(NaturesBlocks.SHADOW_WOOD.get(), blockLoc(NaturesBlocks.SHADOW_LOG), blockLoc(NaturesBlocks.SHADOW_LOG));
+        logBlock(NaturesBlocks.STRIPPED_SHADOW_LOG.get());
+        axisBlock(NaturesBlocks.STRIPPED_SHADOW_WOOD.get(), blockLoc(NaturesBlocks.STRIPPED_SHADOW_LOG), blockLoc(NaturesBlocks.STRIPPED_SHADOW_LOG));
+        simpleBlock(NaturesBlocks.SHADOW_PLANKS.get());
+        stairsBlock(NaturesBlocks.SHADOW_STAIRS.get(), blockLoc(NaturesBlocks.SHADOW_PLANKS));
+        slabBlock(NaturesBlocks.SHADOW_SLAB.get(), blockLoc(NaturesBlocks.SHADOW_PLANKS), blockLoc(NaturesBlocks.SHADOW_PLANKS));
+        fenceBlock(NaturesBlocks.SHADOW_FENCE, blockLoc(NaturesBlocks.SHADOW_PLANKS));
+        fenceGateBlock(NaturesBlocks.SHADOW_FENCE_GATE.get(), blockLoc(NaturesBlocks.SHADOW_PLANKS));
+        doorBlock(NaturesBlocks.SHADOW_DOOR.get(), blockLoc(NaturesBlocks.SHADOW_DOOR, "bottom"), blockLoc(NaturesBlocks.SHADOW_DOOR, "top"));
+        trapdoorBlock(NaturesBlocks.SHADOW_TRAPDOOR.get(), blockLoc(NaturesBlocks.SHADOW_TRAPDOOR), true);
+        pressurePlateBlock(NaturesBlocks.SHADOW_PRESSURE_PLATE.get(), blockLoc(NaturesBlocks.SHADOW_PLANKS));
+        buttonBlock(NaturesBlocks.SHADOW_BUTTON, blockLoc(NaturesBlocks.SHADOW_PLANKS));
 
         logBlock(NaturesBlocks.WILLOW_LOG.get());
         axisBlock(NaturesBlocks.WILLOW_WOOD.get(), blockLoc(NaturesBlocks.WILLOW_LOG), blockLoc(NaturesBlocks.WILLOW_LOG));
@@ -71,14 +85,6 @@ public class NaturesBlockStateProvider extends BlockStateProvider {
         wallBlock(NaturesBlocks.SHALE_BRICK_WALL, blockLoc(NaturesBlocks.SHALE_BRICKS));
     }
 
-    private ResourceLocation blockLoc(RegistryObject<? extends Block> block) {
-        return super.modLoc("block/" + block.getId().getPath());
-    }
-
-    public ResourceLocation blockLoc(RegistryObject<? extends Block> block, String suffix) {
-        return super.modLoc("block/" + block.getId().getPath() + "_" + suffix);
-    }
-
     private void fenceBlock(RegistryObject<FenceBlock> block, ResourceLocation texture) {
         super.fenceBlock(block.get(), texture);
         models().fenceInventory(block.getId().getPath() + "_inventory", texture);
@@ -92,5 +98,13 @@ public class NaturesBlockStateProvider extends BlockStateProvider {
     public void wallBlock(RegistryObject<WallBlock> block, ResourceLocation texture) {
         super.wallBlock(block.get(), texture);
         models().wallInventory(block.getId().getPath() + "_inventory", texture);
+    }
+
+    private ResourceLocation blockLoc(RegistryObject<? extends Block> block) {
+        return super.modLoc("block/" + block.getId().getPath());
+    }
+
+    public ResourceLocation blockLoc(RegistryObject<? extends Block> block, String suffix) {
+        return super.modLoc("block/" + block.getId().getPath() + "_" + suffix);
     }
 }

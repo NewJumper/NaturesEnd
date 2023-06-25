@@ -37,6 +37,20 @@ public class NaturesItemModelProvider extends ItemModelProvider {
         blockModel(NaturesBlocks.EVERGREEN_LEAVES);
         getBuilder(NaturesBlocks.EVERGREEN_SAPLING.getId().getPath()).parent(GENERATED).texture("layer0", "block/" + NaturesBlocks.EVERGREEN_SAPLING.getId().getPath());
 
+        blockModel(NaturesBlocks.SHADOW_LOG);
+        blockModel(NaturesBlocks.SHADOW_WOOD);
+        blockModel(NaturesBlocks.STRIPPED_SHADOW_LOG);
+        blockModel(NaturesBlocks.STRIPPED_SHADOW_WOOD);
+        blockModel(NaturesBlocks.SHADOW_PLANKS);
+        blockModel(NaturesBlocks.SHADOW_STAIRS);
+        blockModel(NaturesBlocks.SHADOW_SLAB);
+        blockModel(NaturesBlocks.SHADOW_FENCE, "inventory");
+        blockModel(NaturesBlocks.SHADOW_FENCE_GATE);
+        blockItemModel(NaturesBlocks.SHADOW_DOOR, GENERATED).renderType("translucent");
+        blockModel(NaturesBlocks.SHADOW_TRAPDOOR, "bottom");
+        blockModel(NaturesBlocks.SHADOW_PRESSURE_PLATE);
+        blockModel(NaturesBlocks.SHADOW_BUTTON, "inventory");
+
         blockModel(NaturesBlocks.WILLOW_LOG);
         blockModel(NaturesBlocks.WILLOW_WOOD);
         blockModel(NaturesBlocks.STRIPPED_WILLOW_LOG);

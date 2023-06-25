@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "naturesend:block/stripped_shadow_log",
+    "side": "naturesend:block/stripped_shadow_log"
+  }
+}

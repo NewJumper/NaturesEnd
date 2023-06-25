@@ -43,6 +43,20 @@ public class NaturesLootTables extends BlockLootSubProvider {
         dropSelf(NaturesBlocks.EVERGREEN_SIGN.get());
         dropSelf(NaturesBlocks.EVERGREEN_HANGING_SIGN.get());
 
+        dropSelf(NaturesBlocks.SHADOW_LOG.get());
+        dropSelf(NaturesBlocks.SHADOW_WOOD.get());
+        dropSelf(NaturesBlocks.STRIPPED_SHADOW_LOG.get());
+        dropSelf(NaturesBlocks.STRIPPED_SHADOW_WOOD.get());
+        dropSelf(NaturesBlocks.SHADOW_PLANKS.get());
+        dropSelf(NaturesBlocks.SHADOW_STAIRS.get());
+        add(NaturesBlocks.SHADOW_SLAB.get(), this::createSlabItemTable);
+        dropSelf(NaturesBlocks.SHADOW_FENCE.get());
+        dropSelf(NaturesBlocks.SHADOW_FENCE_GATE.get());
+        add(NaturesBlocks.SHADOW_DOOR.get(), this::createDoorTable);
+        dropSelf(NaturesBlocks.SHADOW_TRAPDOOR.get());
+        dropSelf(NaturesBlocks.SHADOW_PRESSURE_PLATE.get());
+        dropSelf(NaturesBlocks.SHADOW_BUTTON.get());
+
         dropSelf(NaturesBlocks.WILLOW_LOG.get());
         dropSelf(NaturesBlocks.WILLOW_WOOD.get());
         dropSelf(NaturesBlocks.STRIPPED_WILLOW_LOG.get());

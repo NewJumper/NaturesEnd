@@ -10,6 +10,7 @@ import com.newjumper.naturesend.datagen.assets.NaturesItemModelProvider;
 import com.newjumper.naturesend.datagen.data.*;
 import com.newjumper.naturesend.util.NaturesCreativeTab;
 import com.newjumper.naturesend.util.render.NaturesBoatRenderer;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
@@ -71,6 +72,12 @@ public class NaturesEnd {
     public static class NaturesEndClient {
         @SubscribeEvent
         public static void clientSetup(final FMLClientSetupEvent event) {
+            event.enqueueWork(() -> {
+                Sheets.addWoodType(NaturesBlocks.EVERGREEN);
+                Sheets.addWoodType(NaturesBlocks.SHADOW);
+                Sheets.addWoodType(NaturesBlocks.WILLOW);
+            });
+
             BlockEntityRenderers.register(NaturesBlockEntities.NATURES_SIGNS.get(), SignRenderer::new);
             BlockEntityRenderers.register(NaturesBlockEntities.NATURES_HANGING_SIGNS.get(), HangingSignRenderer::new);
             EntityRenderers.register(NaturesEntities.NATURES_BOAT.get(), (context) -> new NaturesBoatRenderer(context, false));

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "naturesend:block/shadow_slab"
+    },
+    "type=double": {
+      "model": "naturesend:block/shadow_planks"
+    },
+    "type=top": {
+      "model": "naturesend:block/shadow_slab_top"
+    }
+  }
+}

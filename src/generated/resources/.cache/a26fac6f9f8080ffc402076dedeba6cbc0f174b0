@@ -1,4 +1,4 @@
-// 1.20.1	2023-06-23T01:55:21.0080178	Item Models: naturesend
+// 1.20.1	2023-06-25T00:43:04.6744397	Item Models: naturesend
 da8fe7f82e824998cc7c4479cfc6fdc7d0606dab assets/naturesend/models/item/chlorite_shale.json
 71fbeecfae76697e1dc7e04e7221c117a9226137 assets/naturesend/models/item/eroded_shale.json
 d2ff4672e68cb3067f0dc6bef0644da2b413eec7 assets/naturesend/models/item/evergreen_boat.json
@@ -23,6 +23,17 @@ bc6c2dba369f504dc5a6bb890c3f671adeb3b62b assets/naturesend/models/item/purple_sh
 b60956f7f623c18865e2cf7705c0adca3020647f assets/naturesend/models/item/red_shale.json
 8eda08281aaf18301298683fa510b770bba85d35 assets/naturesend/models/item/salt.json
 fed1987e7a34a9aad6fbaea9cb4e27c3553b6439 assets/naturesend/models/item/salt_block.json
+356c5cba18ccb468bd5c3187392917e663c30e1c assets/naturesend/models/item/shadow_button.json
+b7a4b87eea351e13e3bd11676c776a9dbd0c8131 assets/naturesend/models/item/shadow_door.json
+70c4ab69453399d52acdc1570b1d38c5bbc182f7 assets/naturesend/models/item/shadow_fence.json
+90b27f98c420b0c430e2b91edbfbe511f3043f1f assets/naturesend/models/item/shadow_fence_gate.json
+80ef10314330868339f08797a79c034ca27c228f assets/naturesend/models/item/shadow_log.json
+24c6ccebc3de26e0e5ac17129341dd2d0abb9672 assets/naturesend/models/item/shadow_planks.json
+5071c34aa8033aac3038cf66b94149cf7142d2ff assets/naturesend/models/item/shadow_pressure_plate.json
+a0a9cd1460b832aa2ee2483d0133a2988985813e assets/naturesend/models/item/shadow_slab.json
+f96a4a9f529448671179608698195fe3abc177ed assets/naturesend/models/item/shadow_stairs.json
+66342044ccf1af849b63e2f5e5594cb26dfbca11 assets/naturesend/models/item/shadow_trapdoor.json
+a56105951a01cd12a114db69863ae3ce46f5ef92 assets/naturesend/models/item/shadow_wood.json
 b94c2d4c01872a9ceda04e84bd1e4f9c836f85ce assets/naturesend/models/item/shale.json
 09b707d8c224451699368ab0015077bf6f1043ce assets/naturesend/models/item/shale_bricks.json
 987b1701881c8da31d18b260083470ee29fca714 assets/naturesend/models/item/shale_brick_slab.json
@@ -31,6 +42,8 @@ b541f7dd01556d08ddc1f52ddd6d864ecc9955b8 assets/naturesend/models/item/shale_bri
 d5092a360a8e769ab1c53a223c1e17699e67efe0 assets/naturesend/models/item/shale_plate.json
 e4f40c93a74b21497f15f199cd93ae4ecfbd1bfd assets/naturesend/models/item/stripped_evergreen_log.json
 b987ca3946f4141334b1c908044e7cf90f61660a assets/naturesend/models/item/stripped_evergreen_wood.json
+d67f1c21cf95aa49c7dd4106648f80be5445d120 assets/naturesend/models/item/stripped_shadow_log.json
+04b5908e9da780e7196b3d140c83b56518c29352 assets/naturesend/models/item/stripped_shadow_wood.json
 b3847dbf4353d139124556047047f28c03c94702 assets/naturesend/models/item/stripped_willow_log.json
 c262bebcdd847a24751ab83e1123cfc191f1f001 assets/naturesend/models/item/stripped_willow_wood.json
 288e3c39a97c90d81eed8058d62fea19a14f8984 assets/naturesend/models/item/willow_boat.json

@@ -37,6 +37,20 @@ public class NaturesCreativeTab {
             event.accept(NaturesItems.EVERGREEN_BOAT);
             event.accept(NaturesItems.EVERGREEN_CHEST_BOAT);
 
+            event.accept(NaturesBlocks.SHADOW_LOG);
+            event.accept(NaturesBlocks.SHADOW_WOOD);
+            event.accept(NaturesBlocks.STRIPPED_SHADOW_LOG);
+            event.accept(NaturesBlocks.STRIPPED_SHADOW_WOOD);
+            event.accept(NaturesBlocks.SHADOW_PLANKS);
+            event.accept(NaturesBlocks.SHADOW_STAIRS);
+            event.accept(NaturesBlocks.SHADOW_SLAB);
+            event.accept(NaturesBlocks.SHADOW_FENCE);
+            event.accept(NaturesBlocks.SHADOW_FENCE_GATE);
+            event.accept(NaturesBlocks.SHADOW_DOOR);
+            event.accept(NaturesBlocks.SHADOW_TRAPDOOR);
+            event.accept(NaturesBlocks.SHADOW_PRESSURE_PLATE);
+            event.accept(NaturesBlocks.SHADOW_BUTTON);
+
             event.accept(NaturesBlocks.WILLOW_LOG);
             event.accept(NaturesBlocks.WILLOW_WOOD);
             event.accept(NaturesBlocks.STRIPPED_WILLOW_LOG);
