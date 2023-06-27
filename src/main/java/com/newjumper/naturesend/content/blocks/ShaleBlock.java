@@ -9,7 +9,6 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -65,24 +64,14 @@ public class ShaleBlock extends Block {
             return InteractionResult.sidedSuccess(pLevel.isClientSide());
         } else if(!pState.is(NaturesBlocks.CHLORITE_SHALE.get()) && !pState.is(NaturesBlocks.SHALE.get())) {
             if(!pState.is(NaturesBlocks.FERROUS_SHALE.get()) && pPlayer.getMainHandItem().is(Tags.Items.RAW_MATERIALS_IRON)) {
-                if(!pPlayer.isCreative()) {
-                    ItemStack rawIron = pPlayer.getItemBySlot(EquipmentSlot.MAINHAND);
-                    rawIron.setCount(rawIron.getCount() - 1);
-                    pPlayer.setItemSlot(EquipmentSlot.MAINHAND, rawIron);
-                }
-
+                if(!pPlayer.isCreative()) pPlayer.getMainHandItem().shrink(1);
                 if(pState.is(NaturesBlocks.RED_SHALE.get())) pLevel.setBlock(pPos, NaturesBlocks.PURPLE_SHALE.get().defaultBlockState(), 3);
                 if(pState.is(NaturesBlocks.PURPLE_SHALE.get())) pLevel.setBlock(pPos, NaturesBlocks.FERROUS_SHALE.get().defaultBlockState(), 3);
                 return InteractionResult.sidedSuccess(pLevel.isClientSide());
             }
 
             if(pState.is(NaturesBlocks.FERROUS_SHALE.get()) && pPlayer.getMainHandItem().is(NaturesTags.Items.SALTS)) {
-                if(!pPlayer.isCreative()) {
-                    ItemStack salt = pPlayer.getItemBySlot(EquipmentSlot.MAINHAND);
-                    salt.setCount(salt.getCount() - 1);
-                    pPlayer.setItemSlot(EquipmentSlot.MAINHAND, salt);
-                }
-
+                if(!pPlayer.isCreative()) pPlayer.getMainHandItem().shrink(1);
                 pLevel.setBlock(pPos, NaturesBlocks.CHLORITE_SHALE.get().defaultBlockState(), 3);
                 return InteractionResult.sidedSuccess(pLevel.isClientSide());
             }
