@@ -37,6 +37,7 @@ public class NaturesBlockStateProvider extends BlockStateProvider {
         signBlock(NaturesBlocks.EVERGREEN_SIGN.get(), NaturesBlocks.EVERGREEN_WALL_SIGN.get(), blockLoc(NaturesBlocks.EVERGREEN_PLANKS));
         simpleBlock(NaturesBlocks.EVERGREEN_HANGING_SIGN.get(), models().sign(NaturesBlocks.EVERGREEN_HANGING_SIGN.getId().getPath(), blockLoc(NaturesBlocks.STRIPPED_EVERGREEN_LOG)));
         simpleBlock(NaturesBlocks.EVERGREEN_WALL_HANGING_SIGN.get(), models().sign(NaturesBlocks.EVERGREEN_HANGING_SIGN.getId().getPath(), blockLoc(NaturesBlocks.STRIPPED_EVERGREEN_LOG)));
+        simpleBlock(NaturesBlocks.POTTED_EVERGREEN_SAPLING.get(), models().withExistingParent(NaturesBlocks.POTTED_EVERGREEN_SAPLING.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(NaturesBlocks.EVERGREEN_SAPLING)).renderType("cutout"));
 
         logBlock(NaturesBlocks.SHADOW_LOG.get());
         axisBlock(NaturesBlocks.SHADOW_WOOD.get(), blockLoc(NaturesBlocks.SHADOW_LOG), blockLoc(NaturesBlocks.SHADOW_LOG));
@@ -73,6 +74,7 @@ public class NaturesBlockStateProvider extends BlockStateProvider {
         signBlock(NaturesBlocks.WILLOW_SIGN.get(), NaturesBlocks.WILLOW_WALL_SIGN.get(), blockLoc(NaturesBlocks.WILLOW_PLANKS));
         simpleBlock(NaturesBlocks.WILLOW_HANGING_SIGN.get(), models().sign(NaturesBlocks.WILLOW_HANGING_SIGN.getId().getPath(), blockLoc(NaturesBlocks.STRIPPED_WILLOW_LOG)));
         simpleBlock(NaturesBlocks.WILLOW_WALL_HANGING_SIGN.get(), models().sign(NaturesBlocks.WILLOW_HANGING_SIGN.getId().getPath(), blockLoc(NaturesBlocks.STRIPPED_WILLOW_LOG)));
+        simpleBlock(NaturesBlocks.POTTED_WILLOW_SAPLING.get(), models().withExistingParent(NaturesBlocks.POTTED_WILLOW_SAPLING.getId().getPath(), mcLoc("flower_pot_cross")).texture("plant", blockLoc(NaturesBlocks.WILLOW_SAPLING)).renderType("cutout"));
 
         simpleBlock(NaturesBlocks.SHALE.get());
         simpleBlock(NaturesBlocks.ERODED_SHALE.get());

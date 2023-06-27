@@ -69,6 +69,7 @@ public class NaturesBlocks {
             return new NaturesHangingSignBlockEntity(pPos, pState);
         }
     });
+    public static final RegistryObject<Block> POTTED_EVERGREEN_SAPLING = BLOCKS.register("potted_evergreen_sapling", () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, EVERGREEN_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
 
     private static final BlockSetType SHADOW_SET = BlockSetType.register(new BlockSetType("shadow"));
     public static final WoodType SHADOW = WoodType.register(new WoodType("shadow", SHADOW_SET));
@@ -151,6 +152,7 @@ public class NaturesBlocks {
             return new NaturesHangingSignBlockEntity(pPos, pState);
         }
     });
+    public static final RegistryObject<Block> POTTED_WILLOW_SAPLING = BLOCKS.register("potted_willow_sapling", () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, WILLOW_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
 
     public static final RegistryObject<Block> SHALE = register("shale", () -> new ShaleBlock(BlockBehaviour.Properties.of().strength(4, 7).mapColor(MapColor.COLOR_GRAY).randomTicks().requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> ERODED_SHALE = register("eroded_shale", () -> new Block(BlockBehaviour.Properties.of().strength(2, 7).mapColor(MapColor.STONE).requiresCorrectToolForDrops()));

@@ -17,14 +17,15 @@ import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
-import net.minecraftforge.api.distmarker.Dist;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(NaturesEnd.MOD_ID)
@@ -42,7 +43,29 @@ public class NaturesEnd {
 
         MinecraftForge.EVENT_BUS.register(this);
         eventBus.addListener(NaturesCreativeTab::buildCreativeTab);
+        eventBus.addListener(this::commonSetup);
+        eventBus.addListener(this::clientSetup);
         eventBus.addListener(this::generateData);
+    }
+
+    private void commonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NaturesBlocks.EVERGREEN_SAPLING.getId(), NaturesBlocks.POTTED_EVERGREEN_SAPLING);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NaturesBlocks.WILLOW_SAPLING.getId(), NaturesBlocks.POTTED_WILLOW_SAPLING);
+        });
+    }
+
+    private void clientSetup(FMLClientSetupEvent event) {
+        event.enqueueWork(() -> {
+            Sheets.addWoodType(NaturesBlocks.EVERGREEN);
+            Sheets.addWoodType(NaturesBlocks.SHADOW);
+            Sheets.addWoodType(NaturesBlocks.WILLOW);
+        });
+
+        BlockEntityRenderers.register(NaturesBlockEntities.NATURES_SIGNS.get(), SignRenderer::new);
+        BlockEntityRenderers.register(NaturesBlockEntities.NATURES_HANGING_SIGNS.get(), HangingSignRenderer::new);
+        EntityRenderers.register(NaturesEntities.NATURES_BOAT.get(), (context) -> new NaturesBoatRenderer(context, false));
+        EntityRenderers.register(NaturesEntities.NATURES_CHEST_BOAT.get(), (context) -> new NaturesBoatRenderer(context, true));
     }
 
     private void generateData(GatherDataEvent event) {
@@ -66,22 +89,5 @@ public class NaturesEnd {
         generator.addProvider(event.includeServer(), new NaturesLootTableProvider(packOutput));
 
         generator.addProvider(event.includeServer(), new NaturesWorldGeneration(packOutput, event.getLookupProvider()));
-    }
-
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class NaturesEndClient {
-        @SubscribeEvent
-        public static void clientSetup(final FMLClientSetupEvent event) {
-            event.enqueueWork(() -> {
-                Sheets.addWoodType(NaturesBlocks.EVERGREEN);
-                Sheets.addWoodType(NaturesBlocks.SHADOW);
-                Sheets.addWoodType(NaturesBlocks.WILLOW);
-            });
-
-            BlockEntityRenderers.register(NaturesBlockEntities.NATURES_SIGNS.get(), SignRenderer::new);
-            BlockEntityRenderers.register(NaturesBlockEntities.NATURES_HANGING_SIGNS.get(), HangingSignRenderer::new);
-            EntityRenderers.register(NaturesEntities.NATURES_BOAT.get(), (context) -> new NaturesBoatRenderer(context, false));
-            EntityRenderers.register(NaturesEntities.NATURES_CHEST_BOAT.get(), (context) -> new NaturesBoatRenderer(context, true));
-        }
     }
 }

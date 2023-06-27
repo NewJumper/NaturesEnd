@@ -42,6 +42,7 @@ public class NaturesLootTables extends BlockLootSubProvider {
         dropSelf(NaturesBlocks.EVERGREEN_SAPLING.get());
         dropSelf(NaturesBlocks.EVERGREEN_SIGN.get());
         dropSelf(NaturesBlocks.EVERGREEN_HANGING_SIGN.get());
+        dropPottedContents(NaturesBlocks.POTTED_EVERGREEN_SAPLING.get());
 
         dropSelf(NaturesBlocks.SHADOW_LOG.get());
         dropSelf(NaturesBlocks.SHADOW_WOOD.get());
@@ -76,6 +77,7 @@ public class NaturesLootTables extends BlockLootSubProvider {
         dropSelf(NaturesBlocks.WILLOW_SAPLING.get());
         dropSelf(NaturesBlocks.WILLOW_SIGN.get());
         dropSelf(NaturesBlocks.WILLOW_HANGING_SIGN.get());
+        dropPottedContents(NaturesBlocks.POTTED_WILLOW_SAPLING.get());
 
         dropSelf(NaturesBlocks.SHALE.get());
         dropSelf(NaturesBlocks.ERODED_SHALE.get());
