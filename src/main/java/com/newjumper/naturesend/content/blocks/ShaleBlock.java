@@ -11,6 +11,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -55,7 +56,7 @@ public class ShaleBlock extends Block {
 
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        if(pState.is(NaturesBlocks.SHALE.get()) && pPlayer.getMainHandItem().is(ItemTags.PICKAXES)) {
+        if(pState.is(NaturesBlocks.SHALE.get()) && pPlayer.getMainHandItem().getItem() instanceof PickaxeItem) {
             int[] drops = { 1, 1, 1, 2, 2, 3 };
             popResource(pLevel, pPos, new ItemStack(NaturesItems.SHALE_PLATE.get(), drops[(int) (Math.random() * 6)]));
             pPlayer.getMainHandItem().hurtAndBreak(1, pPlayer, player -> player.broadcastBreakEvent(pHand));
