@@ -56,6 +56,8 @@ public class NaturesLootTables extends BlockLootSubProvider {
         dropSelf(NaturesBlocks.SHADOW_TRAPDOOR.get());
         dropSelf(NaturesBlocks.SHADOW_PRESSURE_PLATE.get());
         dropSelf(NaturesBlocks.SHADOW_BUTTON.get());
+        dropSelf(NaturesBlocks.SHADOW_SIGN.get());
+        dropSelf(NaturesBlocks.SHADOW_HANGING_SIGN.get());
 
         dropSelf(NaturesBlocks.WILLOW_LOG.get());
         dropSelf(NaturesBlocks.WILLOW_WOOD.get());

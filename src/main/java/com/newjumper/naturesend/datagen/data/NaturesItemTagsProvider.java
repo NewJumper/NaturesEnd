@@ -44,8 +44,8 @@ public class NaturesItemTagsProvider extends ItemTagsProvider {
         copy(NaturesTags.Blocks.SHADOW_LOGS, NaturesTags.Items.SHADOW_LOGS);
         copy(NaturesTags.Blocks.WILLOW_LOGS, NaturesTags.Items.WILLOW_LOGS);
 
-        tag(ItemTags.BOATS).add(NaturesItems.EVERGREEN_BOAT.get(), NaturesItems.WILLOW_BOAT.get());
-        tag(ItemTags.CHEST_BOATS).add(NaturesItems.EVERGREEN_CHEST_BOAT.get(), NaturesItems.WILLOW_CHEST_BOAT.get());
+        tag(ItemTags.BOATS).add(NaturesItems.EVERGREEN_BOAT.get(), NaturesItems.SHADOW_BOAT.get(), NaturesItems.WILLOW_BOAT.get());
+        tag(ItemTags.CHEST_BOATS).add(NaturesItems.EVERGREEN_CHEST_BOAT.get(), NaturesItems.SHADOW_CHEST_BOAT.get(), NaturesItems.WILLOW_CHEST_BOAT.get());
 
         tag(NaturesTags.Items.SALTS).add(NaturesItems.SALT.get());
     }

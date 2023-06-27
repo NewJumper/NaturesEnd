@@ -85,6 +85,30 @@ public class NaturesBlocks {
     public static final RegistryObject<TrapDoorBlock> SHADOW_TRAPDOOR = register("shadow_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_LIGHT_GRAY), SHADOW_SET));
     public static final RegistryObject<PressurePlateBlock> SHADOW_PRESSURE_PLATE = register("shadow_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.COLOR_LIGHT_GRAY), SHADOW_SET));
     public static final RegistryObject<ButtonBlock> SHADOW_BUTTON = register("shadow_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), SHADOW_SET, 30, true));
+    public static final RegistryObject<StandingSignBlock> SHADOW_SIGN = BLOCKS.register("shadow_sign", () -> new StandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(MapColor.COLOR_LIGHT_GRAY), SHADOW) {
+        @Override
+        public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+            return new NaturesSignBlockEntity(pPos, pState);
+        }
+    });
+    public static final RegistryObject<WallSignBlock> SHADOW_WALL_SIGN = BLOCKS.register("shadow_wall_sign", () -> new WallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).lootFrom(SHADOW_SIGN).mapColor(MapColor.COLOR_LIGHT_GRAY), SHADOW) {
+        @Override
+        public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+            return new NaturesSignBlockEntity(pPos, pState);
+        }
+    });
+    public static final RegistryObject<CeilingHangingSignBlock> SHADOW_HANGING_SIGN = BLOCKS.register("shadow_hanging_sign", () -> new CeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(MapColor.COLOR_LIGHT_GRAY), SHADOW) {
+        @Override
+        public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+            return new NaturesHangingSignBlockEntity(pPos, pState);
+        }
+    });
+    public static final RegistryObject<WallHangingSignBlock> SHADOW_WALL_HANGING_SIGN = BLOCKS.register("shadow_wall_hanging_sign", () -> new WallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).lootFrom(SHADOW_HANGING_SIGN).mapColor(MapColor.COLOR_LIGHT_GRAY), SHADOW) {
+        @Override
+        public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+            return new NaturesHangingSignBlockEntity(pPos, pState);
+        }
+    });
 
     private static final BlockSetType WILLOW_SET = BlockSetType.register(new BlockSetType("willow"));
     public static final WoodType WILLOW = WoodType.register(new WoodType("willow", WILLOW_SET));

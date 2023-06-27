@@ -51,6 +51,9 @@ public class NaturesBlockStateProvider extends BlockStateProvider {
         trapdoorBlock(NaturesBlocks.SHADOW_TRAPDOOR.get(), blockLoc(NaturesBlocks.SHADOW_TRAPDOOR), true);
         pressurePlateBlock(NaturesBlocks.SHADOW_PRESSURE_PLATE.get(), blockLoc(NaturesBlocks.SHADOW_PLANKS));
         buttonBlock(NaturesBlocks.SHADOW_BUTTON, blockLoc(NaturesBlocks.SHADOW_PLANKS));
+        signBlock(NaturesBlocks.SHADOW_SIGN.get(), NaturesBlocks.SHADOW_WALL_SIGN.get(), blockLoc(NaturesBlocks.SHADOW_PLANKS));
+        simpleBlock(NaturesBlocks.SHADOW_HANGING_SIGN.get(), models().sign(NaturesBlocks.SHADOW_HANGING_SIGN.getId().getPath(), blockLoc(NaturesBlocks.STRIPPED_SHADOW_LOG)));
+        simpleBlock(NaturesBlocks.SHADOW_WALL_HANGING_SIGN.get(), models().sign(NaturesBlocks.SHADOW_HANGING_SIGN.getId().getPath(), blockLoc(NaturesBlocks.STRIPPED_SHADOW_LOG)));
 
         logBlock(NaturesBlocks.WILLOW_LOG.get());
         axisBlock(NaturesBlocks.WILLOW_WOOD.get(), blockLoc(NaturesBlocks.WILLOW_LOG), blockLoc(NaturesBlocks.WILLOW_LOG));

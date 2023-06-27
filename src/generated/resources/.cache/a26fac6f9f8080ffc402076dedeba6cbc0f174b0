@@ -1,4 +1,4 @@
-// 1.20.1	2023-06-25T00:43:04.6744397	Item Models: naturesend
+// 1.20.1	2023-06-26T22:44:46.3438504	Item Models: naturesend
 da8fe7f82e824998cc7c4479cfc6fdc7d0606dab assets/naturesend/models/item/chlorite_shale.json
 71fbeecfae76697e1dc7e04e7221c117a9226137 assets/naturesend/models/item/eroded_shale.json
 d2ff4672e68cb3067f0dc6bef0644da2b413eec7 assets/naturesend/models/item/evergreen_boat.json
@@ -23,13 +23,17 @@ bc6c2dba369f504dc5a6bb890c3f671adeb3b62b assets/naturesend/models/item/purple_sh
 b60956f7f623c18865e2cf7705c0adca3020647f assets/naturesend/models/item/red_shale.json
 8eda08281aaf18301298683fa510b770bba85d35 assets/naturesend/models/item/salt.json
 fed1987e7a34a9aad6fbaea9cb4e27c3553b6439 assets/naturesend/models/item/salt_block.json
+c691e78f38d30098b267125d55c7ccacde85732a assets/naturesend/models/item/shadow_boat.json
 356c5cba18ccb468bd5c3187392917e663c30e1c assets/naturesend/models/item/shadow_button.json
+895d45023937e3b2a9d0cbb0456e61814ae28cbe assets/naturesend/models/item/shadow_chest_boat.json
 b7a4b87eea351e13e3bd11676c776a9dbd0c8131 assets/naturesend/models/item/shadow_door.json
 70c4ab69453399d52acdc1570b1d38c5bbc182f7 assets/naturesend/models/item/shadow_fence.json
 90b27f98c420b0c430e2b91edbfbe511f3043f1f assets/naturesend/models/item/shadow_fence_gate.json
+c196d76c2da1ee9e011ae076cd0174362de58548 assets/naturesend/models/item/shadow_hanging_sign.json
 80ef10314330868339f08797a79c034ca27c228f assets/naturesend/models/item/shadow_log.json
 24c6ccebc3de26e0e5ac17129341dd2d0abb9672 assets/naturesend/models/item/shadow_planks.json
 5071c34aa8033aac3038cf66b94149cf7142d2ff assets/naturesend/models/item/shadow_pressure_plate.json
+614693f9c1290286a82d77d1c2ed823fa2dba925 assets/naturesend/models/item/shadow_sign.json
 a0a9cd1460b832aa2ee2483d0133a2988985813e assets/naturesend/models/item/shadow_slab.json
 f96a4a9f529448671179608698195fe3abc177ed assets/naturesend/models/item/shadow_stairs.json
 66342044ccf1af849b63e2f5e5594cb26dfbca11 assets/naturesend/models/item/shadow_trapdoor.json

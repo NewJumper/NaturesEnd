@@ -17,6 +17,11 @@ public class NaturesItems {
     public static final RegistryObject<Item> EVERGREEN_BOAT = ITEMS.register("evergreen_boat", () -> new NaturesBoatItem(false, new Item.Properties().stacksTo(1), NaturesBlocks.EVERGREEN));
     public static final RegistryObject<Item> EVERGREEN_CHEST_BOAT = ITEMS.register("evergreen_chest_boat", () -> new NaturesBoatItem(true, new Item.Properties().stacksTo(1), NaturesBlocks.EVERGREEN));
 
+    public static final RegistryObject<Item> SHADOW_SIGN = ITEMS.register("shadow_sign", () -> new SignItem(new Item.Properties().stacksTo(16), NaturesBlocks.SHADOW_SIGN.get(), NaturesBlocks.SHADOW_WALL_SIGN.get()));
+    public static final RegistryObject<Item> SHADOW_HANGING_SIGN = ITEMS.register("shadow_hanging_sign", () -> new HangingSignItem(NaturesBlocks.SHADOW_HANGING_SIGN.get(), NaturesBlocks.SHADOW_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> SHADOW_BOAT = ITEMS.register("shadow_boat", () -> new NaturesBoatItem(false, new Item.Properties().stacksTo(1), NaturesBlocks.SHADOW));
+    public static final RegistryObject<Item> SHADOW_CHEST_BOAT = ITEMS.register("shadow_chest_boat", () -> new NaturesBoatItem(true, new Item.Properties().stacksTo(1), NaturesBlocks.SHADOW));
+
     public static final RegistryObject<Item> WILLOW_SIGN = ITEMS.register("willow_sign", () -> new SignItem(new Item.Properties().stacksTo(16), NaturesBlocks.WILLOW_SIGN.get(), NaturesBlocks.WILLOW_WALL_SIGN.get()));
     public static final RegistryObject<Item> WILLOW_HANGING_SIGN = ITEMS.register("willow_hanging_sign", () -> new HangingSignItem(NaturesBlocks.WILLOW_HANGING_SIGN.get(), NaturesBlocks.WILLOW_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> WILLOW_BOAT = ITEMS.register("willow_boat", () -> new NaturesBoatItem(false, new Item.Properties().stacksTo(1), NaturesBlocks.WILLOW));

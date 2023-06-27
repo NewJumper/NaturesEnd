@@ -1,4 +1,4 @@
-// 1.20.1	2023-06-25T00:43:04.6821202	Loot Tables
+// 1.20.1	2023-06-26T22:44:46.3547146	Loot Tables
 fd220a9b6b25bb4a263a453a4f7bd5043c7e05ad data/naturesend/loot_tables/blocks/chlorite_shale.json
 3a9a51bdec1380625c352249b4f7534e87dd6763 data/naturesend/loot_tables/blocks/eroded_shale.json
 b087bbe66242232d329f29028fc942ccec8ecd23 data/naturesend/loot_tables/blocks/evergreen_button.json
@@ -24,9 +24,11 @@ b75612b0e33202e0f963d8abdfbd5c59b5700430 data/naturesend/loot_tables/blocks/shad
 f5a304e296cf09df09d0de6904a600cf75e1f8e7 data/naturesend/loot_tables/blocks/shadow_door.json
 844205244fac05ecf8c15675c491d539ac046190 data/naturesend/loot_tables/blocks/shadow_fence.json
 a90d65ae36643497552f77a9db74ebbda5c14264 data/naturesend/loot_tables/blocks/shadow_fence_gate.json
+29b7233833b62bacaceac4cd2cf3e9e1a9d7a185 data/naturesend/loot_tables/blocks/shadow_hanging_sign.json
 62eda3b0d11d58ea982576875b2cac45290da4d4 data/naturesend/loot_tables/blocks/shadow_log.json
 3b895ffa0718c388aac32ac27e61b14b15f6ea7f data/naturesend/loot_tables/blocks/shadow_planks.json
 044b26fa64e4a04a57218c1d15b8f8ed87189d37 data/naturesend/loot_tables/blocks/shadow_pressure_plate.json
+c02645bb0f5a1df5b252e11a508fb68e6dc9d588 data/naturesend/loot_tables/blocks/shadow_sign.json
 9519fb4a8489dbfe3f8fde12749314bcf4ed8c8a data/naturesend/loot_tables/blocks/shadow_slab.json
 9a94f62af49122d8e9568d9387d40358e5de617c data/naturesend/loot_tables/blocks/shadow_stairs.json
 1d59a244427f3c41801a8a4d4489e46aecc77ad7 data/naturesend/loot_tables/blocks/shadow_trapdoor.json

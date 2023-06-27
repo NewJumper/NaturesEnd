@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "naturesend:shadow_planks"
+    }
+  ],
+  "result": {
+    "item": "naturesend:shadow_button"
+  }
+}

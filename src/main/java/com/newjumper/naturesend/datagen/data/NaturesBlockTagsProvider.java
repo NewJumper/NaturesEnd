@@ -39,10 +39,10 @@ public class NaturesBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.WOODEN_BUTTONS).add(NaturesBlocks.EVERGREEN_BUTTON.get(), NaturesBlocks.SHADOW_BUTTON.get(), NaturesBlocks.WILLOW_BUTTON.get());
         tag(BlockTags.LEAVES).add(NaturesBlocks.EVERGREEN_LEAVES.get(), NaturesBlocks.WILLOW_LEAVES.get());
         tag(BlockTags.SAPLINGS).add(NaturesBlocks.EVERGREEN_SAPLING.get(), NaturesBlocks.WILLOW_SAPLING.get());
-        tag(BlockTags.STANDING_SIGNS).add(NaturesBlocks.EVERGREEN_SIGN.get(), NaturesBlocks.WILLOW_SIGN.get());
-        tag(BlockTags.WALL_SIGNS).add(NaturesBlocks.EVERGREEN_WALL_SIGN.get(), NaturesBlocks.WILLOW_WALL_SIGN.get());
-        tag(BlockTags.CEILING_HANGING_SIGNS).add(NaturesBlocks.EVERGREEN_HANGING_SIGN.get(), NaturesBlocks.WILLOW_HANGING_SIGN.get());
-        tag(BlockTags.WALL_HANGING_SIGNS).add(NaturesBlocks.EVERGREEN_WALL_HANGING_SIGN.get(), NaturesBlocks.WILLOW_WALL_HANGING_SIGN.get());
+        tag(BlockTags.STANDING_SIGNS).add(NaturesBlocks.EVERGREEN_SIGN.get(), NaturesBlocks.SHADOW_SIGN.get(), NaturesBlocks.WILLOW_SIGN.get());
+        tag(BlockTags.WALL_SIGNS).add(NaturesBlocks.EVERGREEN_WALL_SIGN.get(), NaturesBlocks.SHADOW_WALL_SIGN.get(), NaturesBlocks.WILLOW_WALL_SIGN.get());
+        tag(BlockTags.CEILING_HANGING_SIGNS).add(NaturesBlocks.EVERGREEN_HANGING_SIGN.get(), NaturesBlocks.SHADOW_HANGING_SIGN.get(), NaturesBlocks.WILLOW_HANGING_SIGN.get());
+        tag(BlockTags.WALL_HANGING_SIGNS).add(NaturesBlocks.EVERGREEN_WALL_HANGING_SIGN.get(), NaturesBlocks.SHADOW_WALL_HANGING_SIGN.get(), NaturesBlocks.WILLOW_WALL_HANGING_SIGN.get());
         tag(BlockTags.STAIRS).add(NaturesBlocks.SHALE_BRICK_STAIRS.get());
         tag(BlockTags.SLABS).add(NaturesBlocks.SHALE_BRICK_SLAB.get());
         tag(BlockTags.WALLS).add(NaturesBlocks.SHALE_BRICK_WALL.get());

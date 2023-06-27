@@ -85,6 +85,10 @@ public class NaturesItemModelProvider extends ItemModelProvider {
         itemModel(NaturesItems.EVERGREEN_HANGING_SIGN, GENERATED);
         itemModel(NaturesItems.EVERGREEN_BOAT, GENERATED);
         itemModel(NaturesItems.EVERGREEN_CHEST_BOAT, GENERATED);
+        itemModel(NaturesItems.SHADOW_SIGN, GENERATED);
+        itemModel(NaturesItems.SHADOW_HANGING_SIGN, GENERATED);
+        itemModel(NaturesItems.SHADOW_BOAT, GENERATED);
+        itemModel(NaturesItems.SHADOW_CHEST_BOAT, GENERATED);
         itemModel(NaturesItems.WILLOW_SIGN, GENERATED);
         itemModel(NaturesItems.WILLOW_HANGING_SIGN, GENERATED);
         itemModel(NaturesItems.WILLOW_BOAT, GENERATED);
