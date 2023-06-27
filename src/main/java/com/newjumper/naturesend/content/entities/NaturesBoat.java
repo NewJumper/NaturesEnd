@@ -1,6 +1,5 @@
 package com.newjumper.naturesend.content.entities;
 
-import com.newjumper.naturesend.content.NaturesBlocks;
 import com.newjumper.naturesend.content.NaturesEntities;
 import com.newjumper.naturesend.content.NaturesItems;
 import net.minecraft.nbt.CompoundTag;
@@ -38,7 +37,11 @@ public class NaturesBoat extends Boat {
 
     @Override
     public Item getDropItem() {
-        return this.getWoodType().equals(NaturesBlocks.EVERGREEN.name()) ? NaturesItems.EVERGREEN_BOAT.get() : NaturesItems.WILLOW_BOAT.get();
+        return switch(getWoodType()) {
+            default -> NaturesItems.EVERGREEN_BOAT.get();
+            case "shadow" -> NaturesItems.SHADOW_BOAT.get();
+            case "willow" -> NaturesItems.WILLOW_BOAT.get();
+        };
     }
 
     @Override

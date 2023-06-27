@@ -25,8 +25,9 @@ public class NaturesBoatRenderer extends BoatRenderer {
 
     public NaturesBoatRenderer(EntityRendererProvider.Context pContext, boolean pChestBoat) {
         super(pContext, pChestBoat);
-        this.BOAT_RESOURCES = ImmutableMap.of(NaturesBlocks.WILLOW.name(), Pair.of(new ResourceLocation(NaturesEnd.MOD_ID, "textures/entity/" + (pChestBoat ? "chest_boat" : "boat") + "/" + NaturesBlocks.WILLOW.name() + ".png"), this.createBoatModel(pContext, pChestBoat)),
-                NaturesBlocks.EVERGREEN.name(), Pair.of(new ResourceLocation(NaturesEnd.MOD_ID, "textures/entity/" + (pChestBoat ? "chest_boat" : "boat") + "/" + NaturesBlocks.EVERGREEN.name() + ".png"), this.createBoatModel(pContext, pChestBoat)));
+        this.BOAT_RESOURCES = ImmutableMap.of(NaturesBlocks.EVERGREEN.name(), Pair.of(new ResourceLocation(NaturesEnd.MOD_ID, "textures/entity/" + (pChestBoat ? "chest_boat" : "boat") + "/" + NaturesBlocks.EVERGREEN.name() + ".png"), this.createBoatModel(pContext, pChestBoat)),
+                NaturesBlocks.SHADOW.name(), Pair.of(new ResourceLocation(NaturesEnd.MOD_ID, "textures/entity/" + (pChestBoat ? "chest_boat" : "boat") + "/" + NaturesBlocks.SHADOW.name() + ".png"), this.createBoatModel(pContext, pChestBoat)),
+                NaturesBlocks.WILLOW.name(), Pair.of(new ResourceLocation(NaturesEnd.MOD_ID, "textures/entity/" + (pChestBoat ? "chest_boat" : "boat") + "/" + NaturesBlocks.WILLOW.name() + ".png"), this.createBoatModel(pContext, pChestBoat)));
         this.HAS_CHEST = pChestBoat;
     }
 

@@ -50,6 +50,10 @@ public class NaturesCreativeTab {
             event.accept(NaturesBlocks.SHADOW_TRAPDOOR);
             event.accept(NaturesBlocks.SHADOW_PRESSURE_PLATE);
             event.accept(NaturesBlocks.SHADOW_BUTTON);
+            event.accept(NaturesItems.SHADOW_SIGN);
+            event.accept(NaturesItems.SHADOW_HANGING_SIGN);
+            event.accept(NaturesItems.SHADOW_BOAT);
+            event.accept(NaturesItems.SHADOW_CHEST_BOAT);
 
             event.accept(NaturesBlocks.WILLOW_LOG);
             event.accept(NaturesBlocks.WILLOW_WOOD);
