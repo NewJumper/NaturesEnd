@@ -5,6 +5,8 @@ import com.newjumper.naturesend.content.NaturesBlocks;
 import com.newjumper.naturesend.content.NaturesItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.level.block.WallHangingSignBlock;
+import net.minecraft.world.level.block.WallSignBlock;
 import net.minecraftforge.common.data.LanguageProvider;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -29,8 +31,7 @@ public class ENLanguageProvider extends LanguageProvider {
     }
 
     private boolean filter(RegistryObject<?> entry) {
-        return entry == NaturesBlocks.WILLOW_WALL_SIGN ||
-                entry == NaturesBlocks.WILLOW_WALL_HANGING_SIGN;
+        return entry.get() instanceof WallSignBlock || entry.get() instanceof WallHangingSignBlock;
     }
 
     private String convertToName(String key) {

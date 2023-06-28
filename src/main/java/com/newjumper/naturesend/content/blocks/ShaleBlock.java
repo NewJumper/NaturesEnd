@@ -5,7 +5,6 @@ import com.newjumper.naturesend.content.NaturesItems;
 import com.newjumper.naturesend.util.NaturesTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
