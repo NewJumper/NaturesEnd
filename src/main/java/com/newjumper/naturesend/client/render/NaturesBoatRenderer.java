@@ -1,4 +1,4 @@
-package com.newjumper.naturesend.util.render;
+package com.newjumper.naturesend.client.render;
 
 import com.google.common.collect.ImmutableMap;
 import com.mojang.datafixers.util.Pair;

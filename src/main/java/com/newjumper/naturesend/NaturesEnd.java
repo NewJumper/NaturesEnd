@@ -1,5 +1,6 @@
 package com.newjumper.naturesend;
 
+import com.newjumper.naturesend.client.render.NaturesBoatRenderer;
 import com.newjumper.naturesend.content.NaturesBlockEntities;
 import com.newjumper.naturesend.content.NaturesBlocks;
 import com.newjumper.naturesend.content.NaturesEntities;
@@ -9,7 +10,6 @@ import com.newjumper.naturesend.datagen.assets.NaturesBlockStateProvider;
 import com.newjumper.naturesend.datagen.assets.NaturesItemModelProvider;
 import com.newjumper.naturesend.datagen.data.*;
 import com.newjumper.naturesend.util.NaturesCreativeTab;
-import com.newjumper.naturesend.util.render.NaturesBoatRenderer;
 import net.minecraft.client.model.BoatModel;
 import net.minecraft.client.model.ChestBoatModel;
 import net.minecraft.client.renderer.Sheets;
