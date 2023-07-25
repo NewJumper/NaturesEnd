@@ -10,6 +10,8 @@ import com.newjumper.naturesend.datagen.assets.NaturesItemModelProvider;
 import com.newjumper.naturesend.datagen.data.*;
 import com.newjumper.naturesend.util.NaturesCreativeTab;
 import com.newjumper.naturesend.util.render.NaturesBoatRenderer;
+import net.minecraft.client.model.BoatModel;
+import net.minecraft.client.model.ChestBoatModel;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
@@ -19,6 +21,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
@@ -46,6 +49,7 @@ public class NaturesEnd {
         eventBus.addListener(this::commonSetup);
         eventBus.addListener(this::clientSetup);
         eventBus.addListener(this::generateData);
+        eventBus.addListener(this::registerLayers);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
@@ -74,20 +78,22 @@ public class NaturesEnd {
         ExistingFileHelper fileHelper = event.getExistingFileHelper();
 
         // assets
+        generator.addProvider(event.includeClient(), new ENLanguageProvider(packOutput));
         generator.addProvider(event.includeClient(), new NaturesBlockStateProvider(packOutput, fileHelper));
         generator.addProvider(event.includeClient(), new NaturesItemModelProvider(packOutput, fileHelper));
 
-        generator.addProvider(event.includeClient(), new ENLanguageProvider(packOutput));
-
         // data
-        generator.addProvider(event.includeServer(), new NaturesRecipeProvider(packOutput));
-
         NaturesBlockTagsProvider blockTags = new NaturesBlockTagsProvider(packOutput, event.getLookupProvider(), fileHelper);
         generator.addProvider(event.includeServer(), blockTags);
         generator.addProvider(event.includeServer(), new NaturesItemTagsProvider(packOutput, event.getLookupProvider(), blockTags, fileHelper));
 
         generator.addProvider(event.includeServer(), new NaturesLootTableProvider(packOutput));
-
+        generator.addProvider(event.includeServer(), new NaturesRecipeProvider(packOutput));
         generator.addProvider(event.includeServer(), new NaturesWorldGeneration(packOutput, event.getLookupProvider()));
+    }
+
+    private void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        event.registerLayerDefinition(NaturesBoatRenderer.NATURES_BOAT_MODEL, BoatModel::createBodyModel);
+        event.registerLayerDefinition(NaturesBoatRenderer.NATURES_CHEST_BOAT_MODEL, ChestBoatModel::createBodyModel);
     }
 }
