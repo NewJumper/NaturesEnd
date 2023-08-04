@@ -73,6 +73,7 @@ public class NaturesEnd {
         NaturesBlockTagsProvider blockTags = new NaturesBlockTagsProvider(packOutput, event.getLookupProvider(), fileHelper);
         generator.addProvider(event.includeServer(), blockTags);
         generator.addProvider(event.includeServer(), new NaturesItemTagsProvider(packOutput, event.getLookupProvider(), blockTags, fileHelper));
+        generator.addProvider(event.includeServer(), new NaturesBiomeTagsProvider(packOutput, event.getLookupProvider(), fileHelper));
 
         generator.addProvider(event.includeServer(), new NaturesLootTableProvider(packOutput));
         generator.addProvider(event.includeServer(), new NaturesRecipeProvider(packOutput));

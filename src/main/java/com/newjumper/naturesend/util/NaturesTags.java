@@ -1,11 +1,13 @@
 package com.newjumper.naturesend.util;
 
 import com.newjumper.naturesend.NaturesEnd;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
 
 public class NaturesTags {
@@ -28,6 +30,14 @@ public class NaturesTags {
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(NaturesEnd.MOD_ID, name));
+        }
+    }
+
+    public static class Biomes {
+        public static final TagKey<Biome> HAS_VILLAGE_JUNGLE = tag("has_structure/village_jungle");
+
+        private static TagKey<Biome> tag(String name) {
+            return TagKey.create(Registries.BIOME, new ResourceLocation(NaturesEnd.MOD_ID, name));
         }
     }
 }
