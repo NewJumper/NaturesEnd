@@ -34,10 +34,6 @@ public class NaturesTags {
     }
 
     public static class Biomes {
-        public static final TagKey<Biome> HAS_VILLAGE_JUNGLE = tag("has_structure/village_jungle");
-
-        private static TagKey<Biome> tag(String name) {
-            return TagKey.create(Registries.BIOME, new ResourceLocation(NaturesEnd.MOD_ID, name));
-        }
+        public static final TagKey<Biome> HAS_VILLAGE_JUNGLE = TagKey.create(Registries.BIOME, new ResourceLocation(NaturesEnd.MOD_ID, "has_structure/village_jungle"));
     }
 }

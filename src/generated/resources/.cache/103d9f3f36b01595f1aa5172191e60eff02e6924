@@ -1,9 +1,12 @@
-// 1.20.1	2023-08-03T19:19:08.0930267	Registries
+// 1.20.1	2023-08-03T19:23:45.4966134	Registries
 a0e35cdf7ee8fd920b0e6d2c596f0b5ab0e20aa7 data/naturesend/worldgen/configured_feature/tree_evergreen.json
 1c2f49285c9dee1d747370052bafc1afd2654471 data/naturesend/worldgen/configured_feature/tree_evergreen_short.json
 3af870e2bdee28ef5d26faafda823a87a8a73c8c data/naturesend/worldgen/configured_feature/tree_willow.json
 700d11aa497bde0453a4706e5cd67aeddb6c61df data/naturesend/worldgen/placed_feature/evergreen.json
 3987d3d8b724e78ecec8b1a3e446ccbb694900c3 data/naturesend/worldgen/placed_feature/evergreen_short.json
 69221d41c320ee75b619b6935c0194678d8f1b7b data/naturesend/worldgen/placed_feature/willow.json
-fc8fb49d5a7de848bceae2bd83f18952d1b2bc4a data/naturesend/worldgen/structure/village_jungle.json
+5f236c84fb662f4023357354eb2ac22eb8c64445 data/naturesend/worldgen/structure/village_jungle.json
 af1b5f2104ed931bade20264fb45905b49a2f0e6 data/naturesend/worldgen/structure_set/villages.json
+1ed3eddad8eedc444292e6be85e46e33521734ad data/naturesend/worldgen/template_pool/village/jungle/streets.json
+4a21a06dd772a77417a5854e52b36606f641aea0 data/naturesend/worldgen/template_pool/village/jungle/terminators.json
+4f6c4b1eb69912c7eb532f01f55447dd614d05a2 data/naturesend/worldgen/template_pool/village/jungle/town_centers.json
