@@ -6,3 +6,5 @@
 </h1>
 
 A Minecraft mod that adds new biomes and secrets!
+
+New villages!
