@@ -74,9 +74,27 @@
     },
     {
       "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "naturesend:village/jungle/houses/jungle_farm_1",
+        "processors": "minecraft:mossify_20_percent",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "naturesend:village/jungle/houses/jungle_farm_2",
+        "processors": "minecraft:mossify_20_percent",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
         "element_type": "minecraft:empty_pool_element"
       },
-      "weight": 8
+      "weight": 6
     }
   ],
   "fallback": "naturesend:village/jungle/terminators"
