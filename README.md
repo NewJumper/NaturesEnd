@@ -8,3 +8,4 @@
 A Minecraft mod that adds new biomes and secrets!
 
 New villages!
+Jungle
