@@ -92,9 +92,36 @@
     },
     {
       "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "naturesend:village/jungle/houses/jungle_animal_pen_1",
+        "processors": "minecraft:mossify_20_percent",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "naturesend:village/jungle/houses/jungle_animal_pen_2",
+        "processors": "minecraft:mossify_20_percent",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "naturesend:village/jungle/houses/jungle_animal_pen_3",
+        "processors": "minecraft:mossify_20_percent",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
         "element_type": "minecraft:empty_pool_element"
       },
-      "weight": 6
+      "weight": 4
     }
   ],
   "fallback": "naturesend:village/jungle/terminators"
