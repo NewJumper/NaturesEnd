@@ -93,6 +93,42 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
+        "location": "naturesend:village/jungle/houses/jungle_fisher_cottage_1",
+        "processors": "minecraft:mossify_20_percent",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "naturesend:village/jungle/houses/jungle_library_1",
+        "processors": "minecraft:mossify_20_percent",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "naturesend:village/jungle/houses/jungle_temple_1",
+        "processors": "minecraft:mossify_20_percent",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "naturesend:village/jungle/houses/jungle_weaponsmith_1",
+        "processors": "minecraft:mossify_20_percent",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
         "location": "naturesend:village/jungle/houses/jungle_farm_1",
         "processors": "minecraft:mossify_20_percent",
         "projection": "rigid"
