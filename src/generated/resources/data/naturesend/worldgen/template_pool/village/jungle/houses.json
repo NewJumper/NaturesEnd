@@ -84,6 +84,15 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
+        "location": "naturesend:village/jungle/houses/jungle_armorer_house_1",
+        "processors": "minecraft:mossify_20_percent",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
         "location": "naturesend:village/jungle/houses/jungle_farm_1",
         "processors": "minecraft:mossify_20_percent",
         "projection": "rigid"
@@ -125,15 +134,6 @@
         "projection": "rigid"
       },
       "weight": 1
-    },
-    {
-      "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "naturesend:village/jungle/houses/jungle_armorer_house_1",
-        "processors": "minecraft:mossify_20_percent",
-        "projection": "rigid"
-      },
-      "weight": 10
     },
     {
       "element": {
