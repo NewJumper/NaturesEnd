@@ -93,6 +93,24 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
+        "location": "naturesend:village/jungle/houses/jungle_butcher_shop_1",
+        "processors": "minecraft:mossify_20_percent",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "naturesend:village/jungle/houses/jungle_cartographer_1",
+        "processors": "minecraft:mossify_20_percent",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
         "location": "naturesend:village/jungle/houses/jungle_fisher_cottage_1",
         "processors": "minecraft:mossify_20_percent",
         "projection": "rigid"
@@ -111,7 +129,34 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
+        "location": "naturesend:village/jungle/houses/jungle_masons_house_1",
+        "processors": "minecraft:mossify_20_percent",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "naturesend:village/jungle/houses/jungle_tannery_1",
+        "processors": "minecraft:mossify_20_percent",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
         "location": "naturesend:village/jungle/houses/jungle_temple_1",
+        "processors": "minecraft:mossify_20_percent",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "naturesend:village/jungle/houses/jungle_toolsmith_1",
         "processors": "minecraft:mossify_20_percent",
         "projection": "rigid"
       },
@@ -184,7 +229,7 @@
       "element": {
         "element_type": "minecraft:empty_pool_element"
       },
-      "weight": 4
+      "weight": 6
     }
   ],
   "fallback": "naturesend:village/jungle/terminators"
