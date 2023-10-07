@@ -1,4 +1,4 @@
-// 1.20.1	2023-06-26T23:05:42.0171178	Loot Tables
+// 1.20.1	2023-10-06T22:20:42.464771	Loot Tables
 fd220a9b6b25bb4a263a453a4f7bd5043c7e05ad data/naturesend/loot_tables/blocks/chlorite_shale.json
 3a9a51bdec1380625c352249b4f7534e87dd6763 data/naturesend/loot_tables/blocks/eroded_shale.json
 b087bbe66242232d329f29028fc942ccec8ecd23 data/naturesend/loot_tables/blocks/evergreen_button.json
@@ -61,3 +61,4 @@ dca58dcb34f1ad362b6d49f1784560bbbd56f2ae data/naturesend/loot_tables/blocks/will
 53304ec1f98f1e1cc503673f9d0290aac0413d38 data/naturesend/loot_tables/blocks/willow_stairs.json
 554d20b3afead449face4a11e3828714a6cf9531 data/naturesend/loot_tables/blocks/willow_trapdoor.json
 a79f31dd02c66728663f9f8e653bbe08fcc4dea8 data/naturesend/loot_tables/blocks/willow_wood.json
+7e73f33f06d94df0d29dc431781419d4eee19ab4 data/naturesend/loot_tables/chests/village/village_jungle_house.json

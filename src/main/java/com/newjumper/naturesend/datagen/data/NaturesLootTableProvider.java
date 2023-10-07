@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class NaturesLootTableProvider extends LootTableProvider {
     public NaturesLootTableProvider(PackOutput pOutput) {
-        super(pOutput, BuiltInLootTables.all(), List.of(new LootTableProvider.SubProviderEntry(NaturesLootTables::new, LootContextParamSets.BLOCK)));
+        super(pOutput, BuiltInLootTables.all(), List.of(new LootTableProvider.SubProviderEntry(NaturesBlockLoot::new, LootContextParamSets.BLOCK), new LootTableProvider.SubProviderEntry(NaturesChestLoot::new, LootContextParamSets.CHEST)));
     }
 
     @Override
